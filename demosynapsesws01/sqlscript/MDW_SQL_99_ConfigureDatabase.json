@@ -11,7 +11,7 @@
 			},
 			"currentConnection": {
 				"poolName": "MDWHOpenHack",
-				"databaseName": "master"
+				"databaseName": "MDWHOpenHack"
 			}
 		},
 		"type": "SqlQuery"
