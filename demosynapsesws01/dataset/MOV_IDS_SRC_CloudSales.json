@@ -1,0 +1,12 @@
+{
+	"name": "MOV_IDS_SRC_CloudSales",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Movies_CloudSales",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	}
+}
