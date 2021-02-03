@@ -10,7 +10,7 @@
 					"referenceName": "demosynapseakv01",
 					"type": "LinkedServiceReference"
 				},
-				"secretName": "Movies-LS-ConnectionString-ohmdw-catalog-xvwrxepisetws"
+				"secretName": "Movies-LS-ConnectionString-SouthridgeMovies"
 			}
 		},
 		"connectVia": {
