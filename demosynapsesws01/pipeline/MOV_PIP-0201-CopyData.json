@@ -189,7 +189,7 @@
 							],
 							"outputs": [
 								{
-									"referenceName": "MOV_IDS_SNK_ADLS_RAW_CloudStreaming_PARQUET",
+									"referenceName": "MOV_IDS_SNK_ADLS_RAW_SourthRidge_CloudStreaming_PARQUET",
 									"type": "DatasetReference"
 								}
 							]

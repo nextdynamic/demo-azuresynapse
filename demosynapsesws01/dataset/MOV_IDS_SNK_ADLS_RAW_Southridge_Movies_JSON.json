@@ -5,6 +5,9 @@
 			"referenceName": "demosynapsesws01-WorkspaceDefaultStorage",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "Movies"
+		},
 		"annotations": [],
 		"type": "Json",
 		"typeProperties": {
