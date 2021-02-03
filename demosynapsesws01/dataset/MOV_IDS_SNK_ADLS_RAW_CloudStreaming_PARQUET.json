@@ -1,0 +1,24 @@
+{
+	"name": "MOV_IDS_SNK_ADLS_RAW_CloudStreaming_PARQUET",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "demosynapsesws01-WorkspaceDefaultStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@concat(item().schema_name, \".\", item().tablename, \".parquet\")",
+					"type": "Expression"
+				},
+				"folderPath": "CloudStreaming",
+				"fileSystem": "RAW"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
