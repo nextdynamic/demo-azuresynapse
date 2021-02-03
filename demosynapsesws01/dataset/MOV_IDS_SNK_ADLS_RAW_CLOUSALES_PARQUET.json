@@ -1,0 +1,24 @@
+{
+	"name": "MOV_IDS_SNK_ADLS_RAW_CLOUSALES_PARQUET",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "demosynapsesws01-WorkspaceDefaultStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@concat(item().schema_name, \".\", item().tablename, \".parquet\")",
+					"type": "Expression"
+				},
+				"folderPath": "CloudSales",
+				"fileSystem": "RAW"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
