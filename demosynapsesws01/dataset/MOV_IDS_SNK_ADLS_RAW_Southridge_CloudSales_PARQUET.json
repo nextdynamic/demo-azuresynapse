@@ -1,5 +1,5 @@
 {
-	"name": "MOV_IDS_SNK_ADLS_RAW_CloudSales_PARQUET",
+	"name": "MOV_IDS_SNK_ADLS_RAW_Southridge_CloudSales_PARQUET",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "demosynapsesws01-WorkspaceDefaultStorage",
@@ -17,7 +17,7 @@
 					"value": "@concat(item().table_schema,'.',item().table_name,'.parquet')",
 					"type": "Expression"
 				},
-				"folderPath": "raw/cloudsales",
+				"folderPath": "raw/Southridge/CloudSales",
 				"fileSystem": "movies"
 			},
 			"compressionCodec": "snappy"

@@ -117,7 +117,7 @@
 							],
 							"outputs": [
 								{
-									"referenceName": "MOV_IDS_SNK_ADLS_RAW_CloudSales_PARQUET",
+									"referenceName": "MOV_IDS_SNK_ADLS_RAW_Southridge_CloudSales_PARQUET",
 									"type": "DatasetReference"
 								}
 							]
