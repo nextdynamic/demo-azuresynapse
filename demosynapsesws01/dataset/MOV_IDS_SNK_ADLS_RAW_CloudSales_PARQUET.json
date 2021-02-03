@@ -1,5 +1,5 @@
 {
-	"name": "MOV_IDS_SNK_ADLS_RAW_CLOUSALES_PARQUET",
+	"name": "MOV_IDS_SNK_ADLS_RAW_CloudSales_PARQUET",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "demosynapsesws01-WorkspaceDefaultStorage",
