@@ -1,5 +1,5 @@
 {
-	"name": "MOV_IDS_LUP_CloudStreaming",
+	"name": "MOV_IDS_LUP_Southridge_CloudStreaming",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "Movies_CloudStreaming",
