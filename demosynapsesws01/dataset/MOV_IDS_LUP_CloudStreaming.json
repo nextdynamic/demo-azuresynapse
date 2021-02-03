@@ -1,0 +1,15 @@
+{
+	"name": "MOV_IDS_LUP_CloudStreaming",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Movies_CloudSales",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Movies"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	}
+}
