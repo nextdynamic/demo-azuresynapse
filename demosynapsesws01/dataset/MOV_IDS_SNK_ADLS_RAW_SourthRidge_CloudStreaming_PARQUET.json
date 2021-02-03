@@ -1,5 +1,5 @@
 {
-	"name": "MOV_IDS_SNK_ADLS_RAW_CloudStreaming_PARQUET",
+	"name": "MOV_IDS_SNK_ADLS_RAW_SourthRidge_CloudStreaming_PARQUET",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "demosynapsesws01-WorkspaceDefaultStorage",
