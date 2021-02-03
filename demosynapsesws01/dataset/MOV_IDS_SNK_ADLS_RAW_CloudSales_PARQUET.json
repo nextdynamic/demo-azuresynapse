@@ -14,7 +14,7 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": {
-					"value": "@concat(item().schema_name,'.',item().tablename,'.parquet')",
+					"value": "@concat(item().table_schema,'.',item().table_name,'.parquet')",
 					"type": "Expression"
 				},
 				"folderPath": "CloudSales",
