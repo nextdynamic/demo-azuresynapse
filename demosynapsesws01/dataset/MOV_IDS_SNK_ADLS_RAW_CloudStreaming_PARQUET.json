@@ -5,13 +5,16 @@
 			"referenceName": "demosynapsesws01-WorkspaceDefaultStorage",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "Movies"
+		},
 		"annotations": [],
 		"type": "Parquet",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": {
-					"value": "@concat(item().schema_name, \".\", item().tablename, \".parquet\")",
+					"value": "@concat(item().schema_name,'.',item().tablename,'.parquet')",
 					"type": "Expression"
 				},
 				"folderPath": "CloudStreaming",
