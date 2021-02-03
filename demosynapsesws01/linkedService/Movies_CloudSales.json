@@ -10,7 +10,7 @@
 					"referenceName": "demosynapseakv01",
 					"type": "LinkedServiceReference"
 				},
-				"secretName": "Moviels-LS-ConnectString-CloudSales"
+				"secretName": "Movies-LS-ConnectionString-CloudSales"
 			}
 		},
 		"connectVia": {
