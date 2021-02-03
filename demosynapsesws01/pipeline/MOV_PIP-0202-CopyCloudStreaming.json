@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "LookupTablesCloudStreaming",
+				"name": "LookupTables",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
@@ -29,12 +29,12 @@
 				}
 			},
 			{
-				"name": "ForEachTableCloudStreaming",
+				"name": "ForEachTable",
 				"description": "",
 				"type": "ForEach",
 				"dependsOn": [
 					{
-						"activity": "LookupTablesCloudStreaming",
+						"activity": "LookupTables",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -43,13 +43,13 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('LookupTablesCloudStreaming').output.value",
+						"value": "@activity('LookupTables').output.value",
 						"type": "Expression"
 					},
 					"isSequential": true,
 					"activities": [
 						{
-							"name": "Copy CloudStreaming",
+							"name": "CopyTables",
 							"type": "Copy",
 							"dependsOn": [],
 							"policy": {
