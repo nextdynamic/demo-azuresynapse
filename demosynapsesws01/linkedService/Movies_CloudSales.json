@@ -1,0 +1,21 @@
+{
+	"name": "Movies_CloudSales",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "demosynapseakv01",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "Moviels-LS-ConnectString-CloudSales"
+			}
+		},
+		"connectVia": {
+			"referenceName": "AutoResolveIntegrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
