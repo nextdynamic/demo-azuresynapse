@@ -214,11 +214,27 @@
 						"type": "CosmosDbSqlApiSource",
 						"preferredRegions": []
 					},
+					"sink": {
+						"type": "JsonSink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings"
+						},
+						"formatSettings": {
+							"type": "JsonWriteSettings",
+							"filePattern": "arrayOfObjects"
+						}
+					},
 					"enableStaging": false
 				},
 				"inputs": [
 					{
 						"referenceName": "MOV_IDS_SRV_Southridge_Movies",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "MOV_IDS_SNK_ADLS_RAW_Southridge_Movies_JSON",
 						"type": "DatasetReference"
 					}
 				]
