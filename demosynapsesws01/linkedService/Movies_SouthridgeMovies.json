@@ -1,0 +1,21 @@
+{
+	"name": "Movies_SouthridgeMovies",
+	"properties": {
+		"annotations": [],
+		"type": "CosmosDb",
+		"typeProperties": {
+			"connectionString": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "demosynapseakv01",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "Movies-LS-ConnectionString-SouthridgeMovies"
+			}
+		},
+		"connectVia": {
+			"referenceName": "AutoResolveIntegrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
