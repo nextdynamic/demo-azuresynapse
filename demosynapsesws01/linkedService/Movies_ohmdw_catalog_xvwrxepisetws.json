@@ -1,0 +1,21 @@
+{
+	"name": "Movies_ohmdw_catalog_xvwrxepisetws",
+	"properties": {
+		"annotations": [],
+		"type": "CosmosDb",
+		"typeProperties": {
+			"connectionString": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "demosynapseakv01",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "Movies-LS-ConnectionString-ohmdw-catalog-xvwrxepisetws"
+			}
+		},
+		"connectVia": {
+			"referenceName": "AutoResolveIntegrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
