@@ -160,8 +160,7 @@
 							"typeProperties": {
 								"source": {
 									"type": "AzureSqlSource",
-									"queryTimeout": "04:00:00",
-									"isolationLevel": "Snapshot",
+									"queryTimeout": "02:00:00",
 									"partitionOption": "None"
 								},
 								"sink": {
