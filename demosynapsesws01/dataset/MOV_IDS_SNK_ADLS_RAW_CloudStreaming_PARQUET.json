@@ -17,8 +17,8 @@
 					"value": "@concat(item().table_schema,'.',item().table_name,'.parquet')",
 					"type": "Expression"
 				},
-				"folderPath": "CloudStreaming",
-				"fileSystem": "RAW"
+				"folderPath": "cloudstreaming",
+				"fileSystem": "raw"
 			},
 			"compressionCodec": "snappy"
 		},
