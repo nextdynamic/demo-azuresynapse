@@ -2,8 +2,11 @@
 	"name": "MOV_IDS_SRV_Southridge_Movies",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "Movies_ohmdw_catalog_xvwrxepisetws",
+			"referenceName": "Movies_SouthridgeMovies",
 			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Movies"
 		},
 		"annotations": [],
 		"type": "CosmosDbSqlApiCollection",
