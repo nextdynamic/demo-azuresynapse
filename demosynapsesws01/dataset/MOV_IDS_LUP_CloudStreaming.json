@@ -2,7 +2,7 @@
 	"name": "MOV_IDS_LUP_CloudStreaming",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "Movies_CloudSales",
+			"referenceName": "Movies_CloudStreaming",
 			"type": "LinkedServiceReference"
 		},
 		"folder": {
