@@ -5,14 +5,11 @@
 			"referenceName": "Movies_ohmdw_catalog_xvwrxepisetws",
 			"type": "LinkedServiceReference"
 		},
-		"folder": {
-			"name": "Movies"
-		},
 		"annotations": [],
 		"type": "CosmosDbSqlApiCollection",
 		"schema": {},
 		"typeProperties": {
-			"collectionName": "southridge"
+			"collectionName": "movies"
 		}
 	}
 }
