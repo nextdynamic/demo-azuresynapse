@@ -159,7 +159,30 @@
 					"#df_Southridge_Orders.printSchema()\r\n",
 					"#display(df_Southridge_Orders.limit(100))"
 				],
-				"execution_count": 8
+				"execution_count": 28
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"# Rename columns\r\n",
+					"df_Southridge_Orders_Renamed = (\r\n",
+					"    df_Southridge_Orders.withColumnRenamed(\"CreatedDate\", \"OrderCreatedDate\")\r\n",
+					"                        .withColumnRenamed(\"UpdatedDate\", \"OrderUpdatedDate\")\r\n",
+					")"
+				],
+				"execution_count": 29
 			},
 			{
 				"cell_type": "code",
@@ -189,7 +212,30 @@
 					"#df_Southridge_OrderDetails.printSchema()\r\n",
 					"#display(df_Southridge_OrderDetails.limit(100))"
 				],
-				"execution_count": 4
+				"execution_count": 30
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"# Rename columns\r\n",
+					"df_Southridge_OrderDetails_Renamed = (\r\n",
+					"    df_Southridge_OrderDetails.withColumnRenamed(\"CreatedDate\", \"OrderDetailCreatedDate\")\r\n",
+					"                        .withColumnRenamed(\"UpdatedDate\", \"OrderDetailUpdatedDate\")\r\n",
+					")"
+				],
+				"execution_count": 32
 			},
 			{
 				"cell_type": "code",
@@ -208,9 +254,9 @@
 				"source": [
 					"# Join dataframes\r\n",
 					"df_Southridge_Orders_Joined = (\r\n",
-					"    df_Southridge_Orders.alias('Orders').join(\r\n",
-					"        df_Southridge_OrderDetails.alias('OrderDetails'),\r\n",
-					"        df_Southridge_Orders.OrderID == df_Southridge_OrderDetails.OrderID,\r\n",
+					"    df_Southridge_Orders_Renamed.alias('Orders').join(\r\n",
+					"        df_Southridge_OrderDetails_Renamed.alias('OrderDetails'),\r\n",
+					"        df_Southridge_Orders_Renamed.OrderID == df_Southridge_OrderDetails_Renamed.OrderID,\r\n",
 					"        'inner'\r\n",
 					"    )\r\n",
 					")\r\n",
@@ -219,7 +265,7 @@
 					"#df_Southridge_Orders_Joined.printSchema()\r\n",
 					"#display(df_Southridge_Orders_Joined.limit(100))"
 				],
-				"execution_count": 5
+				"execution_count": 33
 			},
 			{
 				"cell_type": "markdown",
@@ -262,31 +308,27 @@
 					"    'OrderDate',\r\n",
 					"    'ShipDate',\r\n",
 					"    'TotalCost',\r\n",
-					"    'Orders.CreatedDate',\r\n",
-					"    'Orders.UpdatedDate',\r\n",
+					"    'OrderCreatedDate',\r\n",
+					"    'OrderUpdatedDate',\r\n",
 					"    'OrderDetailID',\r\n",
 					"    'MovieID',\r\n",
 					"    'Quantity',\r\n",
 					"    'UnitCost',\r\n",
 					"    'LineNumber',\r\n",
-					"    'OrderDetails.CreatedDate',\r\n",
-					"    'OrderDetails.UpdatedDate'\r\n",
+					"    'OrderDetailCreatedDate',\r\n",
+					"    'OrderDetailUpdatedDate'\r\n",
 					")\r\n",
 					"\r\n",
 					"# Rename columns\r\n",
 					"df_Southridge_Orders_Modified = (\r\n",
 					"    df_Southridge_Orders_Modified.withColumnRenamed(\"OrderId\", \"SourceSystemOrderID\")\r\n",
-					"                                .withColumnRenamed(\"CreatedDate\", \"OrderCreatedDate\")\r\n",
-					"                                .withColumnRenamed(\"UpdatedDate\", \"OrderUpdatedDate\")\r\n",
-					"                                .withColumnRenamed(\"OrderDetails.CreatedDate\", \"OrderDetailCreatedDate\")\r\n",
-					"                                .withColumnRenamed(\"OrderDetails.UpdatedDate\", \"OrderDetailUpdatedDate\")\r\n",
 					")\r\n",
 					"\r\n",
 					"# Display dataframe\r\n",
-					"df_Southridge_Orders_Modified.printSchema()\r\n",
+					"#df_Southridge_Orders_Modified.printSchema()\r\n",
 					"#display(df_Southridge_Orders_Modified.limit(100))"
 				],
-				"execution_count": 22
+				"execution_count": 42
 			},
 			{
 				"cell_type": "markdown",
@@ -320,9 +362,9 @@
 					"\r\n",
 					"# Display dataframe\r\n",
 					"#df_unioned.printSchema()\r\n",
-					"display(df_unioned.limit(100))"
+					"#display(df_unioned.limit(100))"
 				],
-				"execution_count": 65
+				"execution_count": 44
 			},
 			{
 				"cell_type": "markdown",
@@ -359,24 +401,27 @@
 					"df_unioned_withID = df_unioned_withID.select(\r\n",
 					"    'SourceSystemID',\r\n",
 					"    'GlobalTransactionID',\r\n",
-					"    'SourceSystemCustomerID',\r\n",
-					"    'LastName',\r\n",
-					"    'FirstName',\r\n",
-					"    'AddressLine1',\r\n",
-					"    'AddressLine2',\r\n",
-					"    'City',\r\n",
-					"    'State',\r\n",
-					"    'ZipCode',\r\n",
-					"    'PhoneNumber',\r\n",
-					"    'CreatedDate',\r\n",
-					"    'UpdatedDate'\r\n",
+					"    'SourceSystemOrderID',\r\n",
+					"    'CustomerID',\r\n",
+					"    'OrderDate',\r\n",
+					"    'ShipDate',\r\n",
+					"    'TotalCost',\r\n",
+					"    'OrderCreatedDate',\r\n",
+					"    'OrderUpdatedDate',\r\n",
+					"    'OrderDetailID',\r\n",
+					"    'MovieID',\r\n",
+					"    'Quantity',\r\n",
+					"    'UnitCost',\r\n",
+					"    'LineNumber',\r\n",
+					"    'OrderDetailCreatedDate',\r\n",
+					"    'OrderDetailUpdatedDate'\r\n",
 					")\r\n",
 					"\r\n",
 					"# Display dataframe\r\n",
 					"#df_unioned_withID.printSchema()\r\n",
 					"#display(df_unioned_withID.limit(100))"
 				],
-				"execution_count": 66
+				"execution_count": 50
 			},
 			{
 				"cell_type": "markdown",
@@ -408,7 +453,7 @@
 				"source": [
 					"df_unioned_withID.write.format('parquet').mode('overwrite').save('abfss://movies@demosynapsedls01.dfs.core.windows.net/curated/sales.parquet')"
 				],
-				"execution_count": 67
+				"execution_count": 48
 			}
 		]
 	}
