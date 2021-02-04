@@ -22,12 +22,8 @@
 						"partitionOption": "None"
 					},
 					"dataset": {
-						"referenceName": "MOV_IDS_SRC_Southridge_CloudStreaming",
-						"type": "DatasetReference",
-						"parameters": {
-							"table_schema": "information_schema",
-							"table_name": "tables"
-						}
+						"referenceName": "MOV_IDS_SRC_Southridge_CloudSales",
+						"type": "DatasetReference"
 					},
 					"firstRowOnly": false
 				}
