@@ -29,7 +29,7 @@
 			},
 			"kernelspec": {
 				"name": "synapse_pyspark",
-				"display_name": "Synapse PySpark"
+				"display_name": "python"
 			},
 			"language_info": {
 				"name": "python"
@@ -138,21 +138,10 @@
 					"collapsed": false
 				},
 				"source": [
-					"# Define schema\r\n",
-					"schema = (StructType().\r\n",
-					"          add(\"TransactionID\", StringType()).\r\n",
-					"          add(\"CustomerID\", StringType()).\r\n",
-					"          add(\"MovieID\", StringType()).\r\n",
-					"          add(\"StreamStart\",  TimestampType()).\r\n",
-					"          add(\"StreamEnd\", TimestampType()).\r\n",
-					"          add(\"CreatedDate\", DateType()).\r\n",
-					"          add(\"UpdatedDate\", DateType())\r\n",
-					"         )\r\n",
-					"\r\n",
 					"# Read data from lake\r\n",
 					"df_Southridge = spark.read.load('abfss://movies@demosynapsedls01.dfs.core.windows.net/raw/Southridge/CloudStreaming/dbo.Transactions.parquet',\r\n",
 					"                        format='parquet',\r\n",
-					"                        schema=schema,\r\n",
+					"                        inferSchema=True,\r\n",
 					"                        header=True, \r\n",
 					"                        ignoreLeadingWhiteSpace=True, \r\n",
 					"                        ignoreTrailingWhiteSpace=True\r\n",
@@ -198,11 +187,103 @@
 					"# Add columns\r\n",
 					"df_SouthridgeModified = (\r\n",
 					"    df_SouthridgeModified.withColumn(\"SourceSystemID\", lit(\"1\").cast(IntegerType()))\r\n",
-					"                         .withColumn(\"GlobalTransactionID\", uuidUDF())\r\n",
 					")\r\n",
 					"\r\n",
 					"# Reorder colums\r\n",
 					"df_SouthridgeModified = df_SouthridgeModified.select(\r\n",
+					"    'SourceSystemID',\r\n",
+					"    'SourceSystemTransactionID',\r\n",
+					"    'CustomerID',\r\n",
+					"    'MovieID',\r\n",
+					"    'StreamStart',\r\n",
+					"    'StreamEnd',\r\n",
+					"    'CreatedDate',\r\n",
+					"    'UpdatedDate'\r\n",
+					")\r\n",
+					"\r\n",
+					"# Convert column types\r\n",
+					"df_SouthridgeModified = (\r\n",
+					"    df_SouthridgeModified.withColumn(\"SourceSystemID\", col(\"SourceSystemID\").cast(StringType()))\r\n",
+					"                           .withColumn(\"SourceSystemTransactionID\", col(\"SourceSystemTransactionID\").cast(StringType()))\r\n",
+					"                           .withColumn(\"CustomerID\", col(\"CustomerID\").cast(StringType()))\r\n",
+					"                           .withColumn(\"MovieID\", col(\"MovieID\").cast(StringType()))\r\n",
+					"                           .withColumn(\"StreamStart\", col(\"StreamStart\").cast(TimestampType()))\r\n",
+					"                           .withColumn(\"StreamEnd\", col(\"StreamEnd\").cast(TimestampType()))\r\n",
+					"                           .withColumn(\"CreatedDate\", col(\"CreatedDate\").cast(DateType()))\r\n",
+					"                           .withColumn(\"UpdatedDate\", col(\"UpdatedDate\").cast(DateType()))\r\n",
+					")\r\n",
+					"\r\n",
+					"# Display dataframe\r\n",
+					"#df_SouthridgeModified.printSchema\r\n",
+					"#display(df_SouthridgeModified.limit(100))"
+				],
+				"execution_count": 9
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"## Combine all dataframes"
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"df_unioned = df_SouthridgeModified"
+				],
+				"execution_count": null
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"## Add new ID   "
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"# Add columns\r\n",
+					"df_unioned_withID = df_unioned.withColumn(\"GlobalTransactionID\", uuidUDF())\r\n",
+					"\r\n",
+					"# Order columns\r\n",
+					"df_unioned_withID = df_unioned_withID.select(\r\n",
 					"    'SourceSystemID',\r\n",
 					"    'GlobalTransactionID',\r\n",
 					"    'SourceSystemTransactionID',\r\n",
@@ -215,10 +296,10 @@
 					")\r\n",
 					"\r\n",
 					"# Display dataframe\r\n",
-					"#df_SouthridgeModified.printSchema\r\n",
-					"#display(df_SouthridgeModified.limit(100))"
+					"#df_unioned_withID.printSchema()\r\n",
+					"display(df_unioned_withID.limit(100))"
 				],
-				"execution_count": 9
+				"execution_count": null
 			},
 			{
 				"cell_type": "markdown",
@@ -248,7 +329,7 @@
 					"collapsed": true
 				},
 				"source": [
-					"df_SouthridgeModified.write.format('parquet').mode('overwrite').save('abfss://movies@demosynapsedls01.dfs.core.windows.net/curated/streaming.parquet')"
+					"df_unioned_withID.write.format('parquet').mode('overwrite').save('abfss://movies@demosynapsedls01.dfs.core.windows.net/curated/streaming.parquet')"
 				],
 				"execution_count": 10
 			}
