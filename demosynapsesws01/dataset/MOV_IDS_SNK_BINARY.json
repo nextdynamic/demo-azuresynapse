@@ -12,9 +12,6 @@
 			},
 			"container_path": {
 				"type": "string"
-			},
-			"container_file": {
-				"type": "string"
 			}
 		},
 		"annotations": [],
