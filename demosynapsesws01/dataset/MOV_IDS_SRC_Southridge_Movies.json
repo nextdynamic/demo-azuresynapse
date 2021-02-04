@@ -1,5 +1,5 @@
 {
-	"name": "MOV_IDS_SRV_Southridge_Movies",
+	"name": "MOV_IDS_SRC_Southridge_Movies",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "Movies_SouthridgeMovies",
