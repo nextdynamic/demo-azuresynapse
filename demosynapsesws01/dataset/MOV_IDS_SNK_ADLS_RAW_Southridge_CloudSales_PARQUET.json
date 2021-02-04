@@ -17,7 +17,7 @@
 					"value": "@concat(item().table_schema,'.',item().table_name,'.parquet')",
 					"type": "Expression"
 				},
-				"folderPath": "raw/southridge/cloudsales",
+				"folderPath": "raw/Southridge/CloudSales",
 				"fileSystem": "movies"
 			},
 			"compressionCodec": "snappy"
