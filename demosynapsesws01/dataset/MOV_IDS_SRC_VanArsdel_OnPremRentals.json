@@ -1,0 +1,30 @@
+{
+	"name": "MOV_IDS_SRC_VanArsdel_OnPremRentals",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Movies_VanArsdel_onPrem",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"table_schema": {
+				"type": "string"
+			},
+			"table_name": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": {
+				"value": "@dataset().table_schema",
+				"type": "Expression"
+			},
+			"table": {
+				"value": "@dataset().table_name",
+				"type": "Expression"
+			}
+		}
+	}
+}
