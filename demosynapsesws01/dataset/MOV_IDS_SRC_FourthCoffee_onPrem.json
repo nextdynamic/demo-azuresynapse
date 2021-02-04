@@ -1,0 +1,28 @@
+{
+	"name": "MOV_IDS_SRC_FourthCoffee_onPrem",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Movies_FourthCoffee_onPrem",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"directory": {
+				"type": "string"
+			}
+		},
+		"folder": {
+			"name": "Movies"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"folderPath": {
+					"value": "@dataset().directory",
+					"type": "Expression"
+				}
+			}
+		}
+	}
+}
