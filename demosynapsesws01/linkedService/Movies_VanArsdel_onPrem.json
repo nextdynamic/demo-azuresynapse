@@ -1,0 +1,21 @@
+{
+	"name": "Movies_VanArsdel_onPrem",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"connectionString": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "demosynapseakv01",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "Movies-LS-ConnectionString-VanArsdel-OnPremRentals"
+			}
+		},
+		"connectVia": {
+			"referenceName": "Movies-VanArsdel-onPrem",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
