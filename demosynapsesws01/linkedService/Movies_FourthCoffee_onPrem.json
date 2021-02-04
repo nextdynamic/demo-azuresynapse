@@ -1,0 +1,23 @@
+{
+	"name": "Movies_FourthCoffee_onPrem",
+	"properties": {
+		"annotations": [],
+		"type": "FileServer",
+		"typeProperties": {
+			"host": "C:\\",
+			"userId": "openhackadmin",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "demosynapseakv01",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "Movies-LS-Password-FourthCoffee-OpenHackAdmin"
+			}
+		},
+		"connectVia": {
+			"referenceName": "Movies-FourthCoffee-onPrem",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
