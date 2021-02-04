@@ -29,7 +29,7 @@
 			},
 			"kernelspec": {
 				"name": "synapse_pyspark",
-				"display_name": "python"
+				"display_name": "Synapse PySpark"
 			},
 			"language_info": {
 				"name": "python"
@@ -84,7 +84,7 @@
 					"from pyspark.sql.functions import col, lit, udf, greatest\r\n",
 					"import uuid"
 				],
-				"execution_count": 51
+				"execution_count": 1
 			},
 			{
 				"cell_type": "markdown",
@@ -147,7 +147,7 @@
 				},
 				"source": [
 					"# Read data from lake\r\n",
-					"df_Southridge_Sales_Customers = spark.read.load('abfss://movies@demosynapsedls01.dfs.core.windows.net/raw/Southridge/CloudSales/dbo.Customers.parquet',\r\n",
+					"df_Southridge_Orders = spark.read.load('abfss://movies@demosynapsedls01.dfs.core.windows.net/raw/Southridge/CloudSales/dbo.Orders.parquet',\r\n",
 					"                        format='parquet',\r\n",
 					"                        inferSchema=True,\r\n",
 					"                        header=True, \r\n",
@@ -156,8 +156,8 @@
 					"                        )\r\n",
 					"\r\n",
 					"# Display dataframe\r\n",
-					"#df_Southridge_Sales_Customers.printSchema()\r\n",
-					"#display(df_Southridge_Sales_Customers.limit(100))"
+					"#df_Southridge_Orders.printSchema()\r\n",
+					"display(df_Southridge_Orders.limit(100))"
 				],
 				"execution_count": 53
 			},
@@ -177,7 +177,7 @@
 				},
 				"source": [
 					"# Read data from lake\r\n",
-					"df_Southridge_Sales_Adresses = spark.read.load('abfss://movies@demosynapsedls01.dfs.core.windows.net/raw/Southridge/CloudSales/dbo.Addresses.parquet',\r\n",
+					"df_Southridge_OrderDetails = spark.read.load('abfss://movies@demosynapsedls01.dfs.core.windows.net/raw/Southridge/CloudSales/dbo.OrderDetails.parquet',\r\n",
 					"                        format='parquet',\r\n",
 					"                        inferSchema=True,\r\n",
 					"                        header=True, \r\n",
@@ -186,8 +186,8 @@
 					"                        )\r\n",
 					"\r\n",
 					"# Display dataframe\r\n",
-					"#df_Southridge_Sales_Adresses.printSchema()\r\n",
-					"#display(df_Southridge_Sales_Adresses.limit(100))"
+					"#df_Southridge_OrderDetails.printSchema()\r\n",
+					"display(df_Southridge_OrderDetails.limit(100))"
 				],
 				"execution_count": 54
 			},
@@ -207,17 +207,17 @@
 				},
 				"source": [
 					"# Join dataframes\r\n",
-					"df_Southridge_Sales_Joined = (\r\n",
-					"    df_Southridge_Sales_Customers.alias('Customers').join(\r\n",
-					"        df_Southridge_Sales_Adresses.alias('Adresses'),\r\n",
-					"        df_Southridge_Sales_Customers.CustomerID == df_Southridge_Sales_Adresses.CustomerID,\r\n",
+					"df_Southridge_Orders_Joined = (\r\n",
+					"    df_Southridge_Orders.alias('Orders').join(\r\n",
+					"        df_Southridge_OrderDetails.alias('OrderDetails'),\r\n",
+					"        df_Southridge_Orders.OrderId == df_Southridge_OrderDetails.OrderId,\r\n",
 					"        'inner'\r\n",
 					"    )\r\n",
 					")\r\n",
 					"\r\n",
 					"# Display dataframe\r\n",
 					"#df_Southridge_Sales_Joined.printSchema()\r\n",
-					"#display(df_Southridge_Sales_Joined.limit(100))"
+					"display(df_Southridge_Sales_Joined.limit(100))"
 				],
 				"execution_count": 58
 			},
