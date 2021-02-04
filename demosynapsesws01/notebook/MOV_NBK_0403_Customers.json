@@ -81,10 +81,9 @@
 				},
 				"source": [
 					"from pyspark.sql.types import StringType, TimestampType, DateType, IntegerType, DecimalType, BooleanType, StructType\r\n",
-					"from pyspark.sql.functions import col, lit, udf, to_date\r\n",
-					"import uuid"
+					"from pyspark.sql.functions import col, lit, udf, greatest"
 				],
-				"execution_count": null
+				"execution_count": 22
 			},
 			{
 				"cell_type": "markdown",
@@ -116,7 +115,7 @@
 				"source": [
 					"uuidUDF = udf(lambda : str(uuid.uuid4()),StringType())"
 				],
-				"execution_count": null
+				"execution_count": 6
 			},
 			{
 				"cell_type": "markdown",
@@ -159,7 +158,7 @@
 					"#df_Southridge_Sales_Customers.printSchema\r\n",
 					"#display(df_Southridge_Sales_Customers.limit(100))"
 				],
-				"execution_count": null
+				"execution_count": 7
 			},
 			{
 				"cell_type": "code",
@@ -189,7 +188,7 @@
 					"#df_Southridge_Sales_Adresses.printSchema\r\n",
 					"#display(df_Southridge_Sales_Adresses.limit(100))"
 				],
-				"execution_count": null
+				"execution_count": 8
 			},
 			{
 				"cell_type": "code",
@@ -219,7 +218,7 @@
 					"#df_Southridge_Sales_Joined.printSchema\r\n",
 					"#display(df_Southridge_Sales_Joined.limit(100))"
 				],
-				"execution_count": null
+				"execution_count": 9
 			},
 			{
 				"cell_type": "code",
@@ -249,7 +248,7 @@
 					"#df_Southridge_Streaming_Customers.printSchema#\r\n",
 					"#display(df_Southridge_Streaming_Customers.limit(100))"
 				],
-				"execution_count": null
+				"execution_count": 10
 			},
 			{
 				"cell_type": "code",
@@ -279,7 +278,7 @@
 					"#df_Southridge_Streaming_Adresses.printSchema\r\n",
 					"#display(df_Southridge_Streaming_Adresses.limit(100))"
 				],
-				"execution_count": null
+				"execution_count": 11
 			},
 			{
 				"cell_type": "code",
@@ -309,7 +308,7 @@
 					"#df_Southridge_Streaming_Joined.printSchema\r\n",
 					"#display(df_Southridge_Streaming_Joined.limit(100))"
 				],
-				"execution_count": null
+				"execution_count": 12
 			},
 			{
 				"cell_type": "markdown",
@@ -344,7 +343,7 @@
 					"#df_FourthCoffee.printSchema\r\n",
 					"#display(df_FourthCoffee.limit(100))"
 				],
-				"execution_count": null
+				"execution_count": 13
 			},
 			{
 				"cell_type": "code",
@@ -374,7 +373,7 @@
 					"#df_vanArsdel.printSchema\r\n",
 					"#display(df_vanArsdel.limit(100))"
 				],
-				"execution_count": null
+				"execution_count": 14
 			},
 			{
 				"cell_type": "markdown",
@@ -407,7 +406,8 @@
 					"# Add columns\r\n",
 					"df_Southridge_Sales_Modified = (\r\n",
 					"    df_Southridge_Sales_Joined.withColumn(\"SourceSystemID\", lit(\"1\").cast(IntegerType()))\r\n",
-					"                              .withColumn(\"CreatedDate\", max(col(\"Customers.CreatedDate\").cast(\"long\"), col(\"Adresses.CreatedDate\").cast(\"long\")))\r\n",
+					"                              .withColumn(\"MaxCreatedDate\", greatest(\"Customers.CreatedDate\", \"Addresses.CreatedDate\"))\r\n",
+					"                             .withColumn(\"MaxUpdatedDate\", greatest(\"Customers.UpdatedDate\", \"Addresses.UpdatedDate\"))\r\n",
 					")\r\n",
 					"\r\n",
 					"# Reorder colums\r\n",
@@ -422,37 +422,17 @@
 					"    'State',\r\n",
 					"    'ZipCode',\r\n",
 					"    'PhoneNumber',\r\n",
-					"    'Customers.CreatedDate',\r\n",
-					"    'Customers.UpdatedDate',\r\n",
-					"    'Adresses.CreatedDate',\r\n",
-					"    'Adresses.UpdatedDate',\r\n",
-					"    'CreatedDate'\r\n",
-					")\r\n",
+					"    'MaxCreatedDate',\r\n",
+					"    'MaxUpdatedDate'\r\n",
 					"\r\n",
-					"# Rename columns\r\n",
-					"df_Southridge_Sales_Modified = df_Southridge_Sales_Modified.withColumn(\"SourceSystemCustomerID\", col(\"CustomerID\"))\r\n",
-					"\r\n",
-					"# Convert column types\r\n",
-					"df_Southridge_Sales_Modified = (\r\n",
-					"    df_Southridge_Sales_Modified.withColumn(\"SourceSystemID\", col(\"SourceSystemID\").cast(IntegerType()))\r\n",
-					"                           .withColumn(\"SourceSystemCustomerID\", col(\"SourceSystemCustomerID\").cast(StringType()))\r\n",
-					"                           .withColumn(\"LastName\", col(\"LastName\").cast(StringType()))\r\n",
-					"                           .withColumn(\"FirstName\", col(\"FirstName\").cast(StringType()))\r\n",
-					"                           .withColumn(\"AddressLine1\", col(\"AddressLine1\").cast(StringType()))\r\n",
-					"                           .withColumn(\"AddressLine2\", col(\"AddressLine2\").cast(StringType()))\r\n",
-					"                           .withColumn(\"City\", col(\"City\").cast(StringType()))\r\n",
-					"                           .withColumn(\"State\", col(\"State\").cast(StringType()))\r\n",
-					"                           .withColumn(\"ZipCode\", col(\"ZipCode\").cast(StringType()))\r\n",
-					"                           .withColumn(\"PhoneNumber\", col(\"PhoneNumber\").cast(StringType()))\r\n",
-					"                           .withColumn(\"CreatedDate\", col(\"CreatedDate\").cast(DateType()))\r\n",
-					"                           .withColumn(\"UpdatedDate\", col(\"UpdatedDate\").cast(DateType()))\r\n",
 					")\r\n",
 					"\r\n",
 					"# Display dataframe\r\n",
 					"#df_Southridge_Sales_Modified.printSchema\r\n",
-					"#display(df_Southridge_Sales_Modified.limit(100))"
+					"#display(df_Southridge_Sales_Modified.limit(100))\r\n",
+					"df_Southridge_Sales_Modified.show()"
 				],
-				"execution_count": null
+				"execution_count": 30
 			},
 			{
 				"cell_type": "markdown",
