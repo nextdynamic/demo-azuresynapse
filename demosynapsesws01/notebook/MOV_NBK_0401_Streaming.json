@@ -54,6 +54,9 @@
 		"cells": [
 			{
 				"cell_type": "code",
+				"metadata": {
+					"collapsed": false
+				},
 				"source": [
 					"df_Southridge = spark.read.load('abfss://movies@demosynapsedls01.dfs.core.windows.net/raw/Southridge/CloudStreaming/dbo.Transactions.parquet', format='parquet',\r\n",
 					"                         inferSchema=True, header=True, \r\n",
@@ -63,7 +66,7 @@
 					"\r\n",
 					"display(df_Southridge.limit(100))"
 				],
-				"execution_count": 1
+				"execution_count": 3
 			}
 		]
 	}
