@@ -17,7 +17,6 @@
 					"value": "@concat(item().table_schema,'.',item().table_name,'.parquet')",
 					"type": "Expression"
 				},
-				"folderPath": "raw/Southridge/CloudStreaming",
 				"fileSystem": "movies"
 			},
 			"compressionCodec": "snappy"

@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "LookupTables",
+				"name": "LookupTables_CloudSales",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
@@ -29,12 +29,12 @@
 				}
 			},
 			{
-				"name": "ForEachTable",
+				"name": "ForEachTable_CloudSales",
 				"description": "",
 				"type": "ForEach",
 				"dependsOn": [
 					{
-						"activity": "LookupTables",
+						"activity": "LookupTables_CloudSales",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -43,13 +43,13 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('LookupTables').output.value",
+						"value": "@activity('LookupTables_CloudSales').output.value",
 						"type": "Expression"
 					},
 					"isSequential": false,
 					"activities": [
 						{
-							"name": "CopyTables",
+							"name": "CopyTables_CloudSales",
 							"type": "Copy",
 							"dependsOn": [],
 							"policy": {
@@ -93,12 +93,127 @@
 							],
 							"outputs": [
 								{
-									"referenceName": "MOV_IDS_SNK_ADLS_RAW_Southridge_CloudSales_PARQUET",
-									"type": "DatasetReference"
+									"referenceName": "MOV_IDS_SNK_PARQUET",
+									"type": "DatasetReference",
+									"parameters": {
+										"container_name": "movies",
+										"container_path": "raw/Southridge/CloudSales",
+										"container_file": {
+											"value": "@concat(item().table_schema,'.',item().table_name,'.parquet')",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
 					]
+				}
+			},
+			{
+				"name": "ForEachTable_CloudStreaming",
+				"description": "",
+				"type": "ForEach",
+				"dependsOn": [
+					{
+						"activity": "LookupTables_CloudStreaming",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@activity('LookupTables_CloudStreaming').output.value",
+						"type": "Expression"
+					},
+					"isSequential": false,
+					"activities": [
+						{
+							"name": "CopyTables_CloudStreaming",
+							"type": "Copy",
+							"dependsOn": [],
+							"policy": {
+								"timeout": "7.00:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"source": {
+									"type": "AzureSqlSource",
+									"queryTimeout": "02:00:00",
+									"partitionOption": "None"
+								},
+								"sink": {
+									"type": "ParquetSink",
+									"storeSettings": {
+										"type": "AzureBlobFSWriteSettings"
+									},
+									"formatSettings": {
+										"type": "ParquetWriteSettings"
+									}
+								},
+								"enableStaging": false,
+								"translator": {
+									"type": "TabularTranslator",
+									"typeConversion": true,
+									"typeConversionSettings": {
+										"allowDataTruncation": true,
+										"treatBooleanAsNumber": false
+									}
+								}
+							},
+							"inputs": [
+								{
+									"referenceName": "MOV_IDS_SRC_Southridge_CloudStreaming",
+									"type": "DatasetReference"
+								}
+							],
+							"outputs": [
+								{
+									"referenceName": "MOV_IDS_SNK_PARQUET",
+									"type": "DatasetReference",
+									"parameters": {
+										"container_name": "movies",
+										"container_path": "raw/Southridge/CloudStreaming",
+										"container_file": {
+											"value": "@concat(item().table_schema,'.',item().table_name,'.parquet')",
+											"type": "Expression"
+										}
+									}
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"name": "LookupTables_CloudStreaming",
+				"type": "Lookup",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "AzureSqlSource",
+						"sqlReaderQuery": "SELECT table_schema, table_name\n  FROM information_schema.tables\n WHERE table_type = 'base table' AND table_schema != 'Hidden'",
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
+					},
+					"dataset": {
+						"referenceName": "MOV_IDS_LUP_Southridge_CloudStreaming",
+						"type": "DatasetReference"
+					},
+					"firstRowOnly": false
 				}
 			}
 		],
