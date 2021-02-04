@@ -23,7 +23,11 @@
 					},
 					"dataset": {
 						"referenceName": "MOV_IDS_SRC_Southridge_CloudStreaming",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"table_schema": "information_schema",
+							"table_name": "tables"
+						}
 					},
 					"firstRowOnly": false
 				}
@@ -231,7 +235,11 @@
 					},
 					"dataset": {
 						"referenceName": "MOV_IDS_SRC_Southridge_CloudStreaming",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"table_schema": "information_schema",
+							"table_name": "tables"
+						}
 					},
 					"firstRowOnly": false
 				}
@@ -277,7 +285,8 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"container_name": "movies",
-							"container_path": "raw/Southridge/Movies"
+							"container_path": "raw/Southridge/Movies",
+							"container_file": "export"
 						}
 					}
 				]
