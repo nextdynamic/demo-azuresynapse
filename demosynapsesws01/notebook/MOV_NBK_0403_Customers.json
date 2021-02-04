@@ -81,9 +81,10 @@
 				},
 				"source": [
 					"from pyspark.sql.types import StringType, TimestampType, DateType, IntegerType, DecimalType, BooleanType, StructType\r\n",
-					"from pyspark.sql.functions import col, lit, udf, greatest"
+					"from pyspark.sql.functions import col, lit, udf, greatest\r\n",
+					"import uuid"
 				],
-				"execution_count": 38
+				"execution_count": 46
 			},
 			{
 				"cell_type": "markdown",
@@ -115,7 +116,7 @@
 				"source": [
 					"uuidUDF = udf(lambda : str(uuid.uuid4()),StringType())"
 				],
-				"execution_count": 39
+				"execution_count": 47
 			},
 			{
 				"cell_type": "markdown",
@@ -730,7 +731,7 @@
 							"deleting": false
 						}
 					},
-					"collapsed": true
+					"collapsed": false
 				},
 				"source": [
 					"# Add columns\r\n",
@@ -755,9 +756,9 @@
 					"\r\n",
 					"# Display dataframe\r\n",
 					"#df_unioned_withID.printSchema()\r\n",
-					"display(df_unioned_withID.limit(100))"
+					"#display(df_unioned_withID.limit(100))"
 				],
-				"execution_count": 41
+				"execution_count": 49
 			},
 			{
 				"cell_type": "markdown",
@@ -787,9 +788,9 @@
 					"collapsed": true
 				},
 				"source": [
-					"#df_unioned.write.format('parquet').mode('overwrite').save('abfss://movies@demosynapsedls01.dfs.core.windows.net/curated/rentals.parquet')"
+					"df_unioned_withID.write.format('parquet').mode('overwrite').save('abfss://movies@demosynapsedls01.dfs.core.windows.net/curated/customers.parquet')"
 				],
-				"execution_count": 13
+				"execution_count": 50
 			}
 		]
 	}
