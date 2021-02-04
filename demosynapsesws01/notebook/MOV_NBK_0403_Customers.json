@@ -11,15 +11,15 @@
 			"type": "BigDataPoolReference"
 		},
 		"sessionProperties": {
-			"driverMemory": "28g",
-			"driverCores": 4,
-			"executorMemory": "28g",
-			"executorCores": 4,
-			"numExecutors": 4,
+			"driverMemory": "56g",
+			"driverCores": 8,
+			"executorMemory": "56g",
+			"executorCores": 8,
+			"numExecutors": 2,
 			"conf": {
 				"spark.dynamicAllocation.enabled": "false",
-				"spark.dynamicAllocation.minExecutors": "4",
-				"spark.dynamicAllocation.maxExecutors": "4"
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2"
 			}
 		},
 		"metadata": {
@@ -409,13 +409,10 @@
 					"                                                         .withColumn(\"CreatedDate\", max(col(\"Customers.CreatedDate\").cast(\"long\"), col(\"Adresses.CreatedDate\").cast(\"long\")))\r\n",
 					")\r\n",
 					"\r\n",
-					"# Rename columns\r\n",
-					"df_Southridge_Sales_Modified = df_Southridge_Sales_Modified.withColumn(\"SourceSystemCustomerID\", col(\"Customers.CustomerID\"))\r\n",
-					"\r\n",
 					"# Reorder colums\r\n",
 					"df_Southridge_Sales_Modified = df_Southridge_Sales_Modified.select(\r\n",
 					"    'SourceSystemID',\r\n",
-					"    'SourceSystemCustomerID',\r\n",
+					"    'Customers.CustomerID',\r\n",
 					"    'LastName',\r\n",
 					"    'FirstName',\r\n",
 					"    'AddressLine1',\r\n",
@@ -430,6 +427,9 @@
 					"    'Adresses.UpdatedDate',\r\n",
 					"    'CreatedDate'\r\n",
 					")\r\n",
+					"\r\n",
+					"# Rename columns\r\n",
+					"df_Southridge_Sales_Modified = df_Southridge_Sales_Modified.withColumn(\"SourceSystemCustomerID\", col(\"CustomerID\"))\r\n",
 					"\r\n",
 					"# Convert column types\r\n",
 					"df_Southridge_Sales_Modified = (\r\n",
@@ -450,189 +450,6 @@
 					"# Display dataframe\r\n",
 					"#df_Southridge_Sales_Modified.printSchema\r\n",
 					"#display(df_Southridge_Sales_Modified.limit(100))"
-				],
-				"execution_count": 32
-			},
-			{
-				"cell_type": "code",
-				"metadata": {
-					"jupyter": {
-						"source_hidden": false,
-						"outputs_hidden": false
-					},
-					"nteract": {
-						"transient": {
-							"deleting": false
-						}
-					},
-					"collapsed": false
-				},
-				"source": [
-					"# Rename columns\r\n",
-					"df_Southridge_Streaming_Modified = df_Southridge_Streaming_Joined.withColumnRenamed(\"CustomerID\", \"SourceSystemCustomerID\")\r\n",
-					"\r\n",
-					"# Add columns\r\n",
-					"df_Southridge_Streaming_Modified = (\r\n",
-					"    df_Southridge_Streaming_Modified.withColumn(\"SourceSystemID\", lit(\"1\").cast(IntegerType()))\r\n",
-					")\r\n",
-					"\r\n",
-					"# Reorder colums\r\n",
-					"df_Southridge_Streaming_Modified = df_Southridge_Streaming_Modified.select(\r\n",
-					"    'SourceSystemID',\r\n",
-					"    'SourceSystemCustomerID',\r\n",
-					"    'LastName',\r\n",
-					"    'FirstName',\r\n",
-					"    'AddressLine1',\r\n",
-					"    'AddressLine2',\r\n",
-					"    'City',\r\n",
-					"    'State',\r\n",
-					"    'ZipCode',\r\n",
-					"    'PhoneNumber',\r\n",
-					"    'CreatedDate',\r\n",
-					"    'UpdatedDate'\r\n",
-					")\r\n",
-					"\r\n",
-					"# Convert column types\r\n",
-					"df_Southridge_Streaming_Modified = (\r\n",
-					"    df_Southridge_Streaming_Modified.withColumn(\"SourceSystemID\", col(\"SourceSystemID\").cast(IntegerType()))\r\n",
-					"                           .withColumn(\"SourceSystemCustomerID\", col(\"SourceSystemCustomerID\").cast(StringType()))\r\n",
-					"                           .withColumn(\"LastName\", col(\"LastName\").cast(StringType()))\r\n",
-					"                           .withColumn(\"FirstName\", col(\"FirstName\").cast(StringType()))\r\n",
-					"                           .withColumn(\"AddressLine1\", col(\"AddressLine1\").cast(StringType()))\r\n",
-					"                           .withColumn(\"AddressLine2\", col(\"AddressLine2\").cast(StringType()))\r\n",
-					"                           .withColumn(\"City\", col(\"City\").cast(StringType()))\r\n",
-					"                           .withColumn(\"State\", col(\"State\").cast(StringType()))\r\n",
-					"                           .withColumn(\"ZipCode\", col(\"ZipCode\").cast(StringType()))\r\n",
-					"                           .withColumn(\"PhoneNumber\", col(\"PhoneNumber\").cast(StringType()))\r\n",
-					"                           .withColumn(\"CreatedDate\", col(\"CreatedDate\").cast(DateType()))\r\n",
-					"                           .withColumn(\"UpdatedDate\", col(\"UpdatedDate\").cast(DateType()))\r\n",
-					")\r\n",
-					"\r\n",
-					"# Display dataframe\r\n",
-					"#df_Southridge_Streaming_Modified.printSchema\r\n",
-					"#display(df_Southridge_Streaming_Modified.limit(100))"
-				],
-				"execution_count": 63
-			},
-			{
-				"cell_type": "code",
-				"metadata": {
-					"jupyter": {
-						"source_hidden": false,
-						"outputs_hidden": false
-					},
-					"nteract": {
-						"transient": {
-							"deleting": false
-						}
-					},
-					"collapsed": true
-				},
-				"source": [
-					"# Rename columns\r\n",
-					"df_FourthCoffee_Modified = df_FourthCoffee.withColumnRenamed(\"CustomerID\", \"SourceSystemCustomerID\")\r\n",
-					"\r\n",
-					"# Add columns\r\n",
-					"df_FourthCoffee_Modified = (\r\n",
-					"    df_FourthCoffee_Modified.withColumn(\"SourceSystemID\", lit(\"2\").cast(IntegerType()))\r\n",
-					")\r\n",
-					"\r\n",
-					"# Reorder colums\r\n",
-					"df_FourthCoffee_Modified = df_FourthCoffee_Modified.select(\r\n",
-					"    'SourceSystemID',\r\n",
-					"    'SourceSystemCustomerID',\r\n",
-					"    'LastName',\r\n",
-					"    'FirstName',\r\n",
-					"    'AddressLine1',\r\n",
-					"    'AddressLine2',\r\n",
-					"    'City',\r\n",
-					"    'State',\r\n",
-					"    'ZipCode',\r\n",
-					"    'PhoneNumber',\r\n",
-					"    'CreatedDate',\r\n",
-					"    'UpdatedDate'\r\n",
-					")\r\n",
-					"\r\n",
-					"# Convert column types\r\n",
-					"df_FourthCoffee_Modified = (\r\n",
-					"    df_FourthCoffee_Modified.withColumn(\"SourceSystemID\", col(\"SourceSystemID\").cast(IntegerType()))\r\n",
-					"                           .withColumn(\"SourceSystemCustomerID\", col(\"SourceSystemCustomerID\").cast(StringType()))\r\n",
-					"                           .withColumn(\"LastName\", col(\"LastName\").cast(StringType()))\r\n",
-					"                           .withColumn(\"FirstName\", col(\"FirstName\").cast(StringType()))\r\n",
-					"                           .withColumn(\"AddressLine1\", col(\"AddressLine1\").cast(StringType()))\r\n",
-					"                           .withColumn(\"AddressLine2\", col(\"AddressLine2\").cast(StringType()))\r\n",
-					"                           .withColumn(\"City\", col(\"City\").cast(StringType()))\r\n",
-					"                           .withColumn(\"State\", col(\"State\").cast(StringType()))\r\n",
-					"                           .withColumn(\"ZipCode\", col(\"ZipCode\").cast(StringType()))\r\n",
-					"                           .withColumn(\"PhoneNumber\", col(\"PhoneNumber\").cast(StringType()))\r\n",
-					"                           .withColumn(\"CreatedDate\", col(\"CreatedDate\").cast(DateType()))\r\n",
-					"                           .withColumn(\"UpdatedDate\", col(\"UpdatedDate\").cast(DateType()))\r\n",
-					")\r\n",
-					"\r\n",
-					"# Display dataframe\r\n",
-					"#df_FourthCoffee_Modified.printSchema\r\n",
-					"#display(df_FourthCoffee_Modified.limit(100))"
-				],
-				"execution_count": null
-			},
-			{
-				"cell_type": "code",
-				"metadata": {
-					"jupyter": {
-						"source_hidden": false,
-						"outputs_hidden": false
-					},
-					"nteract": {
-						"transient": {
-							"deleting": false
-						}
-					},
-					"collapsed": true
-				},
-				"source": [
-					"# Rename columns\r\n",
-					"df_vanArsdel_Modified = df_vanArsdel.withColumnRenamed(\"CustomerID\", \"SourceSystemCustomerID\")\r\n",
-					"\r\n",
-					"# Add columns\r\n",
-					"df_vanArsdel_Modified = (\r\n",
-					"    df_vanArsdel_Modified.withColumn(\"SourceSystemID\", lit(\"3\").cast(IntegerType()))\r\n",
-					")\r\n",
-					"\r\n",
-					"# Reorder colums\r\n",
-					"df_vanArsdel_Modified = df_vanArsdel_Modified.select(\r\n",
-					"    'SourceSystemID',\r\n",
-					"    'SourceSystemCustomerID',\r\n",
-					"    'LastName',\r\n",
-					"    'FirstName',\r\n",
-					"    'AddressLine1',\r\n",
-					"    'AddressLine2',\r\n",
-					"    'City',\r\n",
-					"    'State',\r\n",
-					"    'ZipCode',\r\n",
-					"    'PhoneNumber',\r\n",
-					"    'CreatedDate',\r\n",
-					"    'UpdatedDate'\r\n",
-					")\r\n",
-					"\r\n",
-					"# Convert column types\r\n",
-					"df_vanArsdel_Modified = (\r\n",
-					"    df_vanArsdel_Modified.withColumn(\"SourceSystemID\", col(\"SourceSystemID\").cast(IntegerType()))\r\n",
-					"                           .withColumn(\"SourceSystemCustomerID\", col(\"SourceSystemCustomerID\").cast(StringType()))\r\n",
-					"                           .withColumn(\"LastName\", col(\"LastName\").cast(StringType()))\r\n",
-					"                           .withColumn(\"FirstName\", col(\"FirstName\").cast(StringType()))\r\n",
-					"                           .withColumn(\"AddressLine1\", col(\"AddressLine1\").cast(StringType()))\r\n",
-					"                           .withColumn(\"AddressLine2\", col(\"AddressLine2\").cast(StringType()))\r\n",
-					"                           .withColumn(\"City\", col(\"City\").cast(StringType()))\r\n",
-					"                           .withColumn(\"State\", col(\"State\").cast(StringType()))\r\n",
-					"                           .withColumn(\"ZipCode\", col(\"ZipCode\").cast(StringType()))\r\n",
-					"                           .withColumn(\"PhoneNumber\", col(\"PhoneNumber\").cast(StringType()))\r\n",
-					"                           .withColumn(\"CreatedDate\", col(\"CreatedDate\").cast(DateType()))\r\n",
-					"                           .withColumn(\"UpdatedDate\", col(\"UpdatedDate\").cast(DateType()))\r\n",
-					")\r\n",
-					"\r\n",
-					"# Display dataframe\r\n",
-					"#df_vanArsdel_Modified.printSchema\r\n",
-					"#display(df_vanArsdel_Modified.limit(100))"
 				],
 				"execution_count": null
 			},
@@ -664,7 +481,7 @@
 					"collapsed": true
 				},
 				"source": [
-					"df_unioned = df_FourthCoffeeModified.unionAll(df_vanArsdelModified)"
+					"#df_unioned = df_FourthCoffeeModified.unionAll(df_vanArsdelModified)"
 				],
 				"execution_count": 64
 			},
@@ -696,7 +513,7 @@
 					"collapsed": true
 				},
 				"source": [
-					"df_unioned.write.format('parquet').mode('overwrite').save('abfss://movies@demosynapsedls01.dfs.core.windows.net/curated/rentals.parquet')"
+					"#df_unioned.write.format('parquet').mode('overwrite').save('abfss://movies@demosynapsedls01.dfs.core.windows.net/curated/rentals.parquet')"
 				],
 				"execution_count": 65
 			}
