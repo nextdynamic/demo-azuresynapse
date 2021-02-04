@@ -5,6 +5,14 @@
 			"referenceName": "Movies_CloudStreaming",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"table_schema": {
+				"type": "string"
+			},
+			"table_name": {
+				"type": "string"
+			}
+		},
 		"folder": {
 			"name": "Movies"
 		},
@@ -13,11 +21,11 @@
 		"schema": [],
 		"typeProperties": {
 			"schema": {
-				"value": "@item().table_schema",
+				"value": "@dataset().table_schema",
 				"type": "Expression"
 			},
 			"table": {
-				"value": "@item().table_name",
+				"value": "@dataset().table_name",
 				"type": "Expression"
 			}
 		}
