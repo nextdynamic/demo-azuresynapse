@@ -84,7 +84,7 @@
 					"from pyspark.sql.functions import col, lit, udf, greatest\r\n",
 					"import uuid"
 				],
-				"execution_count": 1
+				"execution_count": 52
 			},
 			{
 				"cell_type": "markdown",
@@ -116,7 +116,7 @@
 				"source": [
 					"uuidUDF = udf(lambda : str(uuid.uuid4()),StringType())"
 				],
-				"execution_count": 2
+				"execution_count": 53
 			},
 			{
 				"cell_type": "markdown",
@@ -159,7 +159,7 @@
 					"#df_Southridge_Orders.printSchema()\r\n",
 					"#display(df_Southridge_Orders.limit(100))"
 				],
-				"execution_count": 28
+				"execution_count": 54
 			},
 			{
 				"cell_type": "code",
@@ -182,7 +182,7 @@
 					"                        .withColumnRenamed(\"UpdatedDate\", \"OrderUpdatedDate\")\r\n",
 					")"
 				],
-				"execution_count": 29
+				"execution_count": 55
 			},
 			{
 				"cell_type": "code",
@@ -212,7 +212,7 @@
 					"#df_Southridge_OrderDetails.printSchema()\r\n",
 					"#display(df_Southridge_OrderDetails.limit(100))"
 				],
-				"execution_count": 30
+				"execution_count": 56
 			},
 			{
 				"cell_type": "code",
@@ -235,7 +235,7 @@
 					"                        .withColumnRenamed(\"UpdatedDate\", \"OrderDetailUpdatedDate\")\r\n",
 					")"
 				],
-				"execution_count": 32
+				"execution_count": 57
 			},
 			{
 				"cell_type": "code",
@@ -265,7 +265,7 @@
 					"#df_Southridge_Orders_Joined.printSchema()\r\n",
 					"#display(df_Southridge_Orders_Joined.limit(100))"
 				],
-				"execution_count": 33
+				"execution_count": 58
 			},
 			{
 				"cell_type": "markdown",
@@ -328,7 +328,7 @@
 					"#df_Southridge_Orders_Modified.printSchema()\r\n",
 					"#display(df_Southridge_Orders_Modified.limit(100))"
 				],
-				"execution_count": 42
+				"execution_count": 59
 			},
 			{
 				"cell_type": "markdown",
@@ -364,7 +364,7 @@
 					"#df_unioned.printSchema()\r\n",
 					"#display(df_unioned.limit(100))"
 				],
-				"execution_count": 44
+				"execution_count": 60
 			},
 			{
 				"cell_type": "markdown",
@@ -421,7 +421,7 @@
 					"#df_unioned_withID.printSchema()\r\n",
 					"#display(df_unioned_withID.limit(100))"
 				],
-				"execution_count": 50
+				"execution_count": 61
 			},
 			{
 				"cell_type": "markdown",
@@ -453,7 +453,7 @@
 				"source": [
 					"df_unioned_withID.write.format('parquet').mode('overwrite').save('abfss://movies@demosynapsedls01.dfs.core.windows.net/curated/sales.parquet')"
 				],
-				"execution_count": 48
+				"execution_count": 62
 			}
 		]
 	}
