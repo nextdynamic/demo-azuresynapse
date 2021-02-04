@@ -162,7 +162,7 @@
 					"#df_Southridge.printSchema\r\n",
 					"#display(df_Southridge.limit(100))"
 				],
-				"execution_count": null
+				"execution_count": 37
 			},
 			{
 				"cell_type": "code",
@@ -205,7 +205,7 @@
 					"#df_SouthridgeModified.printSchema\r\n",
 					"#display(df_SouthridgeModified.limit(100))"
 				],
-				"execution_count": null
+				"execution_count": 38
 			}
 		]
 	}
