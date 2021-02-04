@@ -250,7 +250,7 @@
 				"source": [
 					"df_SouthridgeModified.write.format('parquet').mode('overwrite').save('abfss://movies@demosynapsedls01.dfs.core.windows.net/curated/streaming.parquet')"
 				],
-				"execution_count": 40
+				"execution_count": 41
 			}
 		]
 	}
