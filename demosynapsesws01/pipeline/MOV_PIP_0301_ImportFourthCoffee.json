@@ -1,0 +1,63 @@
+{
+	"name": "MOV_PIP_0301_ImportFourthCoffee",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy data",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "BinarySource",
+						"storeSettings": {
+							"type": "FileServerReadSettings",
+							"recursive": true,
+							"deleteFilesAfterCompletion": false
+						},
+						"formatSettings": {
+							"type": "BinaryReadSettings"
+						}
+					},
+					"sink": {
+						"type": "BinarySink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings"
+						}
+					},
+					"enableStaging": false
+				},
+				"inputs": [
+					{
+						"referenceName": "MOV_IDS_SRC_FourthCoffee_onPrem",
+						"type": "DatasetReference",
+						"parameters": {
+							"directory": "Rentals"
+						}
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "MOV_IDS_SNK_BINARY",
+						"type": "DatasetReference",
+						"parameters": {
+							"container_name": "movies",
+							"container_path": "raw/Southridge/Movies"
+						}
+					}
+				]
+			}
+		],
+		"folder": {
+			"name": "Movies"
+		},
+		"annotations": []
+	}
+}
