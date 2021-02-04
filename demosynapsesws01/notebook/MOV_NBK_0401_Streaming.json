@@ -58,15 +58,24 @@
 					"collapsed": false
 				},
 				"source": [
+					"schema = StructType([ StructField(\"SourceSystemTransactionID\", StringType(), True),\r\n",
+					"                      StructField(\"CustomerID\", StringType(), True),\r\n",
+					"                      StructField(\"MovieID\", StringType(), True),\r\n",
+					"                      StructField(\"StreamStart\",  TimestampType(), True),\r\n",
+					"                      StructField(\"StreamEnd\", TimestampType(), True),\r\n",
+					"                      StructField(\"CreatedDate\", DateType(), True),\r\n",
+					"                      StructField(\"UpdatedDate\", DateType(), True)\r\n",
+					"                    ])\r\n",
+					"\r\n",
 					"df_Southridge = spark.read.load('abfss://movies@demosynapsedls01.dfs.core.windows.net/raw/Southridge/CloudStreaming/dbo.Transactions.parquet', format='parquet',\r\n",
-					"                         inferSchema=True, header=True, \r\n",
+					"                         schema=schema, header=True, \r\n",
 					"                         ignoreLeadingWhiteSpace=True, \r\n",
 					"                         ignoreTrailingWhiteSpace=True,\r\n",
 					"                         nullValue=\"NA\")\r\n",
 					"\r\n",
 					"display(df_Southridge.limit(100))"
 				],
-				"execution_count": 3
+				"execution_count": 1
 			}
 		]
 	}
