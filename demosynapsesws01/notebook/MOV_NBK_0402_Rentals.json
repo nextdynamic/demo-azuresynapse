@@ -29,7 +29,7 @@
 			},
 			"kernelspec": {
 				"name": "synapse_pyspark",
-				"display_name": "Synapse PySpark"
+				"display_name": "python"
 			},
 			"language_info": {
 				"name": "python"
@@ -213,7 +213,7 @@
 					"# Rename columns\r\n",
 					"df_FourthCoffeeModified = df_FourthCoffee.withColumnRenamed(\"TransactionID\", \"SourceSystemTransactionID\")\r\n",
 					"\r\n",
-					"# Add column3\r\n",
+					"# Add columns\r\n",
 					"df_FourthCoffeeModified = (\r\n",
 					"    df_FourthCoffeeModified.withColumn(\"SourceSystemID\", lit(\"2\").cast(IntegerType()))\r\n",
 					"                           .withColumn(\"GlobalTransactionID\", uuidUDF())\r\n",
