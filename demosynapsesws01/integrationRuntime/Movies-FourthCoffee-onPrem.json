@@ -1,0 +1,6 @@
+{
+	"name": "Movies-FourthCoffee-onPrem",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}
