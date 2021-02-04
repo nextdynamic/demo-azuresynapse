@@ -85,7 +85,7 @@
 					"\r\n",
 					"import uuid"
 				],
-				"execution_count": 35
+				"execution_count": 1
 			},
 			{
 				"cell_type": "markdown",
@@ -117,7 +117,7 @@
 				"source": [
 					"uuidUDF = udf(lambda : str(uuid.uuid4()),StringType())"
 				],
-				"execution_count": 36
+				"execution_count": 2
 			},
 			{
 				"cell_type": "markdown",
@@ -162,7 +162,7 @@
 					"#df_Southridge.printSchema\r\n",
 					"#display(df_Southridge.limit(100))"
 				],
-				"execution_count": 37
+				"execution_count": 3
 			},
 			{
 				"cell_type": "markdown",
@@ -218,7 +218,7 @@
 					"#df_SouthridgeModified.printSchema\r\n",
 					"#display(df_SouthridgeModified.limit(100))"
 				],
-				"execution_count": 38
+				"execution_count": 4
 			},
 			{
 				"cell_type": "markdown",
@@ -250,7 +250,7 @@
 				"source": [
 					"df_SouthridgeModified.write.format('parquet').mode('overwrite').save('abfss://movies@demosynapsedls01.dfs.core.windows.net/curated/streaming.parquet')"
 				],
-				"execution_count": 41
+				"execution_count": 5
 			}
 		]
 	}
