@@ -84,7 +84,7 @@
 					"from pyspark.sql.functions import col, lit, udf, to_date\r\n",
 					"import uuid"
 				],
-				"execution_count": 50
+				"execution_count": 58
 			},
 			{
 				"cell_type": "markdown",
@@ -116,7 +116,7 @@
 				"source": [
 					"uuidUDF = udf(lambda : str(uuid.uuid4()),StringType())"
 				],
-				"execution_count": 51
+				"execution_count": 59
 			},
 			{
 				"cell_type": "markdown",
@@ -150,7 +150,7 @@
 					"#df_FourthCoffee.printSchema\r\n",
 					"#display(df_FourthCoffee.limit(100))"
 				],
-				"execution_count": 52
+				"execution_count": 60
 			},
 			{
 				"cell_type": "code",
@@ -180,7 +180,7 @@
 					"#df_vanArsdel.printSchema\r\n",
 					"#display(df_vanArsdel.limit(100))"
 				],
-				"execution_count": 53
+				"execution_count": 61
 			},
 			{
 				"cell_type": "markdown",
@@ -255,7 +255,7 @@
 					"#df_FourthCoffeeModified.printSchema\r\n",
 					"#display(df_FourthCoffeeModified.limit(100))"
 				],
-				"execution_count": 54
+				"execution_count": 62
 			},
 			{
 				"cell_type": "code",
@@ -317,7 +317,7 @@
 					"#df_vanArsdelModified.printSchema\r\n",
 					"#display(df_vanArsdelModified.limit(100))"
 				],
-				"execution_count": 55
+				"execution_count": 63
 			},
 			{
 				"cell_type": "markdown",
@@ -349,7 +349,7 @@
 				"source": [
 					"df_unioned = df_FourthCoffeeModified.unionAll(df_vanArsdelModified)"
 				],
-				"execution_count": 56
+				"execution_count": 64
 			},
 			{
 				"cell_type": "markdown",
@@ -381,7 +381,7 @@
 				"source": [
 					"df_unioned.write.format('parquet').mode('overwrite').save('abfss://movies@demosynapsedls01.dfs.core.windows.net/curated/rentals.parquet')"
 				],
-				"execution_count": 57
+				"execution_count": 65
 			}
 		]
 	}
