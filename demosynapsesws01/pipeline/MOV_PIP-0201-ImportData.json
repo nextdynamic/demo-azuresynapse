@@ -22,7 +22,7 @@
 						"partitionOption": "None"
 					},
 					"dataset": {
-						"referenceName": "MOV_IDS_LUP_Southridge_CloudSales",
+						"referenceName": "MOV_IDS_SRC_Southridge_CloudStreaming",
 						"type": "DatasetReference"
 					},
 					"firstRowOnly": false
@@ -88,7 +88,17 @@
 							"inputs": [
 								{
 									"referenceName": "MOV_IDS_SRC_Southridge_CloudSales",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"table_schema": {
+											"value": "@item().table_schema",
+											"type": "Expression"
+										},
+										"table_name": {
+											"value": "@item().table_name",
+											"type": "Expression"
+										}
+									}
 								}
 							],
 							"outputs": [
@@ -169,7 +179,17 @@
 							"inputs": [
 								{
 									"referenceName": "MOV_IDS_SRC_Southridge_CloudStreaming",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"table_schema": {
+											"value": "@item().table_schema",
+											"type": "Expression"
+										},
+										"table_name": {
+											"value": "@item().table_name",
+											"type": "Expression"
+										}
+									}
 								}
 							],
 							"outputs": [
@@ -210,7 +230,7 @@
 						"partitionOption": "None"
 					},
 					"dataset": {
-						"referenceName": "MOV_IDS_LUP_Southridge_CloudStreaming",
+						"referenceName": "MOV_IDS_SRC_Southridge_CloudStreaming",
 						"type": "DatasetReference"
 					},
 					"firstRowOnly": false
@@ -247,7 +267,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "MOV_IDS_SRV_Southridge_Movies",
+						"referenceName": "MOV_IDS_SRC_Southridge_Movies",
 						"type": "DatasetReference"
 					}
 				],
