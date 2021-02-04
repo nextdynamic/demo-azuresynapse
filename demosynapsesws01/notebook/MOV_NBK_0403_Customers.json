@@ -83,7 +83,7 @@
 					"from pyspark.sql.types import StringType, TimestampType, DateType, IntegerType, DecimalType, BooleanType, StructType\r\n",
 					"from pyspark.sql.functions import col, lit, udf, greatest"
 				],
-				"execution_count": 22
+				"execution_count": 31
 			},
 			{
 				"cell_type": "markdown",
@@ -115,7 +115,7 @@
 				"source": [
 					"uuidUDF = udf(lambda : str(uuid.uuid4()),StringType())"
 				],
-				"execution_count": 6
+				"execution_count": null
 			},
 			{
 				"cell_type": "markdown",
@@ -158,7 +158,7 @@
 					"#df_Southridge_Sales_Customers.printSchema\r\n",
 					"#display(df_Southridge_Sales_Customers.limit(100))"
 				],
-				"execution_count": 7
+				"execution_count": null
 			},
 			{
 				"cell_type": "code",
