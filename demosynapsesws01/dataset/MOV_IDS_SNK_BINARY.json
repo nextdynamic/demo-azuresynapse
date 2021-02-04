@@ -1,0 +1,39 @@
+{
+	"name": "MOV_IDS_SNK_BINARY",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "demosynapsesws01-WorkspaceDefaultStorage",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"container_name": {
+				"type": "string"
+			},
+			"container_path": {
+				"type": "string"
+			},
+			"container_file": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().container_file",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().container_path",
+					"type": "Expression"
+				},
+				"fileSystem": {
+					"value": "@dataset().container_name",
+					"type": "Expression"
+				}
+			}
+		}
+	}
+}
