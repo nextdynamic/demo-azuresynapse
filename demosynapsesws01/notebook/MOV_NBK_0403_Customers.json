@@ -84,7 +84,7 @@
 					"from pyspark.sql.functions import col, lit, udf, to_date\r\n",
 					"import uuid"
 				],
-				"execution_count": 1
+				"execution_count": null
 			},
 			{
 				"cell_type": "markdown",
@@ -116,7 +116,7 @@
 				"source": [
 					"uuidUDF = udf(lambda : str(uuid.uuid4()),StringType())"
 				],
-				"execution_count": 2
+				"execution_count": null
 			},
 			{
 				"cell_type": "markdown",
@@ -159,7 +159,7 @@
 					"#df_Southridge_Sales_Customers.printSchema\r\n",
 					"#display(df_Southridge_Sales_Customers.limit(100))"
 				],
-				"execution_count": 3
+				"execution_count": null
 			},
 			{
 				"cell_type": "code",
@@ -189,7 +189,7 @@
 					"#df_Southridge_Sales_Adresses.printSchema\r\n",
 					"#display(df_Southridge_Sales_Adresses.limit(100))"
 				],
-				"execution_count": 4
+				"execution_count": null
 			},
 			{
 				"cell_type": "code",
@@ -219,7 +219,7 @@
 					"#df_Southridge_Sales_Joined.printSchema\r\n",
 					"#display(df_Southridge_Sales_Joined.limit(100))"
 				],
-				"execution_count": 8
+				"execution_count": null
 			},
 			{
 				"cell_type": "code",
@@ -249,7 +249,7 @@
 					"#df_Southridge_Streaming_Customers.printSchema#\r\n",
 					"#display(df_Southridge_Streaming_Customers.limit(100))"
 				],
-				"execution_count": 9
+				"execution_count": null
 			},
 			{
 				"cell_type": "code",
@@ -279,7 +279,7 @@
 					"#df_Southridge_Streaming_Adresses.printSchema\r\n",
 					"#display(df_Southridge_Streaming_Adresses.limit(100))"
 				],
-				"execution_count": 10
+				"execution_count": null
 			},
 			{
 				"cell_type": "code",
@@ -309,7 +309,7 @@
 					"#df_Southridge_Streaming_Joined.printSchema\r\n",
 					"#display(df_Southridge_Streaming_Joined.limit(100))"
 				],
-				"execution_count": 12
+				"execution_count": null
 			},
 			{
 				"cell_type": "markdown",
@@ -344,7 +344,7 @@
 					"#df_FourthCoffee.printSchema\r\n",
 					"#display(df_FourthCoffee.limit(100))"
 				],
-				"execution_count": 13
+				"execution_count": null
 			},
 			{
 				"cell_type": "code",
@@ -374,7 +374,7 @@
 					"#df_vanArsdel.printSchema\r\n",
 					"#display(df_vanArsdel.limit(100))"
 				],
-				"execution_count": 14
+				"execution_count": null
 			},
 			{
 				"cell_type": "markdown",
@@ -405,8 +405,9 @@
 				},
 				"source": [
 					"# Add columns\r\n",
-					"df_Southridge_Sales_Modified = df_Southridge_Sales_Joined.withColumn(\"SourceSystemID\", lit(\"1\").cast(IntegerType())\r\n",
-					"                                                         .withColumn(\"CreatedDate\", max(col(\"Customers.CreatedDate\").cast(\"long\"), col(\"Adresses.CreatedDate\").cast(\"long\")))\r\n",
+					"df_Southridge_Sales_Modified = (\r\n",
+					"    df_Southridge_Sales_Joined.withColumn(\"SourceSystemID\", lit(\"1\").cast(IntegerType()))\r\n",
+					"                              .withColumn(\"CreatedDate\", max(col(\"Customers.CreatedDate\").cast(\"long\"), col(\"Adresses.CreatedDate\").cast(\"long\")))\r\n",
 					")\r\n",
 					"\r\n",
 					"# Reorder colums\r\n",
@@ -483,7 +484,7 @@
 				"source": [
 					"#df_unioned = df_FourthCoffeeModified.unionAll(df_vanArsdelModified)"
 				],
-				"execution_count": 64
+				"execution_count": null
 			},
 			{
 				"cell_type": "markdown",
@@ -515,7 +516,7 @@
 				"source": [
 					"#df_unioned.write.format('parquet').mode('overwrite').save('abfss://movies@demosynapsedls01.dfs.core.windows.net/curated/rentals.parquet')"
 				],
-				"execution_count": 65
+				"execution_count": null
 			}
 		]
 	}
