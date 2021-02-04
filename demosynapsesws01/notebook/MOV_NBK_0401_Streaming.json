@@ -25,7 +25,1881 @@
 		"metadata": {
 			"saveOutput": true,
 			"synapse_widget": {
-				"version": "0.1"
+				"version": "0.1",
+				"state": {
+					"be9cff27-f509-4b34-b2f6-e81d2e22b652": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"CustomerID": "e6a138ae-ad8a-4fa6-a661-5d0ca65f05d4",
+										"CreatedDate": "2017-06-04",
+										"StreamEnd": "2017-06-05 00:39:31",
+										"MovieID": "2a1bfe7d-1abb-48f4-981e-cbecdff77cda",
+										"UpdatedDate": "2017-06-05",
+										"StreamStart": "2017-06-04 22:09:31",
+										"TransactionID": "1635b1ab-22e3-4cf4-8ad1-000015b8f6d1"
+									},
+									{
+										"CustomerID": "da842482-d780-4f17-8b9e-c072bd0a29bc",
+										"CreatedDate": "2017-04-18",
+										"StreamEnd": "2017-04-18 21:58:00",
+										"MovieID": "138ffeb1-278a-490c-b0ec-f83b9ab4197d",
+										"UpdatedDate": "2017-04-18",
+										"StreamStart": "2017-04-18 20:59:00",
+										"TransactionID": "8af99898-ac99-4e5c-9560-00002f797964"
+									},
+									{
+										"CustomerID": "85c1280c-59bc-4504-88fc-d4059e095ce9",
+										"CreatedDate": "2017-09-23",
+										"StreamEnd": "2017-09-23 19:10:32",
+										"MovieID": "751a63ec-5321-4c49-9fe4-4b7f8c0514ce",
+										"UpdatedDate": "2017-09-23",
+										"StreamStart": "2017-09-23 18:19:32",
+										"TransactionID": "5ef69e85-5c2f-44b0-b515-00003061911d"
+									},
+									{
+										"CustomerID": "14d96c4d-6a16-4a0d-9eec-af3cc51c7f8a",
+										"CreatedDate": "2017-05-04",
+										"StreamEnd": "2017-05-04 14:21:47",
+										"MovieID": "015c7c0b-224e-4c08-a6c0-c62f646de829",
+										"UpdatedDate": "2017-05-04",
+										"StreamStart": "2017-05-04 11:50:47",
+										"TransactionID": "9a7f5580-33d0-473e-b3c8-000033c30df3"
+									},
+									{
+										"CustomerID": "c2f29e65-3cc5-40ee-b0c0-cf049e768a02",
+										"CreatedDate": "2017-05-23",
+										"StreamEnd": "2017-05-23 11:29:38",
+										"MovieID": "9ff324e6-5ba1-4030-9ed5-772150eb7a46",
+										"UpdatedDate": "2017-05-23",
+										"StreamStart": "2017-05-23 09:55:38",
+										"TransactionID": "ed807e6c-a289-4e6f-a144-00004dc34013"
+									},
+									{
+										"CustomerID": "4798b5fb-2fcb-4a39-849b-d3c3e733a6e0",
+										"CreatedDate": "2017-06-30",
+										"StreamEnd": "2017-06-30 18:22:40",
+										"MovieID": "adfee89c-5b52-4223-8c26-6a2d02def494",
+										"UpdatedDate": "2017-06-30",
+										"StreamStart": "2017-06-30 15:46:40",
+										"TransactionID": "7a26134b-14e9-4f07-87d8-00006d2d1ffb"
+									},
+									{
+										"CustomerID": "ae48210e-184b-4d0b-bc95-b40a22645b5c",
+										"CreatedDate": "2017-03-25",
+										"StreamEnd": "2017-03-25 08:09:25",
+										"MovieID": "5206c70c-b004-4a85-ad9a-bda28497411c",
+										"UpdatedDate": "2017-03-25",
+										"StreamStart": "2017-03-25 06:01:25",
+										"TransactionID": "aee2743a-9e38-416a-8025-0000738631a2"
+									},
+									{
+										"CustomerID": "643a1e1c-070a-4791-83c3-a42b624cc2c8",
+										"CreatedDate": "2017-05-02",
+										"StreamEnd": "2017-05-02 14:08:26",
+										"MovieID": "ef106db5-8b88-4b08-ac73-568c2e2a8b30",
+										"UpdatedDate": "2017-05-02",
+										"StreamStart": "2017-05-02 12:04:26",
+										"TransactionID": "95736dd0-49bb-4d11-98c5-0000944e03be"
+									},
+									{
+										"CustomerID": "3a1f64da-2f13-4e7f-be37-80f1a328ba79",
+										"CreatedDate": "2017-06-13",
+										"StreamEnd": "2017-06-13 17:09:16",
+										"MovieID": "4676c2a7-4102-4868-a432-5d8771a16121",
+										"UpdatedDate": "2017-06-13",
+										"StreamStart": "2017-06-13 15:22:16",
+										"TransactionID": "c064e085-beb4-4b0e-95c4-000095cba896"
+									},
+									{
+										"CustomerID": "e696093d-e46c-41ff-bdb6-b84f2fe8d4bf",
+										"CreatedDate": "2017-07-18",
+										"StreamEnd": "2017-07-18 10:34:37",
+										"MovieID": "67360a7f-5da7-4d40-93c8-ebb8bd883aad",
+										"UpdatedDate": "2017-07-18",
+										"StreamStart": "2017-07-18 08:39:37",
+										"TransactionID": "ef702e3c-5ed9-4773-bb4b-00009efec408"
+									},
+									{
+										"CustomerID": "0d32a175-3ecb-4b8a-a63d-c53059b71781",
+										"CreatedDate": "2017-11-16",
+										"StreamEnd": "2017-11-17 00:06:42",
+										"MovieID": "86394703-fbe1-4977-ac32-7d809348f641",
+										"UpdatedDate": "2017-11-17",
+										"StreamStart": "2017-11-16 21:33:42",
+										"TransactionID": "a3fde75e-6976-446c-b083-0000b43bda62"
+									},
+									{
+										"CustomerID": "837dc9ce-55ef-476e-a328-d466d029199b",
+										"CreatedDate": "2017-12-01",
+										"StreamEnd": "2017-12-01 08:11:15",
+										"MovieID": "1c58a013-8cd8-4e78-a87a-4c27c871ef6e",
+										"UpdatedDate": "2017-12-01",
+										"StreamStart": "2017-12-01 06:45:15",
+										"TransactionID": "cf97c74c-bd1a-415d-90e8-0000ba5eb215"
+									},
+									{
+										"CustomerID": "782a0b93-a2ce-4136-92ab-b10807292b07",
+										"CreatedDate": "2017-06-17",
+										"StreamEnd": "2017-06-17 21:23:34",
+										"MovieID": "7e569a13-edfa-47f0-886b-907b5d34e3ba",
+										"UpdatedDate": "2017-06-17",
+										"StreamStart": "2017-06-17 20:36:34",
+										"TransactionID": "3aea256b-6819-47b0-984c-0000d74ab697"
+									},
+									{
+										"CustomerID": "1be37e38-d13e-429a-90b0-8b98062e849b",
+										"CreatedDate": "2017-06-29",
+										"StreamEnd": "2017-06-29 21:44:00",
+										"MovieID": "fc171b33-0d6f-4662-9810-5a53dc8bd4cd",
+										"UpdatedDate": "2017-06-29",
+										"StreamStart": "2017-06-29 20:03:00",
+										"TransactionID": "dfc0b7a6-6258-44d0-a144-0000ee3c9d6e"
+									},
+									{
+										"CustomerID": "30dc8063-3b0a-4093-affb-e76f2251571e",
+										"CreatedDate": "2017-10-03",
+										"StreamEnd": "2017-10-03 22:35:52",
+										"MovieID": "f218b170-1e10-42ac-8666-dd097bfa4429",
+										"UpdatedDate": "2017-10-03",
+										"StreamStart": "2017-10-03 20:29:52",
+										"TransactionID": "cb9a252c-dd92-4852-b708-0000f3567f3e"
+									},
+									{
+										"CustomerID": "833aa05f-9f12-4327-a856-3b7d4c8d6ec2",
+										"CreatedDate": "2017-05-08",
+										"StreamEnd": "2017-05-08 07:55:40",
+										"MovieID": "6c113896-773c-4547-ad49-e32290d16316",
+										"UpdatedDate": "2017-05-08",
+										"StreamStart": "2017-05-08 06:12:40",
+										"TransactionID": "aaf0c999-53cd-4860-9345-000104f0ca3d"
+									},
+									{
+										"CustomerID": "7d195360-408a-48ed-ac78-86cabd9a17bb",
+										"CreatedDate": "2017-04-04",
+										"StreamEnd": "2017-04-04 17:46:41",
+										"MovieID": "2858389e-85f4-462e-8853-599954ab2411",
+										"UpdatedDate": "2017-04-04",
+										"StreamStart": "2017-04-04 16:18:41",
+										"TransactionID": "eb214c4b-6d4b-4e94-9579-00010d40c5a5"
+									},
+									{
+										"CustomerID": "7d966666-2caa-4a7a-9123-08fe17a5100a",
+										"CreatedDate": "2017-11-14",
+										"StreamEnd": "2017-11-14 04:48:28",
+										"MovieID": "0ab2fb92-0676-4f9d-b550-e795b6c5f380",
+										"UpdatedDate": "2017-11-14",
+										"StreamStart": "2017-11-14 02:39:28",
+										"TransactionID": "f0270d15-2fc0-4535-8731-00013b24d536"
+									},
+									{
+										"CustomerID": "d73ac538-6dd1-47c7-b6ce-354a0197e0a3",
+										"CreatedDate": "2017-06-19",
+										"StreamEnd": "2017-06-19 09:38:44",
+										"MovieID": "7e569a13-edfa-47f0-886b-907b5d34e3ba",
+										"UpdatedDate": "2017-06-19",
+										"StreamStart": "2017-06-19 08:08:44",
+										"TransactionID": "38912289-0cae-4e15-b377-00014faeca82"
+									},
+									{
+										"CustomerID": "2e7b3b06-526d-448c-bf5d-a65e6df251b4",
+										"CreatedDate": "2017-07-23",
+										"StreamEnd": "2017-07-23 23:40:45",
+										"MovieID": "62ff03fc-4fc8-438b-9c92-097e5c0aef56",
+										"UpdatedDate": "2017-07-23",
+										"StreamStart": "2017-07-23 21:37:45",
+										"TransactionID": "284d5e71-c86b-4498-97c6-000173fe3ce0"
+									},
+									{
+										"CustomerID": "72759881-30dc-4556-b447-59f0d25c8c45",
+										"CreatedDate": "2017-06-23",
+										"StreamEnd": "2017-06-23 13:51:15",
+										"MovieID": "4676c2a7-4102-4868-a432-5d8771a16121",
+										"UpdatedDate": "2017-06-23",
+										"StreamStart": "2017-06-23 12:54:15",
+										"TransactionID": "3c429834-d8c8-47b1-bebd-000196b5673c"
+									},
+									{
+										"CustomerID": "920761db-5197-4acc-95dc-17ce88ce3062",
+										"CreatedDate": "2017-06-16",
+										"StreamEnd": "2017-06-16 02:32:54",
+										"MovieID": "5a0f12a6-9ccf-48ac-8a48-0368d7f9d777",
+										"UpdatedDate": "2017-06-16",
+										"StreamStart": "2017-06-16 01:04:54",
+										"TransactionID": "cf700aa4-c137-4cd1-b0ed-0001ab0d86b6"
+									},
+									{
+										"CustomerID": "79b13984-2a0b-4a7e-bb81-c136ae03ce64",
+										"CreatedDate": "2017-08-03",
+										"StreamEnd": "2017-08-03 15:50:00",
+										"MovieID": "e0d8a526-702b-425c-b58a-9ef243a2c9e4",
+										"UpdatedDate": "2017-08-03",
+										"StreamStart": "2017-08-03 13:26:00",
+										"TransactionID": "6316f011-d032-4e59-a1dd-0001d1c11ffa"
+									},
+									{
+										"CustomerID": "920761db-5197-4acc-95dc-17ce88ce3062",
+										"CreatedDate": "2017-04-04",
+										"StreamEnd": "2017-04-04 17:21:20",
+										"MovieID": "fba4f1f2-b78e-4453-b730-22b320194076",
+										"UpdatedDate": "2017-04-04",
+										"StreamStart": "2017-04-04 17:19:18",
+										"TransactionID": "8e14fa7b-d02d-4a77-a19c-0001d55b590e"
+									},
+									{
+										"CustomerID": "14d8310e-4c14-4812-8fb6-a0a7d01516ab",
+										"CreatedDate": "2017-07-26",
+										"StreamEnd": "2017-07-27 00:53:01",
+										"MovieID": "a1a8eb07-970a-4042-a469-93975ca3fc95",
+										"UpdatedDate": "2017-07-27",
+										"StreamStart": "2017-07-26 23:34:01",
+										"TransactionID": "f1b8caec-712c-4b0c-ba2d-0001ee7bd3b7"
+									},
+									{
+										"CustomerID": "d51a2fbd-29fe-4907-9b62-fe12ed630988",
+										"CreatedDate": "2017-07-06",
+										"StreamEnd": "2017-07-06 08:27:52",
+										"MovieID": "04bfd8ee-9c9a-4b74-8771-c764d4efcc22",
+										"UpdatedDate": "2017-07-06",
+										"StreamStart": "2017-07-06 06:41:52",
+										"TransactionID": "62ac641e-cd98-4915-b612-0002226e9881"
+									},
+									{
+										"CustomerID": "422085d8-f394-4021-9e9c-f8023d53f054",
+										"CreatedDate": "2017-05-26",
+										"StreamEnd": "2017-05-26 03:07:36",
+										"MovieID": "9b59410a-878c-452d-b3ad-1b7f2af51735",
+										"UpdatedDate": "2017-05-26",
+										"StreamStart": "2017-05-26 02:27:36",
+										"TransactionID": "88f87a93-128c-45a6-ad67-000271742450"
+									},
+									{
+										"CustomerID": "36c4f3ee-9267-4d33-b809-795416ebcdf1",
+										"CreatedDate": "2017-07-18",
+										"StreamEnd": "2017-07-18 21:06:44",
+										"MovieID": "abc7b181-0adf-4776-9bd0-c8a6734cf2a2",
+										"UpdatedDate": "2017-07-18",
+										"StreamStart": "2017-07-18 19:49:44",
+										"TransactionID": "b00b9c64-effe-4c2d-9d52-00027c3bd844"
+									},
+									{
+										"CustomerID": "b3dd8d9c-f54a-4301-8222-89136f6aead7",
+										"CreatedDate": "2017-03-28",
+										"StreamEnd": "2017-03-28 21:27:21",
+										"MovieID": "434bbd23-0317-4ac4-ab99-0b4d0e166f7c",
+										"UpdatedDate": "2017-03-28",
+										"StreamStart": "2017-03-28 20:00:21",
+										"TransactionID": "621b2ce5-27df-403a-8bfa-000286a06237"
+									},
+									{
+										"CustomerID": "03d601d2-118e-4ee8-a36b-0e19e3e49292",
+										"CreatedDate": "2017-12-23",
+										"StreamEnd": "2017-12-23 11:35:17",
+										"MovieID": "baa97638-3f1b-4582-a544-092f63b889a7",
+										"UpdatedDate": "2017-12-23",
+										"StreamStart": "2017-12-23 10:06:17",
+										"TransactionID": "30f40af9-8535-4155-8521-00029620def2"
+									},
+									{
+										"CustomerID": "9e7ac1a2-9881-46bf-b230-f557e7e067ce",
+										"CreatedDate": "2017-04-12",
+										"StreamEnd": "2017-04-12 20:21:29",
+										"MovieID": "e7d374fa-549a-49ad-b84d-030c40b4d469",
+										"UpdatedDate": "2017-04-12",
+										"StreamStart": "2017-04-12 18:34:29",
+										"TransactionID": "bb8da80a-c5b1-4c7c-829c-0002d06fb1c5"
+									},
+									{
+										"CustomerID": "3e053617-a51f-4628-963c-02c881386606",
+										"CreatedDate": "2017-12-04",
+										"StreamEnd": "2017-12-04 08:47:37",
+										"MovieID": "1b46e11f-c9ca-4352-b17d-82fad182e5bb",
+										"UpdatedDate": "2017-12-04",
+										"StreamStart": "2017-12-04 07:26:37",
+										"TransactionID": "344a4e8c-3dbe-4322-ba80-0002efbe46ae"
+									},
+									{
+										"CustomerID": "faf1372a-d5a3-4b48-8934-e2efc7797a70",
+										"CreatedDate": "2017-12-21",
+										"StreamEnd": "2017-12-21 17:38:16",
+										"MovieID": "baa97638-3f1b-4582-a544-092f63b889a7",
+										"UpdatedDate": "2017-12-21",
+										"StreamStart": "2017-12-21 16:09:16",
+										"TransactionID": "5b2675d8-34a2-4a6d-b0af-0003101fbd6f"
+									},
+									{
+										"CustomerID": "77935355-7ab2-4390-bb75-4305f6f6a466",
+										"CreatedDate": "2017-08-16",
+										"StreamEnd": "2017-08-16 23:37:10",
+										"MovieID": "87cf1c7e-adf1-4b70-bd2d-269fc054a66e",
+										"UpdatedDate": "2017-08-16",
+										"StreamStart": "2017-08-16 22:22:10",
+										"TransactionID": "889c0425-687d-49d6-a799-00031d0eb991"
+									},
+									{
+										"CustomerID": "5ae8d119-4a33-4d56-a209-7d1cb1fe33c5",
+										"CreatedDate": "2017-10-26",
+										"StreamEnd": "2017-10-26 21:14:53",
+										"MovieID": "a4a6ddbc-ff5a-4ce9-9216-ff3e11dc097d",
+										"UpdatedDate": "2017-10-26",
+										"StreamStart": "2017-10-26 18:43:53",
+										"TransactionID": "c1abb0b3-3a7d-46b3-a01d-00034bc1d847"
+									},
+									{
+										"CustomerID": "1352bc8d-92f1-4d00-8c84-9992af3b80db",
+										"CreatedDate": "2017-10-03",
+										"StreamEnd": "2017-10-03 06:27:32",
+										"MovieID": "8dd19463-e221-45ef-8476-8b7a9bbe698e",
+										"UpdatedDate": "2017-10-03",
+										"StreamStart": "2017-10-03 04:37:32",
+										"TransactionID": "4b56f2bc-2458-4124-9661-000350111f2c"
+									},
+									{
+										"CustomerID": "19abe578-729e-40a9-8f2c-2c6d73a0abe3",
+										"CreatedDate": "2017-12-19",
+										"StreamEnd": "2017-12-19 08:52:18",
+										"MovieID": "b160248d-1e74-4f2f-a568-66c453c64a5f",
+										"UpdatedDate": "2017-12-19",
+										"StreamStart": "2017-12-19 07:40:18",
+										"TransactionID": "9894367f-2b49-44cd-9c40-00038fa640f7"
+									},
+									{
+										"CustomerID": "37a4c86b-9960-46cb-979e-eee41eb82af9",
+										"CreatedDate": "2017-03-18",
+										"StreamEnd": "2017-03-18 08:51:16",
+										"MovieID": "b28898ab-e37b-40fb-bc85-c5c501664448",
+										"UpdatedDate": "2017-03-18",
+										"StreamStart": "2017-03-18 07:06:16",
+										"TransactionID": "e93117a3-3d5e-4263-8b8c-0003ac516c2e"
+									},
+									{
+										"CustomerID": "1a36dfa3-c2fb-44f7-ab5f-4ba67297019d",
+										"CreatedDate": "2017-05-09",
+										"StreamEnd": "2017-05-09 10:35:15",
+										"MovieID": "015c7c0b-224e-4c08-a6c0-c62f646de829",
+										"UpdatedDate": "2017-05-09",
+										"StreamStart": "2017-05-09 08:04:15",
+										"TransactionID": "950bac2b-4c68-49e5-bf30-0003b6999034"
+									},
+									{
+										"CustomerID": "cdf2151d-4ace-4a63-b5d1-4e86eba65817",
+										"CreatedDate": "2017-07-29",
+										"StreamEnd": "2017-07-29 17:47:37",
+										"MovieID": "e7913213-a18f-475a-b71d-30a8e257ebf8",
+										"UpdatedDate": "2017-07-29",
+										"StreamStart": "2017-07-29 15:44:37",
+										"TransactionID": "d5813fd2-8014-4265-9d33-0003d1edea54"
+									},
+									{
+										"CustomerID": "cd4fd66d-569f-4e91-be04-1f7e20cc9364",
+										"CreatedDate": "2017-03-01",
+										"StreamEnd": "2017-03-01 06:42:53",
+										"MovieID": "9c07c2f0-1650-4d7f-ae8d-0cb057f128c8",
+										"UpdatedDate": "2017-03-01",
+										"StreamStart": "2017-03-01 05:20:53",
+										"TransactionID": "ff0df422-4ed2-485a-8ec0-0003d9e64f83"
+									},
+									{
+										"CustomerID": "e868be48-5c41-48dc-84b9-373e913a0326",
+										"CreatedDate": "2017-08-22",
+										"StreamEnd": "2017-08-22 07:22:01",
+										"MovieID": "d43d53ef-ab13-44a1-a743-7511704bd7a9",
+										"UpdatedDate": "2017-08-22",
+										"StreamStart": "2017-08-22 04:55:01",
+										"TransactionID": "a65ad63e-8dc7-499d-9801-000405f4676b"
+									},
+									{
+										"CustomerID": "598fd668-767f-476b-8824-9200cfcc6f2a",
+										"CreatedDate": "2017-12-15",
+										"StreamEnd": "2017-12-15 07:16:20",
+										"MovieID": "4fa87fa7-2bd4-4106-a22a-d961790769c0",
+										"UpdatedDate": "2017-12-15",
+										"StreamStart": "2017-12-15 05:13:20",
+										"TransactionID": "fa1bc49d-207e-4408-a757-00044b36ccbb"
+									},
+									{
+										"CustomerID": "0e787aab-3759-460f-84e1-1e29359cf1b1",
+										"CreatedDate": "2017-11-02",
+										"StreamEnd": "2017-11-02 14:10:44",
+										"MovieID": "e1b5384f-06ce-4ba8-9cdb-a8a6d8ddfeb2",
+										"UpdatedDate": "2017-11-02",
+										"StreamStart": "2017-11-02 12:22:44",
+										"TransactionID": "f450cff2-30bc-42ef-a6ae-00046538de81"
+									},
+									{
+										"CustomerID": "e1109d12-a302-4a71-8ebc-6d6754b4455d",
+										"CreatedDate": "2017-04-19",
+										"StreamEnd": "2017-04-19 10:46:16",
+										"MovieID": "26dd204d-b1ab-4166-b75b-8bfbe4ca21fa",
+										"UpdatedDate": "2017-04-19",
+										"StreamStart": "2017-04-19 08:58:16",
+										"TransactionID": "1449ed4f-a1d1-40c7-b620-00046c1d5af0"
+									},
+									{
+										"CustomerID": "edc285c9-a46d-443d-9295-77c51187120b",
+										"CreatedDate": "2017-11-13",
+										"StreamEnd": "2017-11-13 17:13:40",
+										"MovieID": "543921a8-aa63-4772-b517-08e9e2935451",
+										"UpdatedDate": "2017-11-13",
+										"StreamStart": "2017-11-13 15:51:40",
+										"TransactionID": "4e7f9c8e-3dfa-48fc-af81-000474d8adeb"
+									},
+									{
+										"CustomerID": "68917c10-57b1-4f08-bc86-6203ea57a2d2",
+										"CreatedDate": "2017-06-21",
+										"StreamEnd": "2017-06-21 04:10:05",
+										"MovieID": "b119e26e-9caa-4243-b67c-b78adfe0b793",
+										"UpdatedDate": "2017-06-21",
+										"StreamStart": "2017-06-21 02:59:05",
+										"TransactionID": "007da48e-f7f2-49ba-9aba-000492028f8b"
+									},
+									{
+										"CustomerID": "541528ce-4212-453a-952c-25b081a03e75",
+										"CreatedDate": "2017-03-22",
+										"StreamEnd": "2017-03-22 09:14:15",
+										"MovieID": "0145c158-78b4-4d97-b887-e1a62be502c3",
+										"UpdatedDate": "2017-03-22",
+										"StreamStart": "2017-03-22 07:34:15",
+										"TransactionID": "f5ff5c24-0346-48e5-b561-00049ef25d71"
+									},
+									{
+										"CustomerID": "23d82dd5-f975-47bd-9222-3b7be5e0033c",
+										"CreatedDate": "2017-11-23",
+										"StreamEnd": "2017-11-23 17:25:32",
+										"MovieID": "3b9f0511-305a-4886-a3dc-96077e1f4191",
+										"UpdatedDate": "2017-11-23",
+										"StreamStart": "2017-11-23 16:48:32",
+										"TransactionID": "47b61c4d-b110-4790-b244-0004a14656f9"
+									},
+									{
+										"CustomerID": "f224dc2e-d4f1-463a-ac3b-939e37eb1745",
+										"CreatedDate": "2017-06-13",
+										"StreamEnd": "2017-06-13 14:50:25",
+										"MovieID": "7e569a13-edfa-47f0-886b-907b5d34e3ba",
+										"UpdatedDate": "2017-06-13",
+										"StreamStart": "2017-06-13 13:20:25",
+										"TransactionID": "fe289ee0-47e9-4996-8ad9-0004bd060e03"
+									},
+									{
+										"CustomerID": "5ae8d119-4a33-4d56-a209-7d1cb1fe33c5",
+										"CreatedDate": "2017-07-28",
+										"StreamEnd": "2017-07-28 07:34:26",
+										"MovieID": "bb1b9b9e-e9ea-4e10-9408-c39a61d8bc1c",
+										"UpdatedDate": "2017-07-28",
+										"StreamStart": "2017-07-28 06:00:26",
+										"TransactionID": "e0f84b49-ce80-46f9-9970-0004daa71cc6"
+									},
+									{
+										"CustomerID": "327070f2-5625-4c4c-90f6-28d19d38db98",
+										"CreatedDate": "2017-04-15",
+										"StreamEnd": "2017-04-15 17:07:06",
+										"MovieID": "5c211aa9-7d7c-4ae8-b85c-5dda978cb071",
+										"UpdatedDate": "2017-04-15",
+										"StreamStart": "2017-04-15 15:38:06",
+										"TransactionID": "5e38d683-9461-486e-b065-0004e0f8d6f3"
+									},
+									{
+										"CustomerID": "a9b49936-dfe3-4370-b7cb-ff8feca746fd",
+										"CreatedDate": "2017-09-16",
+										"StreamEnd": "2017-09-16 09:50:41",
+										"MovieID": "596f659c-e774-4581-a6f9-510370664ff6",
+										"UpdatedDate": "2017-09-16",
+										"StreamStart": "2017-09-16 07:50:41",
+										"TransactionID": "0048d984-1cc4-49af-9320-00050b81554c"
+									},
+									{
+										"CustomerID": "f8856503-092a-4e7e-acd3-08e2cb0dcde7",
+										"CreatedDate": "2017-08-13",
+										"StreamEnd": "2017-08-14 01:12:23",
+										"MovieID": "ac9a862e-03a8-43d2-b0f4-95c84323ecb3",
+										"UpdatedDate": "2017-08-14",
+										"StreamStart": "2017-08-13 22:38:23",
+										"TransactionID": "61086701-6c7f-4029-a729-000581df62ed"
+									},
+									{
+										"CustomerID": "fb581626-c39c-4124-b389-7b4ad036c22e",
+										"CreatedDate": "2017-12-17",
+										"StreamEnd": "2017-12-17 23:07:15",
+										"MovieID": "1dcf99d2-7e03-4fb4-98a0-5b0259f0fc5a",
+										"UpdatedDate": "2017-12-17",
+										"StreamStart": "2017-12-17 22:11:15",
+										"TransactionID": "a6ed4841-18be-40ac-b6f8-000588d1ab3a"
+									},
+									{
+										"CustomerID": "72f620cc-907a-4c39-9cc1-76d79c84aa27",
+										"CreatedDate": "2017-12-19",
+										"StreamEnd": "2017-12-19 18:37:32",
+										"MovieID": "dfa6292e-1093-4340-8aa0-1f0fb9d330c8",
+										"UpdatedDate": "2017-12-19",
+										"StreamStart": "2017-12-19 17:44:32",
+										"TransactionID": "0057fef8-d3fa-483d-9717-00059a75548c"
+									},
+									{
+										"CustomerID": "9a11921c-9096-4ba5-b1d7-587b2a7b7c65",
+										"CreatedDate": "2017-11-11",
+										"StreamEnd": "2017-11-11 22:02:01",
+										"MovieID": "e05e8cae-2f8e-4e12-8bd7-5f3a297111f4",
+										"UpdatedDate": "2017-11-11",
+										"StreamStart": "2017-11-11 19:57:01",
+										"TransactionID": "123fdbe3-aa3f-4c9b-8fbc-0005bf7c147a"
+									},
+									{
+										"CustomerID": "84d547c9-ec57-44a6-a166-cbe7a503984f",
+										"CreatedDate": "2017-11-08",
+										"StreamEnd": "2017-11-08 20:00:46",
+										"MovieID": "ad6e4a59-16fd-4e24-b323-0863d2d10da9",
+										"UpdatedDate": "2017-11-08",
+										"StreamStart": "2017-11-08 19:00:46",
+										"TransactionID": "214ed16a-dffa-47fb-9198-0005ccc121ed"
+									},
+									{
+										"CustomerID": "e1109d12-a302-4a71-8ebc-6d6754b4455d",
+										"CreatedDate": "2017-12-27",
+										"StreamEnd": "2017-12-27 08:14:25",
+										"MovieID": "d9a60442-6369-4292-b54e-05a8d1a77ced",
+										"UpdatedDate": "2017-12-27",
+										"StreamStart": "2017-12-27 06:50:25",
+										"TransactionID": "85c3d36f-6eaf-4e3c-9614-0005d0ec545c"
+									},
+									{
+										"CustomerID": "babf4d93-1211-4d22-9ea1-54c473b12d9e",
+										"CreatedDate": "2017-07-28",
+										"StreamEnd": "2017-07-28 11:24:55",
+										"MovieID": "c1402987-bf95-4192-a487-510794e17002",
+										"UpdatedDate": "2017-07-28",
+										"StreamStart": "2017-07-28 09:59:55",
+										"TransactionID": "8dd36eb1-8905-4205-8a69-0005e0036f65"
+									},
+									{
+										"CustomerID": "4bddfdd2-7cb4-4cfd-bba6-aa3507912430",
+										"CreatedDate": "2017-11-19",
+										"StreamEnd": "2017-11-20 01:41:31",
+										"MovieID": "0ab2fb92-0676-4f9d-b550-e795b6c5f380",
+										"UpdatedDate": "2017-11-20",
+										"StreamStart": "2017-11-19 23:32:31",
+										"TransactionID": "17c4910c-49b2-4594-b8e1-00066aec8b1d"
+									},
+									{
+										"CustomerID": "e470d8c9-be56-472e-9a6f-16d86cc61ebd",
+										"CreatedDate": "2017-05-31",
+										"StreamEnd": "2017-05-31 16:00:13",
+										"MovieID": "b2f709ef-da14-49a7-a901-c6b6eb2252f5",
+										"UpdatedDate": "2017-05-31",
+										"StreamStart": "2017-05-31 14:18:13",
+										"TransactionID": "0ed97189-dbb0-4426-96b5-00066b398134"
+									},
+									{
+										"CustomerID": "b9253953-4441-4428-92b4-20e034c2c24a",
+										"CreatedDate": "2017-03-26",
+										"StreamEnd": "2017-03-26 06:01:28",
+										"MovieID": "8ca38949-d5be-4841-835c-13f2e00f03aa",
+										"UpdatedDate": "2017-03-26",
+										"StreamStart": "2017-03-26 04:17:28",
+										"TransactionID": "5a7f7075-a32e-49b6-b3bb-0006b65325b8"
+									},
+									{
+										"CustomerID": "4900f4ed-0f43-4c27-8e75-318e5b835c9e",
+										"CreatedDate": "2017-06-03",
+										"StreamEnd": "2017-06-03 20:41:36",
+										"MovieID": "b2f709ef-da14-49a7-a901-c6b6eb2252f5",
+										"UpdatedDate": "2017-06-03",
+										"StreamStart": "2017-06-03 18:59:36",
+										"TransactionID": "ec80e35e-124b-45dc-b8bf-0006ba47e6d9"
+									},
+									{
+										"CustomerID": "e9c3f10a-eecc-4f42-95da-d0d632e46ac7",
+										"CreatedDate": "2017-11-24",
+										"StreamEnd": "2017-11-24 21:15:28",
+										"MovieID": "d708aa54-e580-4cca-be9e-31f852da8b3c",
+										"UpdatedDate": "2017-11-24",
+										"StreamStart": "2017-11-24 20:20:28",
+										"TransactionID": "07813ae4-c86c-49b2-967c-0006c8c42392"
+									},
+									{
+										"CustomerID": "64caf027-39ea-4a61-af05-2a8e32810a3c",
+										"CreatedDate": "2017-09-26",
+										"StreamEnd": "2017-09-26 09:03:23",
+										"MovieID": "87451d50-093e-4175-a9b6-4b93c31d15b1",
+										"UpdatedDate": "2017-09-26",
+										"StreamStart": "2017-09-26 09:01:36",
+										"TransactionID": "713a1148-b4bf-4b0d-88b4-0006f042b94f"
+									},
+									{
+										"CustomerID": "bcf920c9-368a-4c1c-b61f-1d2800993262",
+										"CreatedDate": "2017-06-15",
+										"StreamEnd": "2017-06-15 20:22:51",
+										"MovieID": "34a69793-04cf-48bb-a1a8-172ee9e0406a",
+										"UpdatedDate": "2017-06-15",
+										"StreamStart": "2017-06-15 18:18:51",
+										"TransactionID": "ada5fb1e-45b0-4797-8cb4-00075f8c0ced"
+									},
+									{
+										"CustomerID": "fa0f32b3-49a4-45ee-97ac-82fd1d43b016",
+										"CreatedDate": "2017-08-22",
+										"StreamEnd": "2017-08-22 05:16:22",
+										"MovieID": "94d94aaa-62bf-4445-b654-c235017c615f",
+										"UpdatedDate": "2017-08-22",
+										"StreamStart": "2017-08-22 05:15:16",
+										"TransactionID": "39ae8684-b9a9-455c-86e3-00076e509366"
+									},
+									{
+										"CustomerID": "e8d961bb-e434-46bf-b167-e1f3d5148c8c",
+										"CreatedDate": "2017-12-29",
+										"StreamEnd": "2017-12-29 17:54:27",
+										"MovieID": "ad01c448-34d7-4ca0-9648-b2e935363e23",
+										"UpdatedDate": "2017-12-29",
+										"StreamStart": "2017-12-29 17:51:38",
+										"TransactionID": "0bf85a37-2df7-4e88-be74-00077ba49004"
+									},
+									{
+										"CustomerID": "17de54a2-54d5-4837-b09a-51f7602071fb",
+										"CreatedDate": "2017-07-25",
+										"StreamEnd": "2017-07-25 03:39:47",
+										"MovieID": "1d8d3371-c48a-462a-ac86-28450a0b439d",
+										"UpdatedDate": "2017-07-25",
+										"StreamStart": "2017-07-25 02:26:47",
+										"TransactionID": "4483f4de-0306-40e6-8bb4-0007ae5f5025"
+									},
+									{
+										"CustomerID": "60a6e427-5d1e-443d-8ca9-e19448812ea8",
+										"CreatedDate": "2017-05-24",
+										"StreamEnd": "2017-05-24 11:41:11",
+										"MovieID": "4a25245d-36a8-4d2b-878a-70e5fe99cae2",
+										"UpdatedDate": "2017-05-24",
+										"StreamStart": "2017-05-24 08:47:11",
+										"TransactionID": "324de2f1-9f2d-4aa8-b59f-0007c86918b8"
+									},
+									{
+										"CustomerID": "234d3c38-7631-497b-85e0-e04da65e90e8",
+										"CreatedDate": "2017-11-06",
+										"StreamEnd": "2017-11-06 20:51:58",
+										"MovieID": "75098bbd-0c2a-488e-bbae-7c094a61d09f",
+										"UpdatedDate": "2017-11-06",
+										"StreamStart": "2017-11-06 20:15:58",
+										"TransactionID": "f5e072a3-d236-49ae-96b0-0007cf52f3c8"
+									},
+									{
+										"CustomerID": "1c405fc6-796d-405e-9643-147516ae35e2",
+										"CreatedDate": "2017-06-24",
+										"StreamEnd": "2017-06-24 05:24:17",
+										"MovieID": "dba684ba-72c5-468a-b5ad-492cf9ef8177",
+										"UpdatedDate": "2017-06-24",
+										"StreamStart": "2017-06-24 05:23:42",
+										"TransactionID": "931c32c3-2529-42f0-8463-0007cfc9d4ec"
+									},
+									{
+										"CustomerID": "541528ce-4212-453a-952c-25b081a03e75",
+										"CreatedDate": "2017-05-12",
+										"StreamEnd": "2017-05-12 15:45:01",
+										"MovieID": "03ca9728-1f43-4046-8852-99402fbdebe7",
+										"UpdatedDate": "2017-05-12",
+										"StreamStart": "2017-05-12 15:03:01",
+										"TransactionID": "b5c48e62-a8a9-40ea-b42a-0008150bcff2"
+									},
+									{
+										"CustomerID": "ddde1380-55af-40a8-aea1-b071042ddc51",
+										"CreatedDate": "2017-11-27",
+										"StreamEnd": "2017-11-27 19:52:07",
+										"MovieID": "11242f75-2928-43a7-8dee-4acb0a24ad19",
+										"UpdatedDate": "2017-11-27",
+										"StreamStart": "2017-11-27 18:52:07",
+										"TransactionID": "0e74ccdb-4329-4ecf-97ea-00083fb62cd7"
+									},
+									{
+										"CustomerID": "782a0b93-a2ce-4136-92ab-b10807292b07",
+										"CreatedDate": "2017-04-05",
+										"StreamEnd": "2017-04-05 01:48:49",
+										"MovieID": "fba4f1f2-b78e-4453-b730-22b320194076",
+										"UpdatedDate": "2017-04-05",
+										"StreamStart": "2017-04-05 00:53:49",
+										"TransactionID": "ea68c35e-e12e-4a52-93e0-000860ba3481"
+									},
+									{
+										"CustomerID": "bfd26e9a-ad23-4893-9905-6062e32f6972",
+										"CreatedDate": "2017-04-21",
+										"StreamEnd": "2017-04-22 01:33:14",
+										"MovieID": "2034d0b2-81e5-4ca5-9bf5-d9f4010102ff",
+										"UpdatedDate": "2017-04-22",
+										"StreamStart": "2017-04-21 23:56:14",
+										"TransactionID": "d2a2cd1f-08b6-4d9e-8d8e-0008983449e4"
+									},
+									{
+										"CustomerID": "09dc431c-292a-460f-92a7-e0cb29e6907a",
+										"CreatedDate": "2017-11-29",
+										"StreamEnd": "2017-11-29 15:52:24",
+										"MovieID": "fb48ef87-6647-4545-9104-38bfd7cbdb79",
+										"UpdatedDate": "2017-11-29",
+										"StreamStart": "2017-11-29 14:55:24",
+										"TransactionID": "e98f19f5-e947-454a-9c40-00089a5a5973"
+									},
+									{
+										"CustomerID": "7d195360-408a-48ed-ac78-86cabd9a17bb",
+										"CreatedDate": "2017-06-21",
+										"StreamEnd": "2017-06-21 20:39:59",
+										"MovieID": "dba684ba-72c5-468a-b5ad-492cf9ef8177",
+										"UpdatedDate": "2017-06-21",
+										"StreamStart": "2017-06-21 19:54:59",
+										"TransactionID": "f6247277-9229-4072-9cc8-00089d96990f"
+									},
+									{
+										"CustomerID": "ae2a8a20-5ef2-45fa-83b1-c82e32047d40",
+										"CreatedDate": "2017-09-30",
+										"StreamEnd": "2017-09-30 22:45:09",
+										"MovieID": "4a2c15b3-ed3f-4b9c-a829-7ad0cecdb85a",
+										"UpdatedDate": "2017-09-30",
+										"StreamStart": "2017-09-30 21:35:09",
+										"TransactionID": "5adff116-2f78-436e-96d6-0008d45beaed"
+									},
+									{
+										"CustomerID": "02aa32e6-1de3-4aa2-a659-c1be5e3c9c5b",
+										"CreatedDate": "2017-05-17",
+										"StreamEnd": "2017-05-17 02:13:21",
+										"MovieID": "b88f7d53-670e-424a-acb9-fa4b12056570",
+										"UpdatedDate": "2017-05-17",
+										"StreamStart": "2017-05-17 00:36:21",
+										"TransactionID": "d3e6f92f-d201-438a-b33c-000900af85e6"
+									},
+									{
+										"CustomerID": "c2e9b58b-796c-43e1-9a33-2560870056fe",
+										"CreatedDate": "2017-12-20",
+										"StreamEnd": "2017-12-20 06:28:33",
+										"MovieID": "4bf90628-4638-4045-afa0-c509eb05d250",
+										"UpdatedDate": "2017-12-20",
+										"StreamStart": "2017-12-20 06:23:47",
+										"TransactionID": "5278f905-2d14-46d1-86bc-0009012b29fa"
+									},
+									{
+										"CustomerID": "8e6ed1d0-a5d7-4294-9b7c-8c27d0539d91",
+										"CreatedDate": "2017-03-18",
+										"StreamEnd": "2017-03-18 08:06:35",
+										"MovieID": "0969240a-91f7-4472-aa28-3a6af165dd7a",
+										"UpdatedDate": "2017-03-18",
+										"StreamStart": "2017-03-18 05:53:35",
+										"TransactionID": "60ed6c17-080a-4d73-a873-0009285d00ed"
+									},
+									{
+										"CustomerID": "920761db-5197-4acc-95dc-17ce88ce3062",
+										"CreatedDate": "2017-06-25",
+										"StreamEnd": "2017-06-25 20:20:58",
+										"MovieID": "0480a136-d857-4fae-a51e-351e7eddae51",
+										"UpdatedDate": "2017-06-25",
+										"StreamStart": "2017-06-25 18:22:58",
+										"TransactionID": "43eeb1bb-f6f8-47ab-9024-000933219d46"
+									},
+									{
+										"CustomerID": "31865f37-e8f8-4289-9221-0dd7db43026f",
+										"CreatedDate": "2017-04-15",
+										"StreamEnd": "2017-04-15 06:43:41",
+										"MovieID": "dcc6ccbf-45e3-48ae-8d46-e44e1f06566d",
+										"UpdatedDate": "2017-04-15",
+										"StreamStart": "2017-04-15 05:08:41",
+										"TransactionID": "0f455b86-e1e5-4313-8ef6-0009372579b9"
+									},
+									{
+										"CustomerID": "97ab8fec-6d26-4b5c-98e6-9a7ee60893e5",
+										"CreatedDate": "2017-11-02",
+										"StreamEnd": "2017-11-02 17:31:44",
+										"MovieID": "f652dbed-75df-4fc7-be67-c118e97bcf84",
+										"UpdatedDate": "2017-11-02",
+										"StreamStart": "2017-11-02 16:45:44",
+										"TransactionID": "3afda9ba-09f2-4437-8b43-00094c2b8762"
+									},
+									{
+										"CustomerID": "3e053617-a51f-4628-963c-02c881386606",
+										"CreatedDate": "2017-08-16",
+										"StreamEnd": "2017-08-16 10:13:13",
+										"MovieID": "f1348c29-968c-4bf5-b56e-178d165e4c0a",
+										"UpdatedDate": "2017-08-16",
+										"StreamStart": "2017-08-16 09:20:13",
+										"TransactionID": "a8370d1c-589c-4bc6-8959-000960da81bf"
+									},
+									{
+										"CustomerID": "be04e713-d2c3-4604-ac54-8b59b2318f68",
+										"CreatedDate": "2017-10-19",
+										"StreamEnd": "2017-10-19 15:33:09",
+										"MovieID": "393e6ff5-cad6-4c5d-bc99-0c83f9d31524",
+										"UpdatedDate": "2017-10-19",
+										"StreamStart": "2017-10-19 13:55:09",
+										"TransactionID": "8d2d6bbc-8e72-4d5e-8cff-00098738c528"
+									},
+									{
+										"CustomerID": "13e3d6fd-2593-4fbd-90cf-46990fb8322f",
+										"CreatedDate": "2017-07-02",
+										"StreamEnd": "2017-07-02 20:36:50",
+										"MovieID": "fc171b33-0d6f-4662-9810-5a53dc8bd4cd",
+										"UpdatedDate": "2017-07-02",
+										"StreamStart": "2017-07-02 18:55:50",
+										"TransactionID": "6a2bd414-1f54-4086-98ec-000993209e48"
+									},
+									{
+										"CustomerID": "79419ee5-76c3-41ae-af75-1d9c048b76e8",
+										"CreatedDate": "2017-07-26",
+										"StreamEnd": "2017-07-26 16:15:38",
+										"MovieID": "330e69c9-c507-420d-bd02-41f9f3b32f0c",
+										"UpdatedDate": "2017-07-26",
+										"StreamStart": "2017-07-26 14:31:38",
+										"TransactionID": "ab88c2f8-a543-434f-9ade-00099aba77a6"
+									},
+									{
+										"CustomerID": "de8f79d2-0f68-49d1-be90-f9b4e3800de1",
+										"CreatedDate": "2017-06-14",
+										"StreamEnd": "2017-06-14 05:14:44",
+										"MovieID": "60a28f3a-b00d-4b9f-a617-509f6bce8914",
+										"UpdatedDate": "2017-06-14",
+										"StreamStart": "2017-06-14 03:45:44",
+										"TransactionID": "a67a4faa-054c-4f82-b521-0009c97a4f9a"
+									},
+									{
+										"CustomerID": "aacb69b8-ad92-4a54-a9ae-9aa8232bc5b4",
+										"CreatedDate": "2017-09-30",
+										"StreamEnd": "2017-09-30 19:32:04",
+										"MovieID": "387ecf57-99cb-47c9-a508-2ecbd752714c",
+										"UpdatedDate": "2017-09-30",
+										"StreamStart": "2017-09-30 18:04:04",
+										"TransactionID": "e1e8acdc-3e03-447b-b200-0009d4926460"
+									},
+									{
+										"CustomerID": "c5c89ec5-25da-48a3-b0e5-9f1f3ef43407",
+										"CreatedDate": "2017-05-18",
+										"StreamEnd": "2017-05-19 00:53:57",
+										"MovieID": "0211285c-f604-4d5e-925b-29e194989ae3",
+										"UpdatedDate": "2017-05-19",
+										"StreamStart": "2017-05-18 23:21:57",
+										"TransactionID": "ada39ed8-5454-4eb0-92e8-0009e005a220"
+									},
+									{
+										"CustomerID": "0d32a175-3ecb-4b8a-a63d-c53059b71781",
+										"CreatedDate": "2017-10-10",
+										"StreamEnd": "2017-10-10 14:47:31",
+										"MovieID": "8dd19463-e221-45ef-8476-8b7a9bbe698e",
+										"UpdatedDate": "2017-10-10",
+										"StreamStart": "2017-10-10 12:57:31",
+										"TransactionID": "7a4304a1-289f-423b-9556-000a3254e4f2"
+									},
+									{
+										"CustomerID": "5ae8d119-4a33-4d56-a209-7d1cb1fe33c5",
+										"CreatedDate": "2017-12-05",
+										"StreamEnd": "2017-12-05 07:02:28",
+										"MovieID": "da8cd31d-668e-4435-9b35-8d8eee6b8a62",
+										"UpdatedDate": "2017-12-05",
+										"StreamStart": "2017-12-05 04:52:28",
+										"TransactionID": "beca7398-8353-4a05-a17e-000a38cdf435"
+									},
+									{
+										"CustomerID": "75fd0654-7bac-40f2-8369-16cd6e81431e",
+										"CreatedDate": "2017-10-19",
+										"StreamEnd": "2017-10-19 03:16:11",
+										"MovieID": "0c2f9f68-19b8-4b84-a45d-5c72c089ef91",
+										"UpdatedDate": "2017-10-19",
+										"StreamStart": "2017-10-19 01:45:11",
+										"TransactionID": "4dc73f6e-a2a8-4459-b1d0-000a4b1f208f"
+									},
+									{
+										"CustomerID": "4798b5fb-2fcb-4a39-849b-d3c3e733a6e0",
+										"CreatedDate": "2017-07-30",
+										"StreamEnd": "2017-07-30 02:01:30",
+										"MovieID": "13751602-e2cd-4355-af19-8db1654b1034",
+										"UpdatedDate": "2017-07-30",
+										"StreamStart": "2017-07-30 00:14:30",
+										"TransactionID": "474147d2-3deb-49f9-a7f9-000a59eb0c2f"
+									},
+									{
+										"CustomerID": "e1109d12-a302-4a71-8ebc-6d6754b4455d",
+										"CreatedDate": "2017-10-07",
+										"StreamEnd": "2017-10-07 00:14:43",
+										"MovieID": "f4df3729-1b4a-43c9-b48e-ec4c47b23b69",
+										"UpdatedDate": "2017-10-07",
+										"StreamStart": "2017-10-07 00:10:16",
+										"TransactionID": "e397225d-9eef-4bcc-b2ae-000a5b8b586e"
+									},
+									{
+										"CustomerID": "7c7aef32-4928-4f22-bb35-b8535d5b0533",
+										"CreatedDate": "2017-11-16",
+										"StreamEnd": "2017-11-16 21:25:26",
+										"MovieID": "6ef59b4d-3571-4bed-9e4a-227bf023e8b4",
+										"UpdatedDate": "2017-11-16",
+										"StreamStart": "2017-11-16 19:57:26",
+										"TransactionID": "1104e69d-8a1a-4d5e-be62-000a76b9f0f3"
+									},
+									{
+										"CustomerID": "643a1e1c-070a-4791-83c3-a42b624cc2c8",
+										"CreatedDate": "2017-09-24",
+										"StreamEnd": "2017-09-24 06:43:41",
+										"MovieID": "0c0de2b1-b6ae-4302-9ddb-bca511d91d1c",
+										"UpdatedDate": "2017-09-24",
+										"StreamStart": "2017-09-24 03:51:41",
+										"TransactionID": "f8a52b3f-45ef-481a-8303-000a777cbcd6"
+									}
+								],
+								"schema": {
+									"TransactionID": "string",
+									"CustomerID": "string",
+									"MovieID": "string",
+									"StreamStart": "int",
+									"StreamEnd": "int",
+									"CreatedDate": "date",
+									"UpdatedDate": "date"
+								}
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"TransactionID"
+									],
+									"seriesFieldKeys": [
+										"StreamStart"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					},
+					"e7cff146-c85a-4854-b1b9-199ac117c9bc": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"CustomerID": "e6a138ae-ad8a-4fa6-a661-5d0ca65f05d4",
+										"CreatedDate": "2017-06-04",
+										"StreamEnd": "2017-06-05 00:39:31",
+										"SourceSystemTransactionID": "1635b1ab-22e3-4cf4-8ad1-000015b8f6d1",
+										"MovieID": "2a1bfe7d-1abb-48f4-981e-cbecdff77cda",
+										"UpdatedDate": "2017-06-05",
+										"StreamStart": "2017-06-04 22:09:31"
+									},
+									{
+										"CustomerID": "da842482-d780-4f17-8b9e-c072bd0a29bc",
+										"CreatedDate": "2017-04-18",
+										"StreamEnd": "2017-04-18 21:58:00",
+										"SourceSystemTransactionID": "8af99898-ac99-4e5c-9560-00002f797964",
+										"MovieID": "138ffeb1-278a-490c-b0ec-f83b9ab4197d",
+										"UpdatedDate": "2017-04-18",
+										"StreamStart": "2017-04-18 20:59:00"
+									},
+									{
+										"CustomerID": "85c1280c-59bc-4504-88fc-d4059e095ce9",
+										"CreatedDate": "2017-09-23",
+										"StreamEnd": "2017-09-23 19:10:32",
+										"SourceSystemTransactionID": "5ef69e85-5c2f-44b0-b515-00003061911d",
+										"MovieID": "751a63ec-5321-4c49-9fe4-4b7f8c0514ce",
+										"UpdatedDate": "2017-09-23",
+										"StreamStart": "2017-09-23 18:19:32"
+									},
+									{
+										"CustomerID": "14d96c4d-6a16-4a0d-9eec-af3cc51c7f8a",
+										"CreatedDate": "2017-05-04",
+										"StreamEnd": "2017-05-04 14:21:47",
+										"SourceSystemTransactionID": "9a7f5580-33d0-473e-b3c8-000033c30df3",
+										"MovieID": "015c7c0b-224e-4c08-a6c0-c62f646de829",
+										"UpdatedDate": "2017-05-04",
+										"StreamStart": "2017-05-04 11:50:47"
+									},
+									{
+										"CustomerID": "c2f29e65-3cc5-40ee-b0c0-cf049e768a02",
+										"CreatedDate": "2017-05-23",
+										"StreamEnd": "2017-05-23 11:29:38",
+										"SourceSystemTransactionID": "ed807e6c-a289-4e6f-a144-00004dc34013",
+										"MovieID": "9ff324e6-5ba1-4030-9ed5-772150eb7a46",
+										"UpdatedDate": "2017-05-23",
+										"StreamStart": "2017-05-23 09:55:38"
+									},
+									{
+										"CustomerID": "4798b5fb-2fcb-4a39-849b-d3c3e733a6e0",
+										"CreatedDate": "2017-06-30",
+										"StreamEnd": "2017-06-30 18:22:40",
+										"SourceSystemTransactionID": "7a26134b-14e9-4f07-87d8-00006d2d1ffb",
+										"MovieID": "adfee89c-5b52-4223-8c26-6a2d02def494",
+										"UpdatedDate": "2017-06-30",
+										"StreamStart": "2017-06-30 15:46:40"
+									},
+									{
+										"CustomerID": "ae48210e-184b-4d0b-bc95-b40a22645b5c",
+										"CreatedDate": "2017-03-25",
+										"StreamEnd": "2017-03-25 08:09:25",
+										"SourceSystemTransactionID": "aee2743a-9e38-416a-8025-0000738631a2",
+										"MovieID": "5206c70c-b004-4a85-ad9a-bda28497411c",
+										"UpdatedDate": "2017-03-25",
+										"StreamStart": "2017-03-25 06:01:25"
+									},
+									{
+										"CustomerID": "643a1e1c-070a-4791-83c3-a42b624cc2c8",
+										"CreatedDate": "2017-05-02",
+										"StreamEnd": "2017-05-02 14:08:26",
+										"SourceSystemTransactionID": "95736dd0-49bb-4d11-98c5-0000944e03be",
+										"MovieID": "ef106db5-8b88-4b08-ac73-568c2e2a8b30",
+										"UpdatedDate": "2017-05-02",
+										"StreamStart": "2017-05-02 12:04:26"
+									},
+									{
+										"CustomerID": "3a1f64da-2f13-4e7f-be37-80f1a328ba79",
+										"CreatedDate": "2017-06-13",
+										"StreamEnd": "2017-06-13 17:09:16",
+										"SourceSystemTransactionID": "c064e085-beb4-4b0e-95c4-000095cba896",
+										"MovieID": "4676c2a7-4102-4868-a432-5d8771a16121",
+										"UpdatedDate": "2017-06-13",
+										"StreamStart": "2017-06-13 15:22:16"
+									},
+									{
+										"CustomerID": "e696093d-e46c-41ff-bdb6-b84f2fe8d4bf",
+										"CreatedDate": "2017-07-18",
+										"StreamEnd": "2017-07-18 10:34:37",
+										"SourceSystemTransactionID": "ef702e3c-5ed9-4773-bb4b-00009efec408",
+										"MovieID": "67360a7f-5da7-4d40-93c8-ebb8bd883aad",
+										"UpdatedDate": "2017-07-18",
+										"StreamStart": "2017-07-18 08:39:37"
+									},
+									{
+										"CustomerID": "0d32a175-3ecb-4b8a-a63d-c53059b71781",
+										"CreatedDate": "2017-11-16",
+										"StreamEnd": "2017-11-17 00:06:42",
+										"SourceSystemTransactionID": "a3fde75e-6976-446c-b083-0000b43bda62",
+										"MovieID": "86394703-fbe1-4977-ac32-7d809348f641",
+										"UpdatedDate": "2017-11-17",
+										"StreamStart": "2017-11-16 21:33:42"
+									},
+									{
+										"CustomerID": "837dc9ce-55ef-476e-a328-d466d029199b",
+										"CreatedDate": "2017-12-01",
+										"StreamEnd": "2017-12-01 08:11:15",
+										"SourceSystemTransactionID": "cf97c74c-bd1a-415d-90e8-0000ba5eb215",
+										"MovieID": "1c58a013-8cd8-4e78-a87a-4c27c871ef6e",
+										"UpdatedDate": "2017-12-01",
+										"StreamStart": "2017-12-01 06:45:15"
+									},
+									{
+										"CustomerID": "782a0b93-a2ce-4136-92ab-b10807292b07",
+										"CreatedDate": "2017-06-17",
+										"StreamEnd": "2017-06-17 21:23:34",
+										"SourceSystemTransactionID": "3aea256b-6819-47b0-984c-0000d74ab697",
+										"MovieID": "7e569a13-edfa-47f0-886b-907b5d34e3ba",
+										"UpdatedDate": "2017-06-17",
+										"StreamStart": "2017-06-17 20:36:34"
+									},
+									{
+										"CustomerID": "1be37e38-d13e-429a-90b0-8b98062e849b",
+										"CreatedDate": "2017-06-29",
+										"StreamEnd": "2017-06-29 21:44:00",
+										"SourceSystemTransactionID": "dfc0b7a6-6258-44d0-a144-0000ee3c9d6e",
+										"MovieID": "fc171b33-0d6f-4662-9810-5a53dc8bd4cd",
+										"UpdatedDate": "2017-06-29",
+										"StreamStart": "2017-06-29 20:03:00"
+									},
+									{
+										"CustomerID": "30dc8063-3b0a-4093-affb-e76f2251571e",
+										"CreatedDate": "2017-10-03",
+										"StreamEnd": "2017-10-03 22:35:52",
+										"SourceSystemTransactionID": "cb9a252c-dd92-4852-b708-0000f3567f3e",
+										"MovieID": "f218b170-1e10-42ac-8666-dd097bfa4429",
+										"UpdatedDate": "2017-10-03",
+										"StreamStart": "2017-10-03 20:29:52"
+									},
+									{
+										"CustomerID": "833aa05f-9f12-4327-a856-3b7d4c8d6ec2",
+										"CreatedDate": "2017-05-08",
+										"StreamEnd": "2017-05-08 07:55:40",
+										"SourceSystemTransactionID": "aaf0c999-53cd-4860-9345-000104f0ca3d",
+										"MovieID": "6c113896-773c-4547-ad49-e32290d16316",
+										"UpdatedDate": "2017-05-08",
+										"StreamStart": "2017-05-08 06:12:40"
+									},
+									{
+										"CustomerID": "7d195360-408a-48ed-ac78-86cabd9a17bb",
+										"CreatedDate": "2017-04-04",
+										"StreamEnd": "2017-04-04 17:46:41",
+										"SourceSystemTransactionID": "eb214c4b-6d4b-4e94-9579-00010d40c5a5",
+										"MovieID": "2858389e-85f4-462e-8853-599954ab2411",
+										"UpdatedDate": "2017-04-04",
+										"StreamStart": "2017-04-04 16:18:41"
+									},
+									{
+										"CustomerID": "7d966666-2caa-4a7a-9123-08fe17a5100a",
+										"CreatedDate": "2017-11-14",
+										"StreamEnd": "2017-11-14 04:48:28",
+										"SourceSystemTransactionID": "f0270d15-2fc0-4535-8731-00013b24d536",
+										"MovieID": "0ab2fb92-0676-4f9d-b550-e795b6c5f380",
+										"UpdatedDate": "2017-11-14",
+										"StreamStart": "2017-11-14 02:39:28"
+									},
+									{
+										"CustomerID": "d73ac538-6dd1-47c7-b6ce-354a0197e0a3",
+										"CreatedDate": "2017-06-19",
+										"StreamEnd": "2017-06-19 09:38:44",
+										"SourceSystemTransactionID": "38912289-0cae-4e15-b377-00014faeca82",
+										"MovieID": "7e569a13-edfa-47f0-886b-907b5d34e3ba",
+										"UpdatedDate": "2017-06-19",
+										"StreamStart": "2017-06-19 08:08:44"
+									},
+									{
+										"CustomerID": "2e7b3b06-526d-448c-bf5d-a65e6df251b4",
+										"CreatedDate": "2017-07-23",
+										"StreamEnd": "2017-07-23 23:40:45",
+										"SourceSystemTransactionID": "284d5e71-c86b-4498-97c6-000173fe3ce0",
+										"MovieID": "62ff03fc-4fc8-438b-9c92-097e5c0aef56",
+										"UpdatedDate": "2017-07-23",
+										"StreamStart": "2017-07-23 21:37:45"
+									},
+									{
+										"CustomerID": "72759881-30dc-4556-b447-59f0d25c8c45",
+										"CreatedDate": "2017-06-23",
+										"StreamEnd": "2017-06-23 13:51:15",
+										"SourceSystemTransactionID": "3c429834-d8c8-47b1-bebd-000196b5673c",
+										"MovieID": "4676c2a7-4102-4868-a432-5d8771a16121",
+										"UpdatedDate": "2017-06-23",
+										"StreamStart": "2017-06-23 12:54:15"
+									},
+									{
+										"CustomerID": "920761db-5197-4acc-95dc-17ce88ce3062",
+										"CreatedDate": "2017-06-16",
+										"StreamEnd": "2017-06-16 02:32:54",
+										"SourceSystemTransactionID": "cf700aa4-c137-4cd1-b0ed-0001ab0d86b6",
+										"MovieID": "5a0f12a6-9ccf-48ac-8a48-0368d7f9d777",
+										"UpdatedDate": "2017-06-16",
+										"StreamStart": "2017-06-16 01:04:54"
+									},
+									{
+										"CustomerID": "79b13984-2a0b-4a7e-bb81-c136ae03ce64",
+										"CreatedDate": "2017-08-03",
+										"StreamEnd": "2017-08-03 15:50:00",
+										"SourceSystemTransactionID": "6316f011-d032-4e59-a1dd-0001d1c11ffa",
+										"MovieID": "e0d8a526-702b-425c-b58a-9ef243a2c9e4",
+										"UpdatedDate": "2017-08-03",
+										"StreamStart": "2017-08-03 13:26:00"
+									},
+									{
+										"CustomerID": "920761db-5197-4acc-95dc-17ce88ce3062",
+										"CreatedDate": "2017-04-04",
+										"StreamEnd": "2017-04-04 17:21:20",
+										"SourceSystemTransactionID": "8e14fa7b-d02d-4a77-a19c-0001d55b590e",
+										"MovieID": "fba4f1f2-b78e-4453-b730-22b320194076",
+										"UpdatedDate": "2017-04-04",
+										"StreamStart": "2017-04-04 17:19:18"
+									},
+									{
+										"CustomerID": "14d8310e-4c14-4812-8fb6-a0a7d01516ab",
+										"CreatedDate": "2017-07-26",
+										"StreamEnd": "2017-07-27 00:53:01",
+										"SourceSystemTransactionID": "f1b8caec-712c-4b0c-ba2d-0001ee7bd3b7",
+										"MovieID": "a1a8eb07-970a-4042-a469-93975ca3fc95",
+										"UpdatedDate": "2017-07-27",
+										"StreamStart": "2017-07-26 23:34:01"
+									},
+									{
+										"CustomerID": "d51a2fbd-29fe-4907-9b62-fe12ed630988",
+										"CreatedDate": "2017-07-06",
+										"StreamEnd": "2017-07-06 08:27:52",
+										"SourceSystemTransactionID": "62ac641e-cd98-4915-b612-0002226e9881",
+										"MovieID": "04bfd8ee-9c9a-4b74-8771-c764d4efcc22",
+										"UpdatedDate": "2017-07-06",
+										"StreamStart": "2017-07-06 06:41:52"
+									},
+									{
+										"CustomerID": "422085d8-f394-4021-9e9c-f8023d53f054",
+										"CreatedDate": "2017-05-26",
+										"StreamEnd": "2017-05-26 03:07:36",
+										"SourceSystemTransactionID": "88f87a93-128c-45a6-ad67-000271742450",
+										"MovieID": "9b59410a-878c-452d-b3ad-1b7f2af51735",
+										"UpdatedDate": "2017-05-26",
+										"StreamStart": "2017-05-26 02:27:36"
+									},
+									{
+										"CustomerID": "36c4f3ee-9267-4d33-b809-795416ebcdf1",
+										"CreatedDate": "2017-07-18",
+										"StreamEnd": "2017-07-18 21:06:44",
+										"SourceSystemTransactionID": "b00b9c64-effe-4c2d-9d52-00027c3bd844",
+										"MovieID": "abc7b181-0adf-4776-9bd0-c8a6734cf2a2",
+										"UpdatedDate": "2017-07-18",
+										"StreamStart": "2017-07-18 19:49:44"
+									},
+									{
+										"CustomerID": "b3dd8d9c-f54a-4301-8222-89136f6aead7",
+										"CreatedDate": "2017-03-28",
+										"StreamEnd": "2017-03-28 21:27:21",
+										"SourceSystemTransactionID": "621b2ce5-27df-403a-8bfa-000286a06237",
+										"MovieID": "434bbd23-0317-4ac4-ab99-0b4d0e166f7c",
+										"UpdatedDate": "2017-03-28",
+										"StreamStart": "2017-03-28 20:00:21"
+									},
+									{
+										"CustomerID": "03d601d2-118e-4ee8-a36b-0e19e3e49292",
+										"CreatedDate": "2017-12-23",
+										"StreamEnd": "2017-12-23 11:35:17",
+										"SourceSystemTransactionID": "30f40af9-8535-4155-8521-00029620def2",
+										"MovieID": "baa97638-3f1b-4582-a544-092f63b889a7",
+										"UpdatedDate": "2017-12-23",
+										"StreamStart": "2017-12-23 10:06:17"
+									},
+									{
+										"CustomerID": "9e7ac1a2-9881-46bf-b230-f557e7e067ce",
+										"CreatedDate": "2017-04-12",
+										"StreamEnd": "2017-04-12 20:21:29",
+										"SourceSystemTransactionID": "bb8da80a-c5b1-4c7c-829c-0002d06fb1c5",
+										"MovieID": "e7d374fa-549a-49ad-b84d-030c40b4d469",
+										"UpdatedDate": "2017-04-12",
+										"StreamStart": "2017-04-12 18:34:29"
+									},
+									{
+										"CustomerID": "3e053617-a51f-4628-963c-02c881386606",
+										"CreatedDate": "2017-12-04",
+										"StreamEnd": "2017-12-04 08:47:37",
+										"SourceSystemTransactionID": "344a4e8c-3dbe-4322-ba80-0002efbe46ae",
+										"MovieID": "1b46e11f-c9ca-4352-b17d-82fad182e5bb",
+										"UpdatedDate": "2017-12-04",
+										"StreamStart": "2017-12-04 07:26:37"
+									},
+									{
+										"CustomerID": "faf1372a-d5a3-4b48-8934-e2efc7797a70",
+										"CreatedDate": "2017-12-21",
+										"StreamEnd": "2017-12-21 17:38:16",
+										"SourceSystemTransactionID": "5b2675d8-34a2-4a6d-b0af-0003101fbd6f",
+										"MovieID": "baa97638-3f1b-4582-a544-092f63b889a7",
+										"UpdatedDate": "2017-12-21",
+										"StreamStart": "2017-12-21 16:09:16"
+									},
+									{
+										"CustomerID": "77935355-7ab2-4390-bb75-4305f6f6a466",
+										"CreatedDate": "2017-08-16",
+										"StreamEnd": "2017-08-16 23:37:10",
+										"SourceSystemTransactionID": "889c0425-687d-49d6-a799-00031d0eb991",
+										"MovieID": "87cf1c7e-adf1-4b70-bd2d-269fc054a66e",
+										"UpdatedDate": "2017-08-16",
+										"StreamStart": "2017-08-16 22:22:10"
+									},
+									{
+										"CustomerID": "5ae8d119-4a33-4d56-a209-7d1cb1fe33c5",
+										"CreatedDate": "2017-10-26",
+										"StreamEnd": "2017-10-26 21:14:53",
+										"SourceSystemTransactionID": "c1abb0b3-3a7d-46b3-a01d-00034bc1d847",
+										"MovieID": "a4a6ddbc-ff5a-4ce9-9216-ff3e11dc097d",
+										"UpdatedDate": "2017-10-26",
+										"StreamStart": "2017-10-26 18:43:53"
+									},
+									{
+										"CustomerID": "1352bc8d-92f1-4d00-8c84-9992af3b80db",
+										"CreatedDate": "2017-10-03",
+										"StreamEnd": "2017-10-03 06:27:32",
+										"SourceSystemTransactionID": "4b56f2bc-2458-4124-9661-000350111f2c",
+										"MovieID": "8dd19463-e221-45ef-8476-8b7a9bbe698e",
+										"UpdatedDate": "2017-10-03",
+										"StreamStart": "2017-10-03 04:37:32"
+									},
+									{
+										"CustomerID": "19abe578-729e-40a9-8f2c-2c6d73a0abe3",
+										"CreatedDate": "2017-12-19",
+										"StreamEnd": "2017-12-19 08:52:18",
+										"SourceSystemTransactionID": "9894367f-2b49-44cd-9c40-00038fa640f7",
+										"MovieID": "b160248d-1e74-4f2f-a568-66c453c64a5f",
+										"UpdatedDate": "2017-12-19",
+										"StreamStart": "2017-12-19 07:40:18"
+									},
+									{
+										"CustomerID": "37a4c86b-9960-46cb-979e-eee41eb82af9",
+										"CreatedDate": "2017-03-18",
+										"StreamEnd": "2017-03-18 08:51:16",
+										"SourceSystemTransactionID": "e93117a3-3d5e-4263-8b8c-0003ac516c2e",
+										"MovieID": "b28898ab-e37b-40fb-bc85-c5c501664448",
+										"UpdatedDate": "2017-03-18",
+										"StreamStart": "2017-03-18 07:06:16"
+									},
+									{
+										"CustomerID": "1a36dfa3-c2fb-44f7-ab5f-4ba67297019d",
+										"CreatedDate": "2017-05-09",
+										"StreamEnd": "2017-05-09 10:35:15",
+										"SourceSystemTransactionID": "950bac2b-4c68-49e5-bf30-0003b6999034",
+										"MovieID": "015c7c0b-224e-4c08-a6c0-c62f646de829",
+										"UpdatedDate": "2017-05-09",
+										"StreamStart": "2017-05-09 08:04:15"
+									},
+									{
+										"CustomerID": "cdf2151d-4ace-4a63-b5d1-4e86eba65817",
+										"CreatedDate": "2017-07-29",
+										"StreamEnd": "2017-07-29 17:47:37",
+										"SourceSystemTransactionID": "d5813fd2-8014-4265-9d33-0003d1edea54",
+										"MovieID": "e7913213-a18f-475a-b71d-30a8e257ebf8",
+										"UpdatedDate": "2017-07-29",
+										"StreamStart": "2017-07-29 15:44:37"
+									},
+									{
+										"CustomerID": "cd4fd66d-569f-4e91-be04-1f7e20cc9364",
+										"CreatedDate": "2017-03-01",
+										"StreamEnd": "2017-03-01 06:42:53",
+										"SourceSystemTransactionID": "ff0df422-4ed2-485a-8ec0-0003d9e64f83",
+										"MovieID": "9c07c2f0-1650-4d7f-ae8d-0cb057f128c8",
+										"UpdatedDate": "2017-03-01",
+										"StreamStart": "2017-03-01 05:20:53"
+									},
+									{
+										"CustomerID": "e868be48-5c41-48dc-84b9-373e913a0326",
+										"CreatedDate": "2017-08-22",
+										"StreamEnd": "2017-08-22 07:22:01",
+										"SourceSystemTransactionID": "a65ad63e-8dc7-499d-9801-000405f4676b",
+										"MovieID": "d43d53ef-ab13-44a1-a743-7511704bd7a9",
+										"UpdatedDate": "2017-08-22",
+										"StreamStart": "2017-08-22 04:55:01"
+									},
+									{
+										"CustomerID": "598fd668-767f-476b-8824-9200cfcc6f2a",
+										"CreatedDate": "2017-12-15",
+										"StreamEnd": "2017-12-15 07:16:20",
+										"SourceSystemTransactionID": "fa1bc49d-207e-4408-a757-00044b36ccbb",
+										"MovieID": "4fa87fa7-2bd4-4106-a22a-d961790769c0",
+										"UpdatedDate": "2017-12-15",
+										"StreamStart": "2017-12-15 05:13:20"
+									},
+									{
+										"CustomerID": "0e787aab-3759-460f-84e1-1e29359cf1b1",
+										"CreatedDate": "2017-11-02",
+										"StreamEnd": "2017-11-02 14:10:44",
+										"SourceSystemTransactionID": "f450cff2-30bc-42ef-a6ae-00046538de81",
+										"MovieID": "e1b5384f-06ce-4ba8-9cdb-a8a6d8ddfeb2",
+										"UpdatedDate": "2017-11-02",
+										"StreamStart": "2017-11-02 12:22:44"
+									},
+									{
+										"CustomerID": "e1109d12-a302-4a71-8ebc-6d6754b4455d",
+										"CreatedDate": "2017-04-19",
+										"StreamEnd": "2017-04-19 10:46:16",
+										"SourceSystemTransactionID": "1449ed4f-a1d1-40c7-b620-00046c1d5af0",
+										"MovieID": "26dd204d-b1ab-4166-b75b-8bfbe4ca21fa",
+										"UpdatedDate": "2017-04-19",
+										"StreamStart": "2017-04-19 08:58:16"
+									},
+									{
+										"CustomerID": "edc285c9-a46d-443d-9295-77c51187120b",
+										"CreatedDate": "2017-11-13",
+										"StreamEnd": "2017-11-13 17:13:40",
+										"SourceSystemTransactionID": "4e7f9c8e-3dfa-48fc-af81-000474d8adeb",
+										"MovieID": "543921a8-aa63-4772-b517-08e9e2935451",
+										"UpdatedDate": "2017-11-13",
+										"StreamStart": "2017-11-13 15:51:40"
+									},
+									{
+										"CustomerID": "68917c10-57b1-4f08-bc86-6203ea57a2d2",
+										"CreatedDate": "2017-06-21",
+										"StreamEnd": "2017-06-21 04:10:05",
+										"SourceSystemTransactionID": "007da48e-f7f2-49ba-9aba-000492028f8b",
+										"MovieID": "b119e26e-9caa-4243-b67c-b78adfe0b793",
+										"UpdatedDate": "2017-06-21",
+										"StreamStart": "2017-06-21 02:59:05"
+									},
+									{
+										"CustomerID": "541528ce-4212-453a-952c-25b081a03e75",
+										"CreatedDate": "2017-03-22",
+										"StreamEnd": "2017-03-22 09:14:15",
+										"SourceSystemTransactionID": "f5ff5c24-0346-48e5-b561-00049ef25d71",
+										"MovieID": "0145c158-78b4-4d97-b887-e1a62be502c3",
+										"UpdatedDate": "2017-03-22",
+										"StreamStart": "2017-03-22 07:34:15"
+									},
+									{
+										"CustomerID": "23d82dd5-f975-47bd-9222-3b7be5e0033c",
+										"CreatedDate": "2017-11-23",
+										"StreamEnd": "2017-11-23 17:25:32",
+										"SourceSystemTransactionID": "47b61c4d-b110-4790-b244-0004a14656f9",
+										"MovieID": "3b9f0511-305a-4886-a3dc-96077e1f4191",
+										"UpdatedDate": "2017-11-23",
+										"StreamStart": "2017-11-23 16:48:32"
+									},
+									{
+										"CustomerID": "f224dc2e-d4f1-463a-ac3b-939e37eb1745",
+										"CreatedDate": "2017-06-13",
+										"StreamEnd": "2017-06-13 14:50:25",
+										"SourceSystemTransactionID": "fe289ee0-47e9-4996-8ad9-0004bd060e03",
+										"MovieID": "7e569a13-edfa-47f0-886b-907b5d34e3ba",
+										"UpdatedDate": "2017-06-13",
+										"StreamStart": "2017-06-13 13:20:25"
+									},
+									{
+										"CustomerID": "5ae8d119-4a33-4d56-a209-7d1cb1fe33c5",
+										"CreatedDate": "2017-07-28",
+										"StreamEnd": "2017-07-28 07:34:26",
+										"SourceSystemTransactionID": "e0f84b49-ce80-46f9-9970-0004daa71cc6",
+										"MovieID": "bb1b9b9e-e9ea-4e10-9408-c39a61d8bc1c",
+										"UpdatedDate": "2017-07-28",
+										"StreamStart": "2017-07-28 06:00:26"
+									},
+									{
+										"CustomerID": "327070f2-5625-4c4c-90f6-28d19d38db98",
+										"CreatedDate": "2017-04-15",
+										"StreamEnd": "2017-04-15 17:07:06",
+										"SourceSystemTransactionID": "5e38d683-9461-486e-b065-0004e0f8d6f3",
+										"MovieID": "5c211aa9-7d7c-4ae8-b85c-5dda978cb071",
+										"UpdatedDate": "2017-04-15",
+										"StreamStart": "2017-04-15 15:38:06"
+									},
+									{
+										"CustomerID": "a9b49936-dfe3-4370-b7cb-ff8feca746fd",
+										"CreatedDate": "2017-09-16",
+										"StreamEnd": "2017-09-16 09:50:41",
+										"SourceSystemTransactionID": "0048d984-1cc4-49af-9320-00050b81554c",
+										"MovieID": "596f659c-e774-4581-a6f9-510370664ff6",
+										"UpdatedDate": "2017-09-16",
+										"StreamStart": "2017-09-16 07:50:41"
+									},
+									{
+										"CustomerID": "f8856503-092a-4e7e-acd3-08e2cb0dcde7",
+										"CreatedDate": "2017-08-13",
+										"StreamEnd": "2017-08-14 01:12:23",
+										"SourceSystemTransactionID": "61086701-6c7f-4029-a729-000581df62ed",
+										"MovieID": "ac9a862e-03a8-43d2-b0f4-95c84323ecb3",
+										"UpdatedDate": "2017-08-14",
+										"StreamStart": "2017-08-13 22:38:23"
+									},
+									{
+										"CustomerID": "fb581626-c39c-4124-b389-7b4ad036c22e",
+										"CreatedDate": "2017-12-17",
+										"StreamEnd": "2017-12-17 23:07:15",
+										"SourceSystemTransactionID": "a6ed4841-18be-40ac-b6f8-000588d1ab3a",
+										"MovieID": "1dcf99d2-7e03-4fb4-98a0-5b0259f0fc5a",
+										"UpdatedDate": "2017-12-17",
+										"StreamStart": "2017-12-17 22:11:15"
+									},
+									{
+										"CustomerID": "72f620cc-907a-4c39-9cc1-76d79c84aa27",
+										"CreatedDate": "2017-12-19",
+										"StreamEnd": "2017-12-19 18:37:32",
+										"SourceSystemTransactionID": "0057fef8-d3fa-483d-9717-00059a75548c",
+										"MovieID": "dfa6292e-1093-4340-8aa0-1f0fb9d330c8",
+										"UpdatedDate": "2017-12-19",
+										"StreamStart": "2017-12-19 17:44:32"
+									},
+									{
+										"CustomerID": "9a11921c-9096-4ba5-b1d7-587b2a7b7c65",
+										"CreatedDate": "2017-11-11",
+										"StreamEnd": "2017-11-11 22:02:01",
+										"SourceSystemTransactionID": "123fdbe3-aa3f-4c9b-8fbc-0005bf7c147a",
+										"MovieID": "e05e8cae-2f8e-4e12-8bd7-5f3a297111f4",
+										"UpdatedDate": "2017-11-11",
+										"StreamStart": "2017-11-11 19:57:01"
+									},
+									{
+										"CustomerID": "84d547c9-ec57-44a6-a166-cbe7a503984f",
+										"CreatedDate": "2017-11-08",
+										"StreamEnd": "2017-11-08 20:00:46",
+										"SourceSystemTransactionID": "214ed16a-dffa-47fb-9198-0005ccc121ed",
+										"MovieID": "ad6e4a59-16fd-4e24-b323-0863d2d10da9",
+										"UpdatedDate": "2017-11-08",
+										"StreamStart": "2017-11-08 19:00:46"
+									},
+									{
+										"CustomerID": "e1109d12-a302-4a71-8ebc-6d6754b4455d",
+										"CreatedDate": "2017-12-27",
+										"StreamEnd": "2017-12-27 08:14:25",
+										"SourceSystemTransactionID": "85c3d36f-6eaf-4e3c-9614-0005d0ec545c",
+										"MovieID": "d9a60442-6369-4292-b54e-05a8d1a77ced",
+										"UpdatedDate": "2017-12-27",
+										"StreamStart": "2017-12-27 06:50:25"
+									},
+									{
+										"CustomerID": "babf4d93-1211-4d22-9ea1-54c473b12d9e",
+										"CreatedDate": "2017-07-28",
+										"StreamEnd": "2017-07-28 11:24:55",
+										"SourceSystemTransactionID": "8dd36eb1-8905-4205-8a69-0005e0036f65",
+										"MovieID": "c1402987-bf95-4192-a487-510794e17002",
+										"UpdatedDate": "2017-07-28",
+										"StreamStart": "2017-07-28 09:59:55"
+									},
+									{
+										"CustomerID": "4bddfdd2-7cb4-4cfd-bba6-aa3507912430",
+										"CreatedDate": "2017-11-19",
+										"StreamEnd": "2017-11-20 01:41:31",
+										"SourceSystemTransactionID": "17c4910c-49b2-4594-b8e1-00066aec8b1d",
+										"MovieID": "0ab2fb92-0676-4f9d-b550-e795b6c5f380",
+										"UpdatedDate": "2017-11-20",
+										"StreamStart": "2017-11-19 23:32:31"
+									},
+									{
+										"CustomerID": "e470d8c9-be56-472e-9a6f-16d86cc61ebd",
+										"CreatedDate": "2017-05-31",
+										"StreamEnd": "2017-05-31 16:00:13",
+										"SourceSystemTransactionID": "0ed97189-dbb0-4426-96b5-00066b398134",
+										"MovieID": "b2f709ef-da14-49a7-a901-c6b6eb2252f5",
+										"UpdatedDate": "2017-05-31",
+										"StreamStart": "2017-05-31 14:18:13"
+									},
+									{
+										"CustomerID": "b9253953-4441-4428-92b4-20e034c2c24a",
+										"CreatedDate": "2017-03-26",
+										"StreamEnd": "2017-03-26 06:01:28",
+										"SourceSystemTransactionID": "5a7f7075-a32e-49b6-b3bb-0006b65325b8",
+										"MovieID": "8ca38949-d5be-4841-835c-13f2e00f03aa",
+										"UpdatedDate": "2017-03-26",
+										"StreamStart": "2017-03-26 04:17:28"
+									},
+									{
+										"CustomerID": "4900f4ed-0f43-4c27-8e75-318e5b835c9e",
+										"CreatedDate": "2017-06-03",
+										"StreamEnd": "2017-06-03 20:41:36",
+										"SourceSystemTransactionID": "ec80e35e-124b-45dc-b8bf-0006ba47e6d9",
+										"MovieID": "b2f709ef-da14-49a7-a901-c6b6eb2252f5",
+										"UpdatedDate": "2017-06-03",
+										"StreamStart": "2017-06-03 18:59:36"
+									},
+									{
+										"CustomerID": "e9c3f10a-eecc-4f42-95da-d0d632e46ac7",
+										"CreatedDate": "2017-11-24",
+										"StreamEnd": "2017-11-24 21:15:28",
+										"SourceSystemTransactionID": "07813ae4-c86c-49b2-967c-0006c8c42392",
+										"MovieID": "d708aa54-e580-4cca-be9e-31f852da8b3c",
+										"UpdatedDate": "2017-11-24",
+										"StreamStart": "2017-11-24 20:20:28"
+									},
+									{
+										"CustomerID": "64caf027-39ea-4a61-af05-2a8e32810a3c",
+										"CreatedDate": "2017-09-26",
+										"StreamEnd": "2017-09-26 09:03:23",
+										"SourceSystemTransactionID": "713a1148-b4bf-4b0d-88b4-0006f042b94f",
+										"MovieID": "87451d50-093e-4175-a9b6-4b93c31d15b1",
+										"UpdatedDate": "2017-09-26",
+										"StreamStart": "2017-09-26 09:01:36"
+									},
+									{
+										"CustomerID": "bcf920c9-368a-4c1c-b61f-1d2800993262",
+										"CreatedDate": "2017-06-15",
+										"StreamEnd": "2017-06-15 20:22:51",
+										"SourceSystemTransactionID": "ada5fb1e-45b0-4797-8cb4-00075f8c0ced",
+										"MovieID": "34a69793-04cf-48bb-a1a8-172ee9e0406a",
+										"UpdatedDate": "2017-06-15",
+										"StreamStart": "2017-06-15 18:18:51"
+									},
+									{
+										"CustomerID": "fa0f32b3-49a4-45ee-97ac-82fd1d43b016",
+										"CreatedDate": "2017-08-22",
+										"StreamEnd": "2017-08-22 05:16:22",
+										"SourceSystemTransactionID": "39ae8684-b9a9-455c-86e3-00076e509366",
+										"MovieID": "94d94aaa-62bf-4445-b654-c235017c615f",
+										"UpdatedDate": "2017-08-22",
+										"StreamStart": "2017-08-22 05:15:16"
+									},
+									{
+										"CustomerID": "e8d961bb-e434-46bf-b167-e1f3d5148c8c",
+										"CreatedDate": "2017-12-29",
+										"StreamEnd": "2017-12-29 17:54:27",
+										"SourceSystemTransactionID": "0bf85a37-2df7-4e88-be74-00077ba49004",
+										"MovieID": "ad01c448-34d7-4ca0-9648-b2e935363e23",
+										"UpdatedDate": "2017-12-29",
+										"StreamStart": "2017-12-29 17:51:38"
+									},
+									{
+										"CustomerID": "17de54a2-54d5-4837-b09a-51f7602071fb",
+										"CreatedDate": "2017-07-25",
+										"StreamEnd": "2017-07-25 03:39:47",
+										"SourceSystemTransactionID": "4483f4de-0306-40e6-8bb4-0007ae5f5025",
+										"MovieID": "1d8d3371-c48a-462a-ac86-28450a0b439d",
+										"UpdatedDate": "2017-07-25",
+										"StreamStart": "2017-07-25 02:26:47"
+									},
+									{
+										"CustomerID": "60a6e427-5d1e-443d-8ca9-e19448812ea8",
+										"CreatedDate": "2017-05-24",
+										"StreamEnd": "2017-05-24 11:41:11",
+										"SourceSystemTransactionID": "324de2f1-9f2d-4aa8-b59f-0007c86918b8",
+										"MovieID": "4a25245d-36a8-4d2b-878a-70e5fe99cae2",
+										"UpdatedDate": "2017-05-24",
+										"StreamStart": "2017-05-24 08:47:11"
+									},
+									{
+										"CustomerID": "234d3c38-7631-497b-85e0-e04da65e90e8",
+										"CreatedDate": "2017-11-06",
+										"StreamEnd": "2017-11-06 20:51:58",
+										"SourceSystemTransactionID": "f5e072a3-d236-49ae-96b0-0007cf52f3c8",
+										"MovieID": "75098bbd-0c2a-488e-bbae-7c094a61d09f",
+										"UpdatedDate": "2017-11-06",
+										"StreamStart": "2017-11-06 20:15:58"
+									},
+									{
+										"CustomerID": "1c405fc6-796d-405e-9643-147516ae35e2",
+										"CreatedDate": "2017-06-24",
+										"StreamEnd": "2017-06-24 05:24:17",
+										"SourceSystemTransactionID": "931c32c3-2529-42f0-8463-0007cfc9d4ec",
+										"MovieID": "dba684ba-72c5-468a-b5ad-492cf9ef8177",
+										"UpdatedDate": "2017-06-24",
+										"StreamStart": "2017-06-24 05:23:42"
+									},
+									{
+										"CustomerID": "541528ce-4212-453a-952c-25b081a03e75",
+										"CreatedDate": "2017-05-12",
+										"StreamEnd": "2017-05-12 15:45:01",
+										"SourceSystemTransactionID": "b5c48e62-a8a9-40ea-b42a-0008150bcff2",
+										"MovieID": "03ca9728-1f43-4046-8852-99402fbdebe7",
+										"UpdatedDate": "2017-05-12",
+										"StreamStart": "2017-05-12 15:03:01"
+									},
+									{
+										"CustomerID": "ddde1380-55af-40a8-aea1-b071042ddc51",
+										"CreatedDate": "2017-11-27",
+										"StreamEnd": "2017-11-27 19:52:07",
+										"SourceSystemTransactionID": "0e74ccdb-4329-4ecf-97ea-00083fb62cd7",
+										"MovieID": "11242f75-2928-43a7-8dee-4acb0a24ad19",
+										"UpdatedDate": "2017-11-27",
+										"StreamStart": "2017-11-27 18:52:07"
+									},
+									{
+										"CustomerID": "782a0b93-a2ce-4136-92ab-b10807292b07",
+										"CreatedDate": "2017-04-05",
+										"StreamEnd": "2017-04-05 01:48:49",
+										"SourceSystemTransactionID": "ea68c35e-e12e-4a52-93e0-000860ba3481",
+										"MovieID": "fba4f1f2-b78e-4453-b730-22b320194076",
+										"UpdatedDate": "2017-04-05",
+										"StreamStart": "2017-04-05 00:53:49"
+									},
+									{
+										"CustomerID": "bfd26e9a-ad23-4893-9905-6062e32f6972",
+										"CreatedDate": "2017-04-21",
+										"StreamEnd": "2017-04-22 01:33:14",
+										"SourceSystemTransactionID": "d2a2cd1f-08b6-4d9e-8d8e-0008983449e4",
+										"MovieID": "2034d0b2-81e5-4ca5-9bf5-d9f4010102ff",
+										"UpdatedDate": "2017-04-22",
+										"StreamStart": "2017-04-21 23:56:14"
+									},
+									{
+										"CustomerID": "09dc431c-292a-460f-92a7-e0cb29e6907a",
+										"CreatedDate": "2017-11-29",
+										"StreamEnd": "2017-11-29 15:52:24",
+										"SourceSystemTransactionID": "e98f19f5-e947-454a-9c40-00089a5a5973",
+										"MovieID": "fb48ef87-6647-4545-9104-38bfd7cbdb79",
+										"UpdatedDate": "2017-11-29",
+										"StreamStart": "2017-11-29 14:55:24"
+									},
+									{
+										"CustomerID": "7d195360-408a-48ed-ac78-86cabd9a17bb",
+										"CreatedDate": "2017-06-21",
+										"StreamEnd": "2017-06-21 20:39:59",
+										"SourceSystemTransactionID": "f6247277-9229-4072-9cc8-00089d96990f",
+										"MovieID": "dba684ba-72c5-468a-b5ad-492cf9ef8177",
+										"UpdatedDate": "2017-06-21",
+										"StreamStart": "2017-06-21 19:54:59"
+									},
+									{
+										"CustomerID": "ae2a8a20-5ef2-45fa-83b1-c82e32047d40",
+										"CreatedDate": "2017-09-30",
+										"StreamEnd": "2017-09-30 22:45:09",
+										"SourceSystemTransactionID": "5adff116-2f78-436e-96d6-0008d45beaed",
+										"MovieID": "4a2c15b3-ed3f-4b9c-a829-7ad0cecdb85a",
+										"UpdatedDate": "2017-09-30",
+										"StreamStart": "2017-09-30 21:35:09"
+									},
+									{
+										"CustomerID": "02aa32e6-1de3-4aa2-a659-c1be5e3c9c5b",
+										"CreatedDate": "2017-05-17",
+										"StreamEnd": "2017-05-17 02:13:21",
+										"SourceSystemTransactionID": "d3e6f92f-d201-438a-b33c-000900af85e6",
+										"MovieID": "b88f7d53-670e-424a-acb9-fa4b12056570",
+										"UpdatedDate": "2017-05-17",
+										"StreamStart": "2017-05-17 00:36:21"
+									},
+									{
+										"CustomerID": "c2e9b58b-796c-43e1-9a33-2560870056fe",
+										"CreatedDate": "2017-12-20",
+										"StreamEnd": "2017-12-20 06:28:33",
+										"SourceSystemTransactionID": "5278f905-2d14-46d1-86bc-0009012b29fa",
+										"MovieID": "4bf90628-4638-4045-afa0-c509eb05d250",
+										"UpdatedDate": "2017-12-20",
+										"StreamStart": "2017-12-20 06:23:47"
+									},
+									{
+										"CustomerID": "8e6ed1d0-a5d7-4294-9b7c-8c27d0539d91",
+										"CreatedDate": "2017-03-18",
+										"StreamEnd": "2017-03-18 08:06:35",
+										"SourceSystemTransactionID": "60ed6c17-080a-4d73-a873-0009285d00ed",
+										"MovieID": "0969240a-91f7-4472-aa28-3a6af165dd7a",
+										"UpdatedDate": "2017-03-18",
+										"StreamStart": "2017-03-18 05:53:35"
+									},
+									{
+										"CustomerID": "920761db-5197-4acc-95dc-17ce88ce3062",
+										"CreatedDate": "2017-06-25",
+										"StreamEnd": "2017-06-25 20:20:58",
+										"SourceSystemTransactionID": "43eeb1bb-f6f8-47ab-9024-000933219d46",
+										"MovieID": "0480a136-d857-4fae-a51e-351e7eddae51",
+										"UpdatedDate": "2017-06-25",
+										"StreamStart": "2017-06-25 18:22:58"
+									},
+									{
+										"CustomerID": "31865f37-e8f8-4289-9221-0dd7db43026f",
+										"CreatedDate": "2017-04-15",
+										"StreamEnd": "2017-04-15 06:43:41",
+										"SourceSystemTransactionID": "0f455b86-e1e5-4313-8ef6-0009372579b9",
+										"MovieID": "dcc6ccbf-45e3-48ae-8d46-e44e1f06566d",
+										"UpdatedDate": "2017-04-15",
+										"StreamStart": "2017-04-15 05:08:41"
+									},
+									{
+										"CustomerID": "97ab8fec-6d26-4b5c-98e6-9a7ee60893e5",
+										"CreatedDate": "2017-11-02",
+										"StreamEnd": "2017-11-02 17:31:44",
+										"SourceSystemTransactionID": "3afda9ba-09f2-4437-8b43-00094c2b8762",
+										"MovieID": "f652dbed-75df-4fc7-be67-c118e97bcf84",
+										"UpdatedDate": "2017-11-02",
+										"StreamStart": "2017-11-02 16:45:44"
+									},
+									{
+										"CustomerID": "3e053617-a51f-4628-963c-02c881386606",
+										"CreatedDate": "2017-08-16",
+										"StreamEnd": "2017-08-16 10:13:13",
+										"SourceSystemTransactionID": "a8370d1c-589c-4bc6-8959-000960da81bf",
+										"MovieID": "f1348c29-968c-4bf5-b56e-178d165e4c0a",
+										"UpdatedDate": "2017-08-16",
+										"StreamStart": "2017-08-16 09:20:13"
+									},
+									{
+										"CustomerID": "be04e713-d2c3-4604-ac54-8b59b2318f68",
+										"CreatedDate": "2017-10-19",
+										"StreamEnd": "2017-10-19 15:33:09",
+										"SourceSystemTransactionID": "8d2d6bbc-8e72-4d5e-8cff-00098738c528",
+										"MovieID": "393e6ff5-cad6-4c5d-bc99-0c83f9d31524",
+										"UpdatedDate": "2017-10-19",
+										"StreamStart": "2017-10-19 13:55:09"
+									},
+									{
+										"CustomerID": "13e3d6fd-2593-4fbd-90cf-46990fb8322f",
+										"CreatedDate": "2017-07-02",
+										"StreamEnd": "2017-07-02 20:36:50",
+										"SourceSystemTransactionID": "6a2bd414-1f54-4086-98ec-000993209e48",
+										"MovieID": "fc171b33-0d6f-4662-9810-5a53dc8bd4cd",
+										"UpdatedDate": "2017-07-02",
+										"StreamStart": "2017-07-02 18:55:50"
+									},
+									{
+										"CustomerID": "79419ee5-76c3-41ae-af75-1d9c048b76e8",
+										"CreatedDate": "2017-07-26",
+										"StreamEnd": "2017-07-26 16:15:38",
+										"SourceSystemTransactionID": "ab88c2f8-a543-434f-9ade-00099aba77a6",
+										"MovieID": "330e69c9-c507-420d-bd02-41f9f3b32f0c",
+										"UpdatedDate": "2017-07-26",
+										"StreamStart": "2017-07-26 14:31:38"
+									},
+									{
+										"CustomerID": "de8f79d2-0f68-49d1-be90-f9b4e3800de1",
+										"CreatedDate": "2017-06-14",
+										"StreamEnd": "2017-06-14 05:14:44",
+										"SourceSystemTransactionID": "a67a4faa-054c-4f82-b521-0009c97a4f9a",
+										"MovieID": "60a28f3a-b00d-4b9f-a617-509f6bce8914",
+										"UpdatedDate": "2017-06-14",
+										"StreamStart": "2017-06-14 03:45:44"
+									},
+									{
+										"CustomerID": "aacb69b8-ad92-4a54-a9ae-9aa8232bc5b4",
+										"CreatedDate": "2017-09-30",
+										"StreamEnd": "2017-09-30 19:32:04",
+										"SourceSystemTransactionID": "e1e8acdc-3e03-447b-b200-0009d4926460",
+										"MovieID": "387ecf57-99cb-47c9-a508-2ecbd752714c",
+										"UpdatedDate": "2017-09-30",
+										"StreamStart": "2017-09-30 18:04:04"
+									},
+									{
+										"CustomerID": "c5c89ec5-25da-48a3-b0e5-9f1f3ef43407",
+										"CreatedDate": "2017-05-18",
+										"StreamEnd": "2017-05-19 00:53:57",
+										"SourceSystemTransactionID": "ada39ed8-5454-4eb0-92e8-0009e005a220",
+										"MovieID": "0211285c-f604-4d5e-925b-29e194989ae3",
+										"UpdatedDate": "2017-05-19",
+										"StreamStart": "2017-05-18 23:21:57"
+									},
+									{
+										"CustomerID": "0d32a175-3ecb-4b8a-a63d-c53059b71781",
+										"CreatedDate": "2017-10-10",
+										"StreamEnd": "2017-10-10 14:47:31",
+										"SourceSystemTransactionID": "7a4304a1-289f-423b-9556-000a3254e4f2",
+										"MovieID": "8dd19463-e221-45ef-8476-8b7a9bbe698e",
+										"UpdatedDate": "2017-10-10",
+										"StreamStart": "2017-10-10 12:57:31"
+									},
+									{
+										"CustomerID": "5ae8d119-4a33-4d56-a209-7d1cb1fe33c5",
+										"CreatedDate": "2017-12-05",
+										"StreamEnd": "2017-12-05 07:02:28",
+										"SourceSystemTransactionID": "beca7398-8353-4a05-a17e-000a38cdf435",
+										"MovieID": "da8cd31d-668e-4435-9b35-8d8eee6b8a62",
+										"UpdatedDate": "2017-12-05",
+										"StreamStart": "2017-12-05 04:52:28"
+									},
+									{
+										"CustomerID": "75fd0654-7bac-40f2-8369-16cd6e81431e",
+										"CreatedDate": "2017-10-19",
+										"StreamEnd": "2017-10-19 03:16:11",
+										"SourceSystemTransactionID": "4dc73f6e-a2a8-4459-b1d0-000a4b1f208f",
+										"MovieID": "0c2f9f68-19b8-4b84-a45d-5c72c089ef91",
+										"UpdatedDate": "2017-10-19",
+										"StreamStart": "2017-10-19 01:45:11"
+									},
+									{
+										"CustomerID": "4798b5fb-2fcb-4a39-849b-d3c3e733a6e0",
+										"CreatedDate": "2017-07-30",
+										"StreamEnd": "2017-07-30 02:01:30",
+										"SourceSystemTransactionID": "474147d2-3deb-49f9-a7f9-000a59eb0c2f",
+										"MovieID": "13751602-e2cd-4355-af19-8db1654b1034",
+										"UpdatedDate": "2017-07-30",
+										"StreamStart": "2017-07-30 00:14:30"
+									},
+									{
+										"CustomerID": "e1109d12-a302-4a71-8ebc-6d6754b4455d",
+										"CreatedDate": "2017-10-07",
+										"StreamEnd": "2017-10-07 00:14:43",
+										"SourceSystemTransactionID": "e397225d-9eef-4bcc-b2ae-000a5b8b586e",
+										"MovieID": "f4df3729-1b4a-43c9-b48e-ec4c47b23b69",
+										"UpdatedDate": "2017-10-07",
+										"StreamStart": "2017-10-07 00:10:16"
+									},
+									{
+										"CustomerID": "7c7aef32-4928-4f22-bb35-b8535d5b0533",
+										"CreatedDate": "2017-11-16",
+										"StreamEnd": "2017-11-16 21:25:26",
+										"SourceSystemTransactionID": "1104e69d-8a1a-4d5e-be62-000a76b9f0f3",
+										"MovieID": "6ef59b4d-3571-4bed-9e4a-227bf023e8b4",
+										"UpdatedDate": "2017-11-16",
+										"StreamStart": "2017-11-16 19:57:26"
+									},
+									{
+										"CustomerID": "643a1e1c-070a-4791-83c3-a42b624cc2c8",
+										"CreatedDate": "2017-09-24",
+										"StreamEnd": "2017-09-24 06:43:41",
+										"SourceSystemTransactionID": "f8a52b3f-45ef-481a-8303-000a777cbcd6",
+										"MovieID": "0c0de2b1-b6ae-4302-9ddb-bca511d91d1c",
+										"UpdatedDate": "2017-09-24",
+										"StreamStart": "2017-09-24 03:51:41"
+									}
+								],
+								"schema": {
+									"SourceSystemTransactionID": "string",
+									"CustomerID": "string",
+									"MovieID": "string",
+									"StreamStart": "int",
+									"StreamEnd": "int",
+									"CreatedDate": "date",
+									"UpdatedDate": "date"
+								}
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"SourceSystemTransactionID"
+									],
+									"seriesFieldKeys": [
+										"StreamStart"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					}
+				}
 			},
 			"kernelspec": {
 				"name": "synapse_pyspark",
@@ -53,29 +1927,106 @@
 		},
 		"cells": [
 			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"## Import libraries"
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"from pyspark.sql.types import StringType, TimestampType, DateType, IntegerType, StructType"
+				],
+				"execution_count": 11
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"## Import streaming data"
+				]
+			},
+			{
 				"cell_type": "code",
 				"metadata": {
 					"collapsed": false
 				},
 				"source": [
-					"schema = StructType([ StructField(\"SourceSystemTransactionID\", StringType(), True),\r\n",
-					"                      StructField(\"CustomerID\", StringType(), True),\r\n",
-					"                      StructField(\"MovieID\", StringType(), True),\r\n",
-					"                      StructField(\"StreamStart\",  TimestampType(), True),\r\n",
-					"                      StructField(\"StreamEnd\", TimestampType(), True),\r\n",
-					"                      StructField(\"CreatedDate\", DateType(), True),\r\n",
-					"                      StructField(\"UpdatedDate\", DateType(), True)\r\n",
-					"                    ])\r\n",
+					"# Define schema\r\n",
+					"schema = (StructType().\r\n",
+					"          add(\"TransactionID\", StringType()).\r\n",
+					"          add(\"CustomerID\", StringType()).\r\n",
+					"          add(\"MovieID\", StringType()).\r\n",
+					"          add(\"StreamStart\",  TimestampType()).\r\n",
+					"          add(\"StreamEnd\", TimestampType()).\r\n",
+					"          add(\"CreatedDate\", DateType()).\r\n",
+					"          add(\"UpdatedDate\", DateType())\r\n",
+					"         )\r\n",
 					"\r\n",
-					"df_Southridge = spark.read.load('abfss://movies@demosynapsedls01.dfs.core.windows.net/raw/Southridge/CloudStreaming/dbo.Transactions.parquet', format='parquet',\r\n",
-					"                         schema=schema, header=True, \r\n",
-					"                         ignoreLeadingWhiteSpace=True, \r\n",
-					"                         ignoreTrailingWhiteSpace=True,\r\n",
-					"                         nullValue=\"NA\")\r\n",
+					"# Read data from lake\r\n",
+					"df_Southridge = spark.read.load('abfss://movies@demosynapsedls01.dfs.core.windows.net/raw/Southridge/CloudStreaming/dbo.Transactions.parquet',\r\n",
+					"                        format='parquet',\r\n",
+					"                        schema=schema,\r\n",
+					"                        header=True, \r\n",
+					"                        ignoreLeadingWhiteSpace=True, \r\n",
+					"                        ignoreTrailingWhiteSpace=True\r\n",
+					"                        )\r\n",
 					"\r\n",
+					"# Display dataframe\r\n",
 					"display(df_Southridge.limit(100))"
 				],
-				"execution_count": 1
+				"execution_count": 9
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"# Rename columns\r\n",
+					"df_SouthridgeModified = df_Southridge.withColumnRenamed(\"TransactionID\", \"SourceSystemTransactionID\")\r\n",
+					"\r\n",
+					"# Add source system\r\n",
+					"df_SouthridgeModified = df_SouthridgeModified.withColumn(\"SourceSystemID\", lit(\"1\").cast(IntegerType))\r\n",
+					"\r\n",
+					"# Display dataframe\r\n",
+					"display(df_SouthridgeModified.limit(100))"
+				],
+				"execution_count": 10
 			}
 		]
 	}
