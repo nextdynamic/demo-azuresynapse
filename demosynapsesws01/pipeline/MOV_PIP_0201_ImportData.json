@@ -286,7 +286,7 @@
 						"parameters": {
 							"container_name": "movies",
 							"container_path": "raw/Southridge/Movies",
-							"container_file": "export"
+							"container_file": "export.json"
 						}
 					}
 				]
