@@ -1,9 +1,21 @@
 {
-	"name": "MOV_IDS_SNK_ADLS_RAW_Southridge_CloudSales_PARQUET",
+	"name": "MOV_IDS_SNK_PARQUET",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "demosynapsesws01-WorkspaceDefaultStorage",
 			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"container_name": {
+				"type": "string",
+				"defaultValue": "movies"
+			},
+			"container_path": {
+				"type": "string"
+			},
+			"container_file": {
+				"type": "string"
+			}
 		},
 		"folder": {
 			"name": "Movies"
@@ -14,11 +26,17 @@
 			"location": {
 				"type": "AzureBlobFSLocation",
 				"fileName": {
-					"value": "@concat(item().table_schema,'.',item().table_name,'.parquet')",
+					"value": "@dataset().container_file",
 					"type": "Expression"
 				},
-				"folderPath": "raw/Southridge/CloudSales",
-				"fileSystem": "movies"
+				"folderPath": {
+					"value": "@dataset().container_path",
+					"type": "Expression"
+				},
+				"fileSystem": {
+					"value": "@dataset().container_name",
+					"type": "Expression"
+				}
 			},
 			"compressionCodec": "snappy"
 		},
