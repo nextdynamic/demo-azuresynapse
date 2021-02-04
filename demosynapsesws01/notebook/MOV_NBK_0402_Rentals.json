@@ -1419,7 +1419,7 @@
 					"\r\n",
 					"# Display dataframe\r\n",
 					"#df_vanArsdel.printSchema\r\n",
-					"display(df_vanArsdel.limit(100))"
+					"#display(df_vanArsdel.limit(100))"
 				],
 				"execution_count": 45
 			},
