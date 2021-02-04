@@ -1,0 +1,6 @@
+{
+	"name": "Movies-VanArsdel-onPrem",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}
