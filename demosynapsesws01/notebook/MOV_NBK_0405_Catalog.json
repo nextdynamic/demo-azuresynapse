@@ -114,7 +114,7 @@
 					"from pyspark.sql.functions import col, lit, udf, greatest, explode\r\n",
 					"import uuid"
 				],
-				"execution_count": 1
+				"execution_count": 18
 			},
 			{
 				"cell_type": "markdown",
@@ -146,7 +146,7 @@
 				"source": [
 					"uuidUDF = udf(lambda : str(uuid.uuid4()),StringType())"
 				],
-				"execution_count": 2
+				"execution_count": 19
 			},
 			{
 				"cell_type": "markdown",
@@ -189,7 +189,7 @@
 					"#df_Southridge_Catalog.printSchema()\r\n",
 					"#display(df_Southridge_Catalog.limit(100))"
 				],
-				"execution_count": 3
+				"execution_count": 20
 			},
 			{
 				"cell_type": "markdown",
@@ -224,7 +224,7 @@
 					"#df_FourthCoffee_Actors.printSchema()\r\n",
 					"#display(df_FourthCoffee_Actors.limit(100))"
 				],
-				"execution_count": 4
+				"execution_count": 21
 			},
 			{
 				"cell_type": "code",
@@ -254,7 +254,7 @@
 					"#df_FourthCoffee_MovieActors.printSchema()\r\n",
 					"#display(df_FourthCoffee_MovieActors.limit(100))"
 				],
-				"execution_count": null
+				"execution_count": 22
 			},
 			{
 				"cell_type": "code",
@@ -284,7 +284,7 @@
 					"#df_FourthCoffee_Movies.printSchema()\r\n",
 					"#display(df_FourthCoffee_Movies.limit(100))"
 				],
-				"execution_count": null
+				"execution_count": 23
 			},
 			{
 				"cell_type": "code",
@@ -314,7 +314,7 @@
 					"#df_FourthCoffee_OnlineMovieMappings.printSchema()\r\n",
 					"#display(df_FourthCoffee_OnlineMovieMappings.limit(100))"
 				],
-				"execution_count": null
+				"execution_count": 24
 			},
 			{
 				"cell_type": "markdown",
@@ -345,18 +345,18 @@
 				},
 				"source": [
 					"# Join dataframes\r\n",
-					"df_Southridge_Catalog = (\r\n",
-					"    df_FourthCoffee_Movies\r\n",
-					"        .join(df_FourthCoffee_MovieActors, df_FourthCoffee_Movies.MovieID == df_FourthCoffee_MovieActors.MovieID, 'left')\r\n",
-					"        .join(df_FourthCoffee_Actors, df_FourthCoffee_MovieActors.ActorID == df_FourthCoffee_Actors.ActorID, 'left')\r\n",
-					"        .join(df_FourthCoffee_OnlineMovieMappings, df_FourthCoffee_Movies.MovieID == df_FourthCoffee_OnlineMovieMappings.MovieID, 'left')\r\n",
+					"df_FourthCoffee_Catalog = (\r\n",
+					"    df_FourthCoffee_Movies.alias(\"Movies\")\r\n",
+					"        .join(df_FourthCoffee_MovieActors.alias(\"MovieActors\"), df_FourthCoffee_Movies.MovieID == df_FourthCoffee_MovieActors.MovieID, 'left')\r\n",
+					"        .join(df_FourthCoffee_Actors.alias(\"Actors\"), df_FourthCoffee_MovieActors.ActorID == df_FourthCoffee_Actors.ActorID, 'left')\r\n",
+					"        .join(df_FourthCoffee_OnlineMovieMappings.alias(\"Mappings\"), df_FourthCoffee_Movies.MovieID == df_FourthCoffee_OnlineMovieMappings.MovieID, 'left')\r\n",
 					")\r\n",
 					"\r\n",
 					"# Display dataframe\r\n",
-					"#df_Southridge_Catalog.printSchema()\r\n",
-					"#display(df_Southridge_Catalog.limit(100))"
+					"#df_FourthCoffee_Catalog.printSchema()\r\n",
+					"#display(df_FourthCoffee_Catalog.limit(100))"
 				],
-				"execution_count": null
+				"execution_count": 34
 			},
 			{
 				"cell_type": "markdown",
@@ -399,7 +399,7 @@
 					"#df_vanArsdel_Actors.printSchema()\r\n",
 					"#display(df_vanArsdel_Actors.limit(100))"
 				],
-				"execution_count": null
+				"execution_count": 26
 			},
 			{
 				"cell_type": "code",
@@ -429,7 +429,7 @@
 					"#df_vanArsdel_MovieActors.printSchema()\r\n",
 					"#display(df_vanArsdel_MovieActors.limit(100))"
 				],
-				"execution_count": null
+				"execution_count": 27
 			},
 			{
 				"cell_type": "code",
@@ -459,7 +459,7 @@
 					"#df_vanArsdel_Movies.printSchema()\r\n",
 					"#display(df_vanArsdel_Movies.limit(100))"
 				],
-				"execution_count": null
+				"execution_count": 28
 			},
 			{
 				"cell_type": "code",
@@ -489,7 +489,7 @@
 					"#df_vanArsdel_Movies.printSchema()\r\n",
 					"#display(df_vanArsdel_Movies.limit(100))"
 				],
-				"execution_count": null
+				"execution_count": 29
 			},
 			{
 				"cell_type": "markdown",
@@ -531,7 +531,7 @@
 					"#df_vanArsdel_Catalog.printSchema()\r\n",
 					"#display(df_vanArsdel_Catalog.limit(100))"
 				],
-				"execution_count": null
+				"execution_count": 30
 			},
 			{
 				"cell_type": "markdown",
@@ -599,7 +599,6 @@
 					"    'TheatricalReleaseYear',\r\n",
 					"    'PhysicalAvailabilityDate',\r\n",
 					"    'StreamingAvailabilityDate'\r\n",
-					"\r\n",
 					")\r\n",
 					"\r\n",
 					"# Convert column types\r\n",
@@ -621,9 +620,80 @@
 					"\r\n",
 					"# Display dataframe\r\n",
 					"#df_Southridge_Catalog_Modified.printSchema()\r\n",
-					"display(df_Southridge_Catalog_Modified"
+					"#display(df_Southridge_Catalog_Modified.limit(100))"
 				],
-				"execution_count": null
+				"execution_count": 32
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"## Fourth Coffee - Transform data"
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": false
+				},
+				"source": [
+					"# Add columns\r\n",
+					"df_FourthCoffee_Catalog_Modified = (\r\n",
+					"    df_FourthCoffee_Catalog\r\n",
+					"        .withColumn(\"SourceSystemID\", lit(\"2\").cast(IntegerType()))\r\n",
+					"        .withColumn(\"TheatricalReleaseYear\", lit(None).cast(StringType()))\r\n",
+					"        .withColumn(\"StreamingAvailabilityDate\", lit(None).cast(StringType()))\r\n",
+					")\r\n",
+					"\r\n",
+					"# Reorder colums\r\n",
+					"df_FourthCoffee_Catalog_Modified = df_FourthCoffee_Catalog_Modified.select(\r\n",
+					"    'SourceSystemID',\r\n",
+					"    'Movies.SourceSystemMovieID',\r\n",
+					"    'SouthridgeMovieID',\r\n",
+					"    'Actors.ActorID',\r\n",
+					"    'ActorName',\r\n",
+					"    'ActorGender',\r\n",
+					"    'Title',\r\n",
+					"    'Genre',\r\n",
+					"    'Rating',\r\n",
+					"    'RuntimeMinutes',\r\n",
+					"    'TheatricalReleaseYear',\r\n",
+					"    'PhysicalAvailabilityDate',\r\n",
+					"    'StreamingAvailabilityDate'\r\n",
+					")\r\n",
+					"\r\n",
+					"# Rename columns\r\n",
+					"df_FourthCoffee_Catalog_Modified = (\r\n",
+					"    df_FourthCoffee_Catalog_Modified\r\n",
+					"        .withColumnRenamed(\"MovieID\", \"SourceSystemMovieID\")\r\n",
+					"        .withColumnRenamed(\"OnlineMovieID\", \"SouthridgeMovieID\")\r\n",
+					"        .withColumnRenamed(\"Gender\", \"ActorGender\")\r\n",
+					"        .withColumnRenamed(\"MovieTitle\", \"Title\")\r\n",
+					"        .withColumnRenamed(\"Category\", \"Genre\")\r\n",
+					"        .withColumnRenamed(\"RunTimeMin\", \"RuntimeMinutes\")\r\n",
+					"        .withColumnRenamed(\"ReleaseDate\", \"PhysicalAvailabilityDate\")\r\n",
+					")\r\n",
+					"\r\n",
+					"# Display dataframe\r\n",
+					"df_FourthCoffee_Catalog_Modified.printSchema()\r\n",
+					"#display(df_FourthCoffee_Catalog_Modified.limit(100))"
+				],
+				"execution_count": 47
 			},
 			{
 				"cell_type": "markdown",
