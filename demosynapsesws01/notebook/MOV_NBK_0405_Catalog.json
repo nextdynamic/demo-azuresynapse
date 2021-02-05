@@ -26,7 +26,1248 @@
 		"metadata": {
 			"saveOutput": true,
 			"synapse_widget": {
-				"version": "0.1"
+				"version": "0.1",
+				"state": {
+					"33dc45ed-fb8d-4d77-b601-a72a5df877c1": {
+						"type": "Synapse.DataFrame",
+						"sync_state": {
+							"table": {
+								"rows": [
+									{
+										"availabilityDate": "2017-03-14 00:00:00",
+										"actor": "Eric Ray",
+										"genre": "Science Fiction",
+										"tier": "1",
+										"streamingAvailabilityDate": "2017-06-06 00:00:00",
+										"id": "9248bacc-4d5c-4758-a250-4002bd645482",
+										"rating": "PG-13",
+										"releaseYear": "1935",
+										"title": "Happy Theater",
+										"runtime": "162"
+									},
+									{
+										"availabilityDate": "2017-03-14 00:00:00",
+										"actor": "Danielle Busey",
+										"genre": "Science Fiction",
+										"tier": "1",
+										"streamingAvailabilityDate": "2017-06-06 00:00:00",
+										"id": "9248bacc-4d5c-4758-a250-4002bd645482",
+										"rating": "PG-13",
+										"releaseYear": "1935",
+										"title": "Happy Theater",
+										"runtime": "162"
+									},
+									{
+										"availabilityDate": "2017-03-14 00:00:00",
+										"actor": "Priscilla Wayne",
+										"genre": "Science Fiction",
+										"tier": "1",
+										"streamingAvailabilityDate": "2017-06-06 00:00:00",
+										"id": "9248bacc-4d5c-4758-a250-4002bd645482",
+										"rating": "PG-13",
+										"releaseYear": "1935",
+										"title": "Happy Theater",
+										"runtime": "162"
+									},
+									{
+										"availabilityDate": "2017-01-31 00:00:00",
+										"actor": "Jack Smith",
+										"genre": "Romance",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-03-28 00:00:00",
+										"id": "10adb54b-ac9c-4a8b-a921-f9bd8ecb3988",
+										"rating": "R",
+										"releaseYear": "1965",
+										"title": "The Theater of Adventure",
+										"runtime": "100"
+									},
+									{
+										"availabilityDate": "2017-01-31 00:00:00",
+										"actor": "Freida Pine",
+										"genre": "Romance",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-03-28 00:00:00",
+										"id": "10adb54b-ac9c-4a8b-a921-f9bd8ecb3988",
+										"rating": "R",
+										"releaseYear": "1965",
+										"title": "The Theater of Adventure",
+										"runtime": "100"
+									},
+									{
+										"availabilityDate": "2018-05-22 00:00:00",
+										"actor": "Thomas Carter",
+										"genre": "Action/Adventure",
+										"tier": "2",
+										"streamingAvailabilityDate": "2018-07-17 00:00:00",
+										"id": "ee607719-e868-4d21-bead-54d796d8fec0",
+										"rating": "R",
+										"releaseYear": "1921",
+										"title": "The Book of Intrigue",
+										"runtime": "143"
+									},
+									{
+										"availabilityDate": "2018-05-22 00:00:00",
+										"actor": "Eric Smith",
+										"genre": "Action/Adventure",
+										"tier": "2",
+										"streamingAvailabilityDate": "2018-07-17 00:00:00",
+										"id": "ee607719-e868-4d21-bead-54d796d8fec0",
+										"rating": "R",
+										"releaseYear": "1921",
+										"title": "The Book of Intrigue",
+										"runtime": "143"
+									},
+									{
+										"availabilityDate": "2017-06-20 00:00:00",
+										"actor": "Peter Smith",
+										"genre": "Action/Adventure",
+										"tier": "1",
+										"streamingAvailabilityDate": "2017-09-12 00:00:00",
+										"id": "891f601a-cb5b-4141-8915-b76fb50f8207",
+										"rating": "R",
+										"releaseYear": "1961",
+										"title": "Western Intrigue",
+										"runtime": "111"
+									},
+									{
+										"availabilityDate": "2017-06-20 00:00:00",
+										"actor": "Madeline Adams",
+										"genre": "Action/Adventure",
+										"tier": "1",
+										"streamingAvailabilityDate": "2017-09-12 00:00:00",
+										"id": "891f601a-cb5b-4141-8915-b76fb50f8207",
+										"rating": "R",
+										"releaseYear": "1961",
+										"title": "Western Intrigue",
+										"runtime": "111"
+									},
+									{
+										"availabilityDate": "2018-01-09 00:00:00",
+										"actor": "Henrietta Norris",
+										"genre": "Romance",
+										"tier": "2",
+										"streamingAvailabilityDate": "2018-03-06 00:00:00",
+										"id": "7cbc95b9-772a-45de-b930-e918c16b3b00",
+										"rating": "PG-13",
+										"releaseYear": "1929",
+										"title": "The Thread of Adventure",
+										"runtime": "96"
+									},
+									{
+										"availabilityDate": "2018-01-09 00:00:00",
+										"actor": "Freida Ray",
+										"genre": "Romance",
+										"tier": "2",
+										"streamingAvailabilityDate": "2018-03-06 00:00:00",
+										"id": "7cbc95b9-772a-45de-b930-e918c16b3b00",
+										"rating": "PG-13",
+										"releaseYear": "1929",
+										"title": "The Thread of Adventure",
+										"runtime": "96"
+									},
+									{
+										"availabilityDate": "2018-01-09 00:00:00",
+										"actor": "Henrietta Adams",
+										"genre": "Romance",
+										"tier": "2",
+										"streamingAvailabilityDate": "2018-03-06 00:00:00",
+										"id": "7cbc95b9-772a-45de-b930-e918c16b3b00",
+										"rating": "PG-13",
+										"releaseYear": "1929",
+										"title": "The Thread of Adventure",
+										"runtime": "96"
+									},
+									{
+										"availabilityDate": "2017-07-18 00:00:00",
+										"actor": "Mark Morris",
+										"genre": "Comedy",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-09-12 00:00:00",
+										"id": "cc74458d-6f09-428b-9d86-b26d8de4fa41",
+										"rating": "PG",
+										"releaseYear": "1966",
+										"title": "The Thread of Fate",
+										"runtime": "96"
+									},
+									{
+										"availabilityDate": "2017-07-18 00:00:00",
+										"actor": "Bill Morris",
+										"genre": "Comedy",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-09-12 00:00:00",
+										"id": "cc74458d-6f09-428b-9d86-b26d8de4fa41",
+										"rating": "PG",
+										"releaseYear": "1966",
+										"title": "The Thread of Fate",
+										"runtime": "96"
+									},
+									{
+										"availabilityDate": "2017-01-31 00:00:00",
+										"actor": "Les Adams",
+										"genre": "Romance",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-03-28 00:00:00",
+										"id": "c72e72ee-a397-461c-acfe-97b492809c5f",
+										"rating": "R",
+										"releaseYear": "1903",
+										"title": "Flying Fate",
+										"runtime": "90"
+									},
+									{
+										"availabilityDate": "2017-01-31 00:00:00",
+										"actor": "Priscilla Busey",
+										"genre": "Romance",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-03-28 00:00:00",
+										"id": "c72e72ee-a397-461c-acfe-97b492809c5f",
+										"rating": "R",
+										"releaseYear": "1903",
+										"title": "Flying Fate",
+										"runtime": "90"
+									},
+									{
+										"availabilityDate": "2017-01-31 00:00:00",
+										"actor": "Frank Wayne",
+										"genre": "Romance",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-03-28 00:00:00",
+										"id": "c72e72ee-a397-461c-acfe-97b492809c5f",
+										"rating": "R",
+										"releaseYear": "1903",
+										"title": "Flying Fate",
+										"runtime": "90"
+									},
+									{
+										"availabilityDate": "2017-07-11 00:00:00",
+										"actor": "Eric Ray",
+										"genre": "Action/Adventure",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-09-05 00:00:00",
+										"id": "13c4c28e-5523-4f1f-a506-1541155c6897",
+										"rating": "R",
+										"releaseYear": "2000",
+										"title": "The House of Ice",
+										"runtime": "152"
+									},
+									{
+										"availabilityDate": "2017-07-11 00:00:00",
+										"actor": "Elise Jones",
+										"genre": "Action/Adventure",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-09-05 00:00:00",
+										"id": "13c4c28e-5523-4f1f-a506-1541155c6897",
+										"rating": "R",
+										"releaseYear": "2000",
+										"title": "The House of Ice",
+										"runtime": "152"
+									},
+									{
+										"availabilityDate": "2017-07-11 00:00:00",
+										"actor": "Eric Smith",
+										"genre": "Action/Adventure",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-09-05 00:00:00",
+										"id": "13c4c28e-5523-4f1f-a506-1541155c6897",
+										"rating": "R",
+										"releaseYear": "2000",
+										"title": "The House of Ice",
+										"runtime": "152"
+									},
+									{
+										"availabilityDate": "2017-02-14 00:00:00",
+										"actor": "Jill Adams",
+										"genre": "Family",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-04-11 00:00:00",
+										"id": "0a920005-8a52-45aa-957e-7023a95b6ebf",
+										"rating": "PG",
+										"releaseYear": "1980",
+										"title": "Frozen Garden",
+										"runtime": "72"
+									},
+									{
+										"availabilityDate": "2017-02-14 00:00:00",
+										"actor": "Bill Wayne",
+										"genre": "Family",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-04-11 00:00:00",
+										"id": "0a920005-8a52-45aa-957e-7023a95b6ebf",
+										"rating": "PG",
+										"releaseYear": "1980",
+										"title": "Frozen Garden",
+										"runtime": "72"
+									},
+									{
+										"availabilityDate": "2017-02-14 00:00:00",
+										"actor": "Priscilla Adams",
+										"genre": "Family",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-04-11 00:00:00",
+										"id": "0a920005-8a52-45aa-957e-7023a95b6ebf",
+										"rating": "PG",
+										"releaseYear": "1980",
+										"title": "Frozen Garden",
+										"runtime": "72"
+									},
+									{
+										"availabilityDate": "2017-08-15 00:00:00",
+										"actor": "Thomas Norris",
+										"genre": "Romance",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-10-10 00:00:00",
+										"id": "b7b30d5f-f219-4941-b534-7d8f7c88bc3d",
+										"rating": "PG",
+										"releaseYear": "2001",
+										"title": "Space Case",
+										"runtime": "94"
+									},
+									{
+										"availabilityDate": "2017-08-15 00:00:00",
+										"actor": "Eric Busey",
+										"genre": "Romance",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-10-10 00:00:00",
+										"id": "b7b30d5f-f219-4941-b534-7d8f7c88bc3d",
+										"rating": "PG",
+										"releaseYear": "2001",
+										"title": "Space Case",
+										"runtime": "94"
+									},
+									{
+										"availabilityDate": "2017-08-15 00:00:00",
+										"actor": "Eric Davis",
+										"genre": "Romance",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-10-10 00:00:00",
+										"id": "b7b30d5f-f219-4941-b534-7d8f7c88bc3d",
+										"rating": "PG",
+										"releaseYear": "2001",
+										"title": "Space Case",
+										"runtime": "94"
+									},
+									{
+										"availabilityDate": "2017-05-09 00:00:00",
+										"actor": "Freida Jones",
+										"genre": "Family",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-07-04 00:00:00",
+										"id": "327e4a2a-382a-4ddb-be55-6e55d43384d0",
+										"rating": "PG",
+										"releaseYear": "1973",
+										"title": "Burning Fate",
+										"runtime": "109"
+									},
+									{
+										"availabilityDate": "2017-05-09 00:00:00",
+										"actor": "Madeline Smith",
+										"genre": "Family",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-07-04 00:00:00",
+										"id": "327e4a2a-382a-4ddb-be55-6e55d43384d0",
+										"rating": "PG",
+										"releaseYear": "1973",
+										"title": "Burning Fate",
+										"runtime": "109"
+									},
+									{
+										"availabilityDate": "2017-01-24 00:00:00",
+										"actor": "Greg Busey",
+										"genre": "Science Fiction",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-03-21 00:00:00",
+										"id": "80f56fe4-54ff-4905-9871-ef508c494c71",
+										"rating": "PG",
+										"releaseYear": "1928",
+										"title": "Furious Joy",
+										"runtime": "169"
+									},
+									{
+										"availabilityDate": "2017-01-24 00:00:00",
+										"actor": "Freida Smith",
+										"genre": "Science Fiction",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-03-21 00:00:00",
+										"id": "80f56fe4-54ff-4905-9871-ef508c494c71",
+										"rating": "PG",
+										"releaseYear": "1928",
+										"title": "Furious Joy",
+										"runtime": "169"
+									},
+									{
+										"availabilityDate": "2017-01-24 00:00:00",
+										"actor": "Barb Morris",
+										"genre": "Science Fiction",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-03-21 00:00:00",
+										"id": "80f56fe4-54ff-4905-9871-ef508c494c71",
+										"rating": "PG",
+										"releaseYear": "1928",
+										"title": "Furious Joy",
+										"runtime": "169"
+									},
+									{
+										"availabilityDate": "2017-05-23 00:00:00",
+										"actor": "Danielle Lemon",
+										"genre": "Science Fiction",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-07-18 00:00:00",
+										"id": "8a1f59f9-aea4-4ef4-abad-56de1be252ed",
+										"rating": "PG",
+										"releaseYear": "1999",
+										"title": "Burning House",
+										"runtime": "186"
+									},
+									{
+										"availabilityDate": "2017-05-23 00:00:00",
+										"actor": "Gillian Jones",
+										"genre": "Science Fiction",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-07-18 00:00:00",
+										"id": "8a1f59f9-aea4-4ef4-abad-56de1be252ed",
+										"rating": "PG",
+										"releaseYear": "1999",
+										"title": "Burning House",
+										"runtime": "186"
+									},
+									{
+										"availabilityDate": "2017-05-23 00:00:00",
+										"actor": "Hank Vale",
+										"genre": "Science Fiction",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-07-18 00:00:00",
+										"id": "8a1f59f9-aea4-4ef4-abad-56de1be252ed",
+										"rating": "PG",
+										"releaseYear": "1999",
+										"title": "Burning House",
+										"runtime": "186"
+									},
+									{
+										"availabilityDate": "2017-08-29 00:00:00",
+										"actor": "Freida Ray",
+										"genre": "Romance",
+										"tier": "1",
+										"streamingAvailabilityDate": "2017-11-21 00:00:00",
+										"id": "1c58a013-8cd8-4e78-a87a-4c27c871ef6e",
+										"rating": "R",
+										"releaseYear": "1956",
+										"title": "Burning Dogs",
+										"runtime": "86"
+									},
+									{
+										"availabilityDate": "2017-08-29 00:00:00",
+										"actor": "Lisa Davis",
+										"genre": "Romance",
+										"tier": "1",
+										"streamingAvailabilityDate": "2017-11-21 00:00:00",
+										"id": "1c58a013-8cd8-4e78-a87a-4c27c871ef6e",
+										"rating": "R",
+										"releaseYear": "1956",
+										"title": "Burning Dogs",
+										"runtime": "86"
+									},
+									{
+										"availabilityDate": "2017-08-29 00:00:00",
+										"actor": "Greg Smith",
+										"genre": "Romance",
+										"tier": "1",
+										"streamingAvailabilityDate": "2017-11-21 00:00:00",
+										"id": "1c58a013-8cd8-4e78-a87a-4c27c871ef6e",
+										"rating": "R",
+										"releaseYear": "1956",
+										"title": "Burning Dogs",
+										"runtime": "86"
+									},
+									{
+										"availabilityDate": "2017-09-05 00:00:00",
+										"actor": "Alice Pine",
+										"genre": "Family",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-10-31 00:00:00",
+										"id": "89729639-ff80-411f-8124-075356b4b3e0",
+										"rating": "PG",
+										"releaseYear": "1957",
+										"title": "Mysterious War",
+										"runtime": "73"
+									},
+									{
+										"availabilityDate": "2017-09-05 00:00:00",
+										"actor": "Mark Davis",
+										"genre": "Family",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-10-31 00:00:00",
+										"id": "89729639-ff80-411f-8124-075356b4b3e0",
+										"rating": "PG",
+										"releaseYear": "1957",
+										"title": "Mysterious War",
+										"runtime": "73"
+									},
+									{
+										"availabilityDate": "2017-09-05 00:00:00",
+										"actor": "Hank Smith",
+										"genre": "Family",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-10-31 00:00:00",
+										"id": "89729639-ff80-411f-8124-075356b4b3e0",
+										"rating": "PG",
+										"releaseYear": "1957",
+										"title": "Mysterious War",
+										"runtime": "73"
+									},
+									{
+										"availabilityDate": "2017-09-05 00:00:00",
+										"actor": "Les Jones",
+										"genre": "Family",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-10-31 00:00:00",
+										"id": "89729639-ff80-411f-8124-075356b4b3e0",
+										"rating": "PG",
+										"releaseYear": "1957",
+										"title": "Mysterious War",
+										"runtime": "73"
+									},
+									{
+										"availabilityDate": "2018-04-10 00:00:00",
+										"actor": "Simon Wayne",
+										"genre": "Comedy",
+										"tier": "2",
+										"streamingAvailabilityDate": "2018-06-05 00:00:00",
+										"id": "a04e1489-5fea-4b3d-be42-23b63cf1a869",
+										"rating": "PG",
+										"releaseYear": "2007",
+										"title": "The Forest of Fate",
+										"runtime": "107"
+									},
+									{
+										"availabilityDate": "2018-04-10 00:00:00",
+										"actor": "Peter Smith",
+										"genre": "Comedy",
+										"tier": "2",
+										"streamingAvailabilityDate": "2018-06-05 00:00:00",
+										"id": "a04e1489-5fea-4b3d-be42-23b63cf1a869",
+										"rating": "PG",
+										"releaseYear": "2007",
+										"title": "The Forest of Fate",
+										"runtime": "107"
+									},
+									{
+										"availabilityDate": "2018-04-10 00:00:00",
+										"actor": "Andy Jones",
+										"genre": "Comedy",
+										"tier": "2",
+										"streamingAvailabilityDate": "2018-06-05 00:00:00",
+										"id": "a04e1489-5fea-4b3d-be42-23b63cf1a869",
+										"rating": "PG",
+										"releaseYear": "2007",
+										"title": "The Forest of Fate",
+										"runtime": "107"
+									},
+									{
+										"availabilityDate": "2018-04-10 00:00:00",
+										"actor": "Gillian Adams",
+										"genre": "Comedy",
+										"tier": "2",
+										"streamingAvailabilityDate": "2018-06-05 00:00:00",
+										"id": "a04e1489-5fea-4b3d-be42-23b63cf1a869",
+										"rating": "PG",
+										"releaseYear": "2007",
+										"title": "The Forest of Fate",
+										"runtime": "107"
+									},
+									{
+										"availabilityDate": "2018-05-15 00:00:00",
+										"actor": "Freida Ray",
+										"genre": "Action/Adventure",
+										"tier": "2",
+										"streamingAvailabilityDate": "2018-07-10 00:00:00",
+										"id": "fe410968-5476-4142-ad15-3104986660cc",
+										"rating": "PG",
+										"releaseYear": "2005",
+										"title": "The Peak of Destiny",
+										"runtime": "157"
+									},
+									{
+										"availabilityDate": "2018-05-15 00:00:00",
+										"actor": "Mark Adams",
+										"genre": "Action/Adventure",
+										"tier": "2",
+										"streamingAvailabilityDate": "2018-07-10 00:00:00",
+										"id": "fe410968-5476-4142-ad15-3104986660cc",
+										"rating": "PG",
+										"releaseYear": "2005",
+										"title": "The Peak of Destiny",
+										"runtime": "157"
+									},
+									{
+										"availabilityDate": "2018-05-15 00:00:00",
+										"actor": "Gillian Lemon",
+										"genre": "Action/Adventure",
+										"tier": "2",
+										"streamingAvailabilityDate": "2018-07-10 00:00:00",
+										"id": "fe410968-5476-4142-ad15-3104986660cc",
+										"rating": "PG",
+										"releaseYear": "2005",
+										"title": "The Peak of Destiny",
+										"runtime": "157"
+									},
+									{
+										"availabilityDate": "2018-05-15 00:00:00",
+										"actor": "Gillian Carter",
+										"genre": "Action/Adventure",
+										"tier": "2",
+										"streamingAvailabilityDate": "2018-07-10 00:00:00",
+										"id": "fe410968-5476-4142-ad15-3104986660cc",
+										"rating": "PG",
+										"releaseYear": "2005",
+										"title": "The Peak of Destiny",
+										"runtime": "157"
+									},
+									{
+										"availabilityDate": "2017-11-07 00:00:00",
+										"actor": "Les Goodman",
+										"genre": "Romance",
+										"tier": "2",
+										"streamingAvailabilityDate": "2018-01-02 00:00:00",
+										"id": "f1ebb601-70af-4425-870b-76a73c8726ff",
+										"rating": "R",
+										"releaseYear": "1970",
+										"title": "Frozen Chime",
+										"runtime": "93"
+									},
+									{
+										"availabilityDate": "2017-11-07 00:00:00",
+										"actor": "Jill Smith",
+										"genre": "Romance",
+										"tier": "2",
+										"streamingAvailabilityDate": "2018-01-02 00:00:00",
+										"id": "f1ebb601-70af-4425-870b-76a73c8726ff",
+										"rating": "R",
+										"releaseYear": "1970",
+										"title": "Frozen Chime",
+										"runtime": "93"
+									},
+									{
+										"availabilityDate": "2017-11-07 00:00:00",
+										"actor": "Frank Jones",
+										"genre": "Romance",
+										"tier": "2",
+										"streamingAvailabilityDate": "2018-01-02 00:00:00",
+										"id": "f1ebb601-70af-4425-870b-76a73c8726ff",
+										"rating": "R",
+										"releaseYear": "1970",
+										"title": "Frozen Chime",
+										"runtime": "93"
+									},
+									{
+										"availabilityDate": "2018-05-29 00:00:00",
+										"actor": "Sally Pine",
+										"genre": "Romance",
+										"tier": "2",
+										"streamingAvailabilityDate": "2018-07-24 00:00:00",
+										"id": "a8dd8915-b053-4a45-8846-0f3b6b1420b2",
+										"rating": "PG-13",
+										"releaseYear": "1986",
+										"title": "Robot Garden",
+										"runtime": "102"
+									},
+									{
+										"availabilityDate": "2018-05-29 00:00:00",
+										"actor": "Hank Lemon",
+										"genre": "Romance",
+										"tier": "2",
+										"streamingAvailabilityDate": "2018-07-24 00:00:00",
+										"id": "a8dd8915-b053-4a45-8846-0f3b6b1420b2",
+										"rating": "PG-13",
+										"releaseYear": "1986",
+										"title": "Robot Garden",
+										"runtime": "102"
+									},
+									{
+										"availabilityDate": "2017-05-30 00:00:00",
+										"actor": "Sally Smith",
+										"genre": "Romance",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-07-25 00:00:00",
+										"id": "13751602-e2cd-4355-af19-8db1654b1034",
+										"rating": "PG-13",
+										"releaseYear": "1907",
+										"title": "Mysterious Cube",
+										"runtime": "107"
+									},
+									{
+										"availabilityDate": "2017-05-30 00:00:00",
+										"actor": "Trudy Pine",
+										"genre": "Romance",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-07-25 00:00:00",
+										"id": "13751602-e2cd-4355-af19-8db1654b1034",
+										"rating": "PG-13",
+										"releaseYear": "1907",
+										"title": "Mysterious Cube",
+										"runtime": "107"
+									},
+									{
+										"availabilityDate": "2017-05-30 00:00:00",
+										"actor": "Sally Goodman",
+										"genre": "Romance",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-07-25 00:00:00",
+										"id": "13751602-e2cd-4355-af19-8db1654b1034",
+										"rating": "PG-13",
+										"releaseYear": "1907",
+										"title": "Mysterious Cube",
+										"runtime": "107"
+									},
+									{
+										"availabilityDate": "2017-02-07 00:00:00",
+										"actor": "Henrietta Goodman",
+										"genre": "Science Fiction",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-04-04 00:00:00",
+										"id": "e250a44c-adac-4fa5-937c-b99b225d32ed",
+										"rating": "PG-13",
+										"releaseYear": "1952",
+										"title": "The Pool of Joy",
+										"runtime": "110"
+									},
+									{
+										"availabilityDate": "2017-02-07 00:00:00",
+										"actor": "Freida Goodman",
+										"genre": "Science Fiction",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-04-04 00:00:00",
+										"id": "e250a44c-adac-4fa5-937c-b99b225d32ed",
+										"rating": "PG-13",
+										"releaseYear": "1952",
+										"title": "The Pool of Joy",
+										"runtime": "110"
+									},
+									{
+										"availabilityDate": "2017-03-28 00:00:00",
+										"actor": "Freida Morris",
+										"genre": "Family",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-05-23 00:00:00",
+										"id": "091e5459-668b-48df-a62e-6955f1340703",
+										"rating": "PG",
+										"releaseYear": "1943",
+										"title": "Chilling Dogs",
+										"runtime": "93"
+									},
+									{
+										"availabilityDate": "2017-03-28 00:00:00",
+										"actor": "Henrietta Goodman",
+										"genre": "Family",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-05-23 00:00:00",
+										"id": "091e5459-668b-48df-a62e-6955f1340703",
+										"rating": "PG",
+										"releaseYear": "1943",
+										"title": "Chilling Dogs",
+										"runtime": "93"
+									},
+									{
+										"availabilityDate": "2017-03-28 00:00:00",
+										"actor": "Henrietta Carter",
+										"genre": "Family",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-05-23 00:00:00",
+										"id": "091e5459-668b-48df-a62e-6955f1340703",
+										"rating": "PG",
+										"releaseYear": "1943",
+										"title": "Chilling Dogs",
+										"runtime": "93"
+									},
+									{
+										"availabilityDate": "2017-09-19 00:00:00",
+										"actor": "Freida Ray",
+										"genre": "Comedy",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-11-14 00:00:00",
+										"id": "68f5f614-3e65-4b40-b9aa-04ef41b1bab7",
+										"rating": "R",
+										"releaseYear": "2001",
+										"title": "Blazing Cave",
+										"runtime": "123"
+									},
+									{
+										"availabilityDate": "2017-09-19 00:00:00",
+										"actor": "Jack Norris",
+										"genre": "Comedy",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-11-14 00:00:00",
+										"id": "68f5f614-3e65-4b40-b9aa-04ef41b1bab7",
+										"rating": "R",
+										"releaseYear": "2001",
+										"title": "Blazing Cave",
+										"runtime": "123"
+									},
+									{
+										"availabilityDate": "2017-12-26 00:00:00",
+										"actor": "Cameron Busey",
+										"genre": "Family",
+										"tier": "2",
+										"streamingAvailabilityDate": "2018-02-20 00:00:00",
+										"id": "e66cbf80-260b-4ee8-9758-e51da419e2f8",
+										"rating": "PG",
+										"releaseYear": "1928",
+										"title": "Blazing Case",
+										"runtime": "99"
+									},
+									{
+										"availabilityDate": "2017-12-26 00:00:00",
+										"actor": "Jack Wayne",
+										"genre": "Family",
+										"tier": "2",
+										"streamingAvailabilityDate": "2018-02-20 00:00:00",
+										"id": "e66cbf80-260b-4ee8-9758-e51da419e2f8",
+										"rating": "PG",
+										"releaseYear": "1928",
+										"title": "Blazing Case",
+										"runtime": "99"
+									},
+									{
+										"availabilityDate": "2017-12-26 00:00:00",
+										"actor": "Alice Norris",
+										"genre": "Family",
+										"tier": "2",
+										"streamingAvailabilityDate": "2018-02-20 00:00:00",
+										"id": "e66cbf80-260b-4ee8-9758-e51da419e2f8",
+										"rating": "PG",
+										"releaseYear": "1928",
+										"title": "Blazing Case",
+										"runtime": "99"
+									},
+									{
+										"availabilityDate": "2018-05-08 00:00:00",
+										"actor": "Eric Pine",
+										"genre": "Romance",
+										"tier": "3",
+										"streamingAvailabilityDate": "2018-06-05 00:00:00",
+										"id": "5abac2c1-b093-4439-a068-c3b0de8271f3",
+										"rating": "R",
+										"releaseYear": "1944",
+										"title": "Happy Dogs",
+										"runtime": "104"
+									},
+									{
+										"availabilityDate": "2018-05-08 00:00:00",
+										"actor": "Thomas Goodman",
+										"genre": "Romance",
+										"tier": "3",
+										"streamingAvailabilityDate": "2018-06-05 00:00:00",
+										"id": "5abac2c1-b093-4439-a068-c3b0de8271f3",
+										"rating": "R",
+										"releaseYear": "1944",
+										"title": "Happy Dogs",
+										"runtime": "104"
+									},
+									{
+										"availabilityDate": "2018-05-08 00:00:00",
+										"actor": "Jill Jones",
+										"genre": "Romance",
+										"tier": "3",
+										"streamingAvailabilityDate": "2018-06-05 00:00:00",
+										"id": "5abac2c1-b093-4439-a068-c3b0de8271f3",
+										"rating": "R",
+										"releaseYear": "1944",
+										"title": "Happy Dogs",
+										"runtime": "104"
+									},
+									{
+										"availabilityDate": "2018-04-17 00:00:00",
+										"actor": "Bill Wayne",
+										"genre": "Romance",
+										"tier": "3",
+										"streamingAvailabilityDate": "2018-05-15 00:00:00",
+										"id": "c1f910a6-4e9e-499a-950d-b946ec100156",
+										"rating": "R",
+										"releaseYear": "1907",
+										"title": "The Dogs of Ice",
+										"runtime": "96"
+									},
+									{
+										"availabilityDate": "2018-04-17 00:00:00",
+										"actor": "Elise Ray",
+										"genre": "Romance",
+										"tier": "3",
+										"streamingAvailabilityDate": "2018-05-15 00:00:00",
+										"id": "c1f910a6-4e9e-499a-950d-b946ec100156",
+										"rating": "R",
+										"releaseYear": "1907",
+										"title": "The Dogs of Ice",
+										"runtime": "96"
+									},
+									{
+										"availabilityDate": "2017-06-13 00:00:00",
+										"actor": "Barb Smith",
+										"genre": "Action/Adventure",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-08-08 00:00:00",
+										"id": "9ef40370-ee62-4daa-80d2-e5dc88661517",
+										"rating": "R",
+										"releaseYear": "1967",
+										"title": "Chilling Pool",
+										"runtime": "144"
+									},
+									{
+										"availabilityDate": "2017-06-13 00:00:00",
+										"actor": "Bill Ray",
+										"genre": "Action/Adventure",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-08-08 00:00:00",
+										"id": "9ef40370-ee62-4daa-80d2-e5dc88661517",
+										"rating": "R",
+										"releaseYear": "1967",
+										"title": "Chilling Pool",
+										"runtime": "144"
+									},
+									{
+										"availabilityDate": "2017-06-13 00:00:00",
+										"actor": "Andy Lemon",
+										"genre": "Action/Adventure",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-08-08 00:00:00",
+										"id": "9ef40370-ee62-4daa-80d2-e5dc88661517",
+										"rating": "R",
+										"releaseYear": "1967",
+										"title": "Chilling Pool",
+										"runtime": "144"
+									},
+									{
+										"availabilityDate": "2018-02-06 00:00:00",
+										"actor": "Eric Ray",
+										"genre": "Comedy",
+										"tier": "1",
+										"streamingAvailabilityDate": "2018-05-01 00:00:00",
+										"id": "0004e3b9-033e-4fc8-b5a7-a352b5d0d3a2",
+										"rating": "R",
+										"releaseYear": "1900",
+										"title": "Mysterious Garden",
+										"runtime": "112"
+									},
+									{
+										"availabilityDate": "2018-02-06 00:00:00",
+										"actor": "Lisa Busey",
+										"genre": "Comedy",
+										"tier": "1",
+										"streamingAvailabilityDate": "2018-05-01 00:00:00",
+										"id": "0004e3b9-033e-4fc8-b5a7-a352b5d0d3a2",
+										"rating": "R",
+										"releaseYear": "1900",
+										"title": "Mysterious Garden",
+										"runtime": "112"
+									},
+									{
+										"availabilityDate": "2017-10-17 00:00:00",
+										"actor": "Charlie Smith",
+										"genre": "Family",
+										"tier": "1",
+										"streamingAvailabilityDate": "2018-01-09 00:00:00",
+										"id": "bee095ee-4035-4e4d-a194-93ee655d6ed7",
+										"rating": "G",
+										"releaseYear": "1982",
+										"title": "The Cave of Sorrow",
+										"runtime": "105"
+									},
+									{
+										"availabilityDate": "2017-10-17 00:00:00",
+										"actor": "Charlie Lemon",
+										"genre": "Family",
+										"tier": "1",
+										"streamingAvailabilityDate": "2018-01-09 00:00:00",
+										"id": "bee095ee-4035-4e4d-a194-93ee655d6ed7",
+										"rating": "G",
+										"releaseYear": "1982",
+										"title": "The Cave of Sorrow",
+										"runtime": "105"
+									},
+									{
+										"availabilityDate": "2017-10-17 00:00:00",
+										"actor": "Frank Wayne",
+										"genre": "Family",
+										"tier": "1",
+										"streamingAvailabilityDate": "2018-01-09 00:00:00",
+										"id": "bee095ee-4035-4e4d-a194-93ee655d6ed7",
+										"rating": "G",
+										"releaseYear": "1982",
+										"title": "The Cave of Sorrow",
+										"runtime": "105"
+									},
+									{
+										"availabilityDate": "2017-01-10 00:00:00",
+										"actor": "Peter Davis",
+										"genre": "Comedy",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-03-07 00:00:00",
+										"id": "e9297c2a-484e-4819-9bc7-6c676de9b69f",
+										"rating": "PG",
+										"releaseYear": "2011",
+										"title": "The Ring of War",
+										"runtime": "125"
+									},
+									{
+										"availabilityDate": "2017-01-10 00:00:00",
+										"actor": "Hank Jones",
+										"genre": "Comedy",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-03-07 00:00:00",
+										"id": "e9297c2a-484e-4819-9bc7-6c676de9b69f",
+										"rating": "PG",
+										"releaseYear": "2011",
+										"title": "The Ring of War",
+										"runtime": "125"
+									},
+									{
+										"availabilityDate": "2017-09-05 00:00:00",
+										"actor": "Alice Goodman",
+										"genre": "Romance",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-10-31 00:00:00",
+										"id": "16991f68-774c-42be-a017-d5e3fb4f926c",
+										"rating": "PG-13",
+										"releaseYear": "2009",
+										"title": "The Theater of Joy",
+										"runtime": "102"
+									},
+									{
+										"availabilityDate": "2017-09-05 00:00:00",
+										"actor": "Jill Vale",
+										"genre": "Romance",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-10-31 00:00:00",
+										"id": "16991f68-774c-42be-a017-d5e3fb4f926c",
+										"rating": "PG-13",
+										"releaseYear": "2009",
+										"title": "The Theater of Joy",
+										"runtime": "102"
+									},
+									{
+										"availabilityDate": "2017-09-05 00:00:00",
+										"actor": "Danielle Norris",
+										"genre": "Romance",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-10-31 00:00:00",
+										"id": "16991f68-774c-42be-a017-d5e3fb4f926c",
+										"rating": "PG-13",
+										"releaseYear": "2009",
+										"title": "The Theater of Joy",
+										"runtime": "102"
+									},
+									{
+										"availabilityDate": "2017-09-05 00:00:00",
+										"actor": "Priscilla Davis",
+										"genre": "Romance",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-10-31 00:00:00",
+										"id": "16991f68-774c-42be-a017-d5e3fb4f926c",
+										"rating": "PG-13",
+										"releaseYear": "2009",
+										"title": "The Theater of Joy",
+										"runtime": "102"
+									},
+									{
+										"availabilityDate": "2017-05-16 00:00:00",
+										"actor": "Lisa Goodman",
+										"genre": "Family",
+										"tier": "3",
+										"streamingAvailabilityDate": "2017-06-13 00:00:00",
+										"id": "0a08d724-0a80-4e57-a712-1c4cda0a9c29",
+										"rating": "G",
+										"releaseYear": "1915",
+										"title": "The Garden of Fate",
+										"runtime": "102"
+									},
+									{
+										"availabilityDate": "2017-05-16 00:00:00",
+										"actor": "Mark Busey",
+										"genre": "Family",
+										"tier": "3",
+										"streamingAvailabilityDate": "2017-06-13 00:00:00",
+										"id": "0a08d724-0a80-4e57-a712-1c4cda0a9c29",
+										"rating": "G",
+										"releaseYear": "1915",
+										"title": "The Garden of Fate",
+										"runtime": "102"
+									},
+									{
+										"availabilityDate": "2017-01-10 00:00:00",
+										"actor": "Lisa Goodman",
+										"genre": "Science Fiction",
+										"tier": "3",
+										"streamingAvailabilityDate": "2017-02-07 00:00:00",
+										"id": "ba6f6305-60a3-49c0-b127-a1da4010b9a0",
+										"rating": "R",
+										"releaseYear": "1908",
+										"title": "Space Garden",
+										"runtime": "165"
+									},
+									{
+										"availabilityDate": "2017-01-10 00:00:00",
+										"actor": "Danielle Busey",
+										"genre": "Science Fiction",
+										"tier": "3",
+										"streamingAvailabilityDate": "2017-02-07 00:00:00",
+										"id": "ba6f6305-60a3-49c0-b127-a1da4010b9a0",
+										"rating": "R",
+										"releaseYear": "1908",
+										"title": "Space Garden",
+										"runtime": "165"
+									},
+									{
+										"availabilityDate": "2017-07-11 00:00:00",
+										"actor": "Jack Smith",
+										"genre": "Comedy",
+										"tier": "1",
+										"streamingAvailabilityDate": "2017-10-03 00:00:00",
+										"id": "b8b1c0f0-ffe0-4b5f-b75c-ef87225beefe",
+										"rating": "R",
+										"releaseYear": "1935",
+										"title": "The Case of War",
+										"runtime": "118"
+									},
+									{
+										"availabilityDate": "2017-07-11 00:00:00",
+										"actor": "Elise Jones",
+										"genre": "Comedy",
+										"tier": "1",
+										"streamingAvailabilityDate": "2017-10-03 00:00:00",
+										"id": "b8b1c0f0-ffe0-4b5f-b75c-ef87225beefe",
+										"rating": "R",
+										"releaseYear": "1935",
+										"title": "The Case of War",
+										"runtime": "118"
+									},
+									{
+										"availabilityDate": "2017-07-11 00:00:00",
+										"actor": "Gillian Davis",
+										"genre": "Comedy",
+										"tier": "1",
+										"streamingAvailabilityDate": "2017-10-03 00:00:00",
+										"id": "b8b1c0f0-ffe0-4b5f-b75c-ef87225beefe",
+										"rating": "R",
+										"releaseYear": "1935",
+										"title": "The Case of War",
+										"runtime": "118"
+									},
+									{
+										"availabilityDate": "2017-07-11 00:00:00",
+										"actor": "Sally Jones",
+										"genre": "Comedy",
+										"tier": "1",
+										"streamingAvailabilityDate": "2017-10-03 00:00:00",
+										"id": "b8b1c0f0-ffe0-4b5f-b75c-ef87225beefe",
+										"rating": "R",
+										"releaseYear": "1935",
+										"title": "The Case of War",
+										"runtime": "118"
+									},
+									{
+										"availabilityDate": "2017-09-26 00:00:00",
+										"actor": "Barb Ray",
+										"genre": "Family",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-11-21 00:00:00",
+										"id": "0f3b5eca-1a3f-4697-b934-4a32d22fd8b2",
+										"rating": "PG",
+										"releaseYear": "1950",
+										"title": "Mysterious Ice",
+										"runtime": "84"
+									},
+									{
+										"availabilityDate": "2017-09-26 00:00:00",
+										"actor": "Thomas Morris",
+										"genre": "Family",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-11-21 00:00:00",
+										"id": "0f3b5eca-1a3f-4697-b934-4a32d22fd8b2",
+										"rating": "PG",
+										"releaseYear": "1950",
+										"title": "Mysterious Ice",
+										"runtime": "84"
+									},
+									{
+										"availabilityDate": "2017-09-26 00:00:00",
+										"actor": "Simon Jones",
+										"genre": "Family",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-11-21 00:00:00",
+										"id": "0f3b5eca-1a3f-4697-b934-4a32d22fd8b2",
+										"rating": "PG",
+										"releaseYear": "1950",
+										"title": "Mysterious Ice",
+										"runtime": "84"
+									},
+									{
+										"availabilityDate": "2017-07-25 00:00:00",
+										"actor": "Charlie Smith",
+										"genre": "Action/Adventure",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-09-19 00:00:00",
+										"id": "d8cd04e7-8da1-4cd9-b931-d10e7433e8d6",
+										"rating": "R",
+										"releaseYear": "1937",
+										"title": "Blazing Scream",
+										"runtime": "156"
+									},
+									{
+										"availabilityDate": "2017-07-25 00:00:00",
+										"actor": "Simon Busey",
+										"genre": "Action/Adventure",
+										"tier": "2",
+										"streamingAvailabilityDate": "2017-09-19 00:00:00",
+										"id": "d8cd04e7-8da1-4cd9-b931-d10e7433e8d6",
+										"rating": "R",
+										"releaseYear": "1937",
+										"title": "Blazing Scream",
+										"runtime": "156"
+									},
+									{
+										"availabilityDate": "2017-12-19 00:00:00",
+										"actor": "Daniel Busey",
+										"genre": "Comedy",
+										"tier": "1",
+										"streamingAvailabilityDate": "2018-03-13 00:00:00",
+										"id": "c6d62b8b-b335-40ca-b60c-4b2fda71afe4",
+										"rating": "R",
+										"releaseYear": "1964",
+										"title": "Furious Destiny",
+										"runtime": "91"
+									}
+								],
+								"schema": {
+									"availabilityDate": "string",
+									"genre": "string",
+									"id": "string",
+									"rating": "string",
+									"releaseYear": "bigint",
+									"runtime": "bigint",
+									"streamingAvailabilityDate": "string",
+									"tier": "bigint",
+									"title": "string",
+									"actor": "string"
+								}
+							},
+							"isSummary": false,
+							"language": "scala"
+						},
+						"persist_state": {
+							"view": {
+								"type": "details",
+								"chartOptions": {
+									"chartType": "bar",
+									"aggregationType": "sum",
+									"categoryFieldKeys": [
+										"availabilityDate"
+									],
+									"seriesFieldKeys": [
+										"releaseYear"
+									],
+									"isStacked": false
+								}
+							}
+						}
+					}
+				}
 			},
 			"kernelspec": {
 				"name": "synapse_pyspark",
@@ -114,7 +1355,7 @@
 					"from pyspark.sql.functions import col, lit, udf, greatest, explode\r\n",
 					"import uuid"
 				],
-				"execution_count": 1
+				"execution_count": 2
 			},
 			{
 				"cell_type": "markdown",
@@ -146,7 +1387,7 @@
 				"source": [
 					"uuidUDF = udf(lambda : str(uuid.uuid4()),StringType())"
 				],
-				"execution_count": 2
+				"execution_count": 3
 			},
 			{
 				"cell_type": "markdown",
@@ -177,188 +1418,19 @@
 				},
 				"source": [
 					"# Read data from lake\r\n",
-					"df_Southridge_Catalog = spark.read.json('abfss://movies@demosynapsedls01.dfs.core.windows.net/raw/Southridge/Movies/export.json',\r\n",
-					"                        format='json',\r\n",
-					"                        inferSchema=True,\r\n",
-					"                        header=True, \r\n",
-					"                        ignoreLeadingWhiteSpace=True, \r\n",
-					"                        ignoreTrailingWhiteSpace=True\r\n",
-					"                        )\r\n",
+					"df_Southridge_Catalog = spark.read.option(\"multiLine\", \"true\").json('abfss://movies@demosynapsedls01.dfs.core.windows.net/raw/Southridge/Movies/export.json')\r\n",
 					"\r\n",
 					"df_Southridge_Catalog = (\r\n",
 					"    df_Southridge_Catalog\r\n",
-					"        .withColumn('actor', explode('actors'))\r\n",
+					"        .withColumn('actor', explode('actors.name'))\r\n",
 					"        .drop('actors', '_attachments', '_etag', '_rid', '_self', '_ts')\r\n",
 					")\r\n",
 					"\r\n",
 					"# Display dataframe\r\n",
-					"df_Southridge_Catalog.printSchema()\r\n",
+					"#df_Southridge_Catalog.printSchema()\r\n",
 					"#display(df_Southridge_Catalog.limit(100))"
 				],
-				"execution_count": 21
-			},
-			{
-				"cell_type": "code",
-				"metadata": {
-					"jupyter": {
-						"source_hidden": false,
-						"outputs_hidden": false
-					},
-					"nteract": {
-						"transient": {
-							"deleting": false
-						}
-					},
-					"collapsed": false
-				},
-				"source": [
-					"# Read data from lake\r\n",
-					"df_Southridge_Sales_Adresses = spark.read.load('abfss://movies@demosynapsedls01.dfs.core.windows.net/raw/Southridge/CloudSales/dbo.Addresses.parquet',\r\n",
-					"                        format='parquet',\r\n",
-					"                        inferSchema=True,\r\n",
-					"                        header=True, \r\n",
-					"                        ignoreLeadingWhiteSpace=True, \r\n",
-					"                        ignoreTrailingWhiteSpace=True\r\n",
-					"                        )\r\n",
-					"\r\n",
-					"# Display dataframe\r\n",
-					"#df_Southridge_Sales_Adresses.printSchema()\r\n",
-					"#display(df_Southridge_Sales_Adresses.limit(100))"
-				],
-				"execution_count": 21
-			},
-			{
-				"cell_type": "code",
-				"metadata": {
-					"jupyter": {
-						"source_hidden": false,
-						"outputs_hidden": false
-					},
-					"nteract": {
-						"transient": {
-							"deleting": false
-						}
-					},
-					"collapsed": false
-				},
-				"source": [
-					"# Read data from lake\r\n",
-					"df_Southridge_Streaming_Customers = spark.read.load('abfss://movies@demosynapsedls01.dfs.core.windows.net/raw/Southridge/CloudStreaming/dbo.Customers.parquet',\r\n",
-					"                        format='parquet',\r\n",
-					"                        inferSchema=True,\r\n",
-					"                        header=True, \r\n",
-					"                        ignoreLeadingWhiteSpace=True, \r\n",
-					"                        ignoreTrailingWhiteSpace=True\r\n",
-					"                        )\r\n",
-					"\r\n",
-					"# Display dataframe\r\n",
-					"#df_Southridge_Streaming_Customers.printSchema()\r\n",
-					"#display(df_Southridge_Streaming_Customers.limit(100))"
-				],
-				"execution_count": 22
-			},
-			{
-				"cell_type": "code",
-				"metadata": {
-					"jupyter": {
-						"source_hidden": false,
-						"outputs_hidden": false
-					},
-					"nteract": {
-						"transient": {
-							"deleting": false
-						}
-					},
-					"collapsed": false
-				},
-				"source": [
-					"# Read data from lake\r\n",
-					"df_Southridge_Streaming_Adresses = spark.read.load('abfss://movies@demosynapsedls01.dfs.core.windows.net/raw/Southridge/CloudStreaming/dbo.Addresses.parquet',\r\n",
-					"                        format='parquet',\r\n",
-					"                        inferSchema=True,\r\n",
-					"                        header=True, \r\n",
-					"                        ignoreLeadingWhiteSpace=True, \r\n",
-					"                        ignoreTrailingWhiteSpace=True\r\n",
-					"                        )\r\n",
-					"\r\n",
-					"# Display dataframe\r\n",
-					"#df_Southridge_Streaming_Adresses.printSchema()\r\n",
-					"#display(df_Southridge_Streaming_Adresses.limit(100))"
-				],
-				"execution_count": 23
-			},
-			{
-				"cell_type": "markdown",
-				"metadata": {
-					"nteract": {
-						"transient": {
-							"deleting": false
-						}
-					}
-				},
-				"source": [
-					"## Southridge - Join data"
-				]
-			},
-			{
-				"cell_type": "code",
-				"metadata": {
-					"jupyter": {
-						"source_hidden": false,
-						"outputs_hidden": false
-					},
-					"nteract": {
-						"transient": {
-							"deleting": false
-						}
-					},
-					"collapsed": false
-				},
-				"source": [
-					"# Join dataframes\r\n",
-					"df_Southridge_Streaming_Joined = (\r\n",
-					"    df_Southridge_Streaming_Customers.alias('Customers').join(\r\n",
-					"        df_Southridge_Streaming_Adresses.alias('Adresses'), \r\n",
-					"        df_Southridge_Streaming_Customers.CustomerID == df_Southridge_Streaming_Adresses.CustomerID,\r\n",
-					"        'inner'\r\n",
-					"    )\r\n",
-					")\r\n",
-					"\r\n",
-					"# Display dataframe\r\n",
-					"#df_Southridge_Streaming_Joined.printSchema()\r\n",
-					"#display(df_Southridge_Streaming_Joined.limit(100))"
-				],
-				"execution_count": 24
-			},
-			{
-				"cell_type": "code",
-				"metadata": {
-					"jupyter": {
-						"source_hidden": false,
-						"outputs_hidden": false
-					},
-					"nteract": {
-						"transient": {
-							"deleting": false
-						}
-					},
-					"collapsed": false
-				},
-				"source": [
-					"# Join dataframes\r\n",
-					"df_Southridge_Sales_Joined = (\r\n",
-					"    df_Southridge_Sales_Customers.alias('Customers').join(\r\n",
-					"        df_Southridge_Sales_Adresses.alias('Adresses'),\r\n",
-					"        df_Southridge_Sales_Customers.CustomerID == df_Southridge_Sales_Adresses.CustomerID,\r\n",
-					"        'inner'\r\n",
-					"    )\r\n",
-					")\r\n",
-					"\r\n",
-					"# Display dataframe\r\n",
-					"#df_Southridge_Sales_Joined.printSchema()\r\n",
-					"#display(df_Southridge_Sales_Joined.limit(100))"
-				],
-				"execution_count": 25
+				"execution_count": 18
 			},
 			{
 				"cell_type": "markdown",
@@ -393,7 +1465,7 @@
 					"#df_FourthCoffee_Actors.printSchema()\r\n",
 					"#display(df_FourthCoffee_Actors.limit(100))"
 				],
-				"execution_count": 5
+				"execution_count": 4
 			},
 			{
 				"cell_type": "code",
@@ -423,7 +1495,7 @@
 					"#df_FourthCoffee_MovieActors.printSchema()\r\n",
 					"#display(df_FourthCoffee_MovieActors.limit(100))"
 				],
-				"execution_count": 6
+				"execution_count": 5
 			},
 			{
 				"cell_type": "code",
@@ -453,7 +1525,7 @@
 					"#df_FourthCoffee_Movies.printSchema()\r\n",
 					"#display(df_FourthCoffee_Movies.limit(100))"
 				],
-				"execution_count": 7
+				"execution_count": 6
 			},
 			{
 				"cell_type": "code",
@@ -483,7 +1555,7 @@
 					"#df_FourthCoffee_OnlineMovieMappings.printSchema()\r\n",
 					"#display(df_FourthCoffee_OnlineMovieMappings.limit(100))"
 				],
-				"execution_count": 8
+				"execution_count": 7
 			},
 			{
 				"cell_type": "markdown",
@@ -525,7 +1597,7 @@
 					"#df_Southridge_Catalog.printSchema()\r\n",
 					"#display(df_Southridge_Catalog.limit(100))"
 				],
-				"execution_count": 12
+				"execution_count": 8
 			},
 			{
 				"cell_type": "markdown",
@@ -568,7 +1640,7 @@
 					"#df_vanArsdel_Actors.printSchema()\r\n",
 					"#display(df_vanArsdel_Actors.limit(100))"
 				],
-				"execution_count": 13
+				"execution_count": 9
 			},
 			{
 				"cell_type": "code",
@@ -598,7 +1670,7 @@
 					"#df_vanArsdel_MovieActors.printSchema()\r\n",
 					"#display(df_vanArsdel_MovieActors.limit(100))"
 				],
-				"execution_count": 14
+				"execution_count": 10
 			},
 			{
 				"cell_type": "code",
@@ -628,7 +1700,7 @@
 					"#df_vanArsdel_Movies.printSchema()\r\n",
 					"#display(df_vanArsdel_Movies.limit(100))"
 				],
-				"execution_count": 15
+				"execution_count": 11
 			},
 			{
 				"cell_type": "code",
@@ -658,7 +1730,7 @@
 					"#df_vanArsdel_Movies.printSchema()\r\n",
 					"#display(df_vanArsdel_Movies.limit(100))"
 				],
-				"execution_count": 16
+				"execution_count": 12
 			},
 			{
 				"cell_type": "markdown",
@@ -700,7 +1772,7 @@
 					"#df_vanArsdel_Catalog.printSchema()\r\n",
 					"#display(df_vanArsdel_Catalog.limit(100))"
 				],
-				"execution_count": 17
+				"execution_count": 13
 			},
 			{
 				"cell_type": "markdown",
@@ -731,10 +1803,8 @@
 				},
 				"source": [
 					"# Add columns\r\n",
-					"df_Southridge_Sales_Modified = (\r\n",
-					"    df_Southridge_Sales_Joined.withColumn(\"SourceSystemID\", lit(\"1\").cast(IntegerType()))\r\n",
-					"                              .withColumn(\"MaxCreatedDate\", greatest(\"Customers.CreatedDate\", \"Adresses.CreatedDate\"))\r\n",
-					"                             .withColumn(\"MaxUpdatedDate\", greatest(\"Customers.UpdatedDate\", \"Adresses.UpdatedDate\"))\r\n",
+					"df_Southridge_Catalog_Modified = (\r\n",
+					"    df_Southridge_Catalog.withColumn(\"SourceSystemID\", lit(\"1\").cast(IntegerType()))\r\n",
 					")\r\n",
 					"\r\n",
 					"# Reorder colums\r\n",
@@ -1127,7 +2197,7 @@
 					"collapsed": true
 				},
 				"source": [
-					"df_unioned_withID.write.format('parquet').mode('overwrite').save('abfss://movies@demosynapsedls01.dfs.core.windows.net/curated/catalog.parquet')"
+					"#df_unioned_withID.write.format('parquet').mode('overwrite').save('abfss://movies@demosynapsedls01.dfs.core.windows.net/curated/catalog.parquet')"
 				],
 				"execution_count": 34
 			}
