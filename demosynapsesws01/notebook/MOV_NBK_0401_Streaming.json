@@ -114,7 +114,7 @@
 					"\r\n",
 					"import uuid"
 				],
-				"execution_count": 8
+				"execution_count": 15
 			},
 			{
 				"cell_type": "markdown",
@@ -146,7 +146,7 @@
 				"source": [
 					"uuidUDF = udf(lambda : str(uuid.uuid4()),StringType())"
 				],
-				"execution_count": 9
+				"execution_count": null
 			},
 			{
 				"cell_type": "markdown",
@@ -180,7 +180,7 @@
 					"#df_Southridge.printSchema\r\n",
 					"#display(df_Southridge.limit(100))"
 				],
-				"execution_count": 10
+				"execution_count": null
 			},
 			{
 				"cell_type": "markdown",

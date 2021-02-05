@@ -29,7 +29,7 @@
 			},
 			"kernelspec": {
 				"name": "synapse_pyspark",
-				"display_name": "python"
+				"display_name": "Synapse PySpark"
 			},
 			"language_info": {
 				"name": "python"
@@ -113,7 +113,7 @@
 					"from pyspark.sql.functions import col, lit, udf, greatest\r\n",
 					"import uuid"
 				],
-				"execution_count": 52
+				"execution_count": 3
 			},
 			{
 				"cell_type": "markdown",
@@ -145,7 +145,7 @@
 				"source": [
 					"uuidUDF = udf(lambda : str(uuid.uuid4()),StringType())"
 				],
-				"execution_count": 53
+				"execution_count": 4
 			},
 			{
 				"cell_type": "markdown",
@@ -157,7 +157,7 @@
 					}
 				},
 				"source": [
-					"## Import data Southridge"
+					"## Southridge - Import data"
 				]
 			},
 			{
@@ -188,7 +188,7 @@
 					"#df_Southridge_Orders.printSchema()\r\n",
 					"#display(df_Southridge_Orders.limit(100))"
 				],
-				"execution_count": 54
+				"execution_count": 5
 			},
 			{
 				"cell_type": "code",
@@ -218,7 +218,7 @@
 					"#df_Southridge_OrderDetails.printSchema()\r\n",
 					"#display(df_Southridge_OrderDetails.limit(100))"
 				],
-				"execution_count": 56
+				"execution_count": 6
 			},
 			{
 				"cell_type": "markdown",
@@ -230,7 +230,7 @@
 					}
 				},
 				"source": [
-					"## Rename duplicate columns Southridge"
+					"## Southridge - Rename duplicate columns"
 				]
 			},
 			{
@@ -254,7 +254,7 @@
 					"                        .withColumnRenamed(\"UpdatedDate\", \"OrderUpdatedDate\")\r\n",
 					")"
 				],
-				"execution_count": 55
+				"execution_count": 7
 			},
 			{
 				"cell_type": "code",
@@ -277,7 +277,7 @@
 					"                        .withColumnRenamed(\"UpdatedDate\", \"OrderDetailUpdatedDate\")\r\n",
 					")"
 				],
-				"execution_count": 57
+				"execution_count": 8
 			},
 			{
 				"cell_type": "markdown",
@@ -289,7 +289,7 @@
 					}
 				},
 				"source": [
-					"## Join data Southridge"
+					"## Southridge - Join data"
 				]
 			},
 			{
@@ -320,7 +320,7 @@
 					"#df_Southridge_Orders_Joined.printSchema()\r\n",
 					"#display(df_Southridge_Orders_Joined.limit(100))"
 				],
-				"execution_count": 58
+				"execution_count": 9
 			},
 			{
 				"cell_type": "markdown",
@@ -332,7 +332,7 @@
 					}
 				},
 				"source": [
-					"## Transform data"
+					"## Southridge - Transform data"
 				]
 			},
 			{
@@ -383,7 +383,7 @@
 					"#df_Southridge_Orders_Modified.printSchema()\r\n",
 					"#display(df_Southridge_Orders_Modified.limit(100))"
 				],
-				"execution_count": 59
+				"execution_count": 10
 			},
 			{
 				"cell_type": "markdown",
@@ -419,7 +419,7 @@
 					"#df_unioned.printSchema()\r\n",
 					"#display(df_unioned.limit(100))"
 				],
-				"execution_count": 60
+				"execution_count": 11
 			},
 			{
 				"cell_type": "markdown",
@@ -476,7 +476,7 @@
 					"#df_unioned_withID.printSchema()\r\n",
 					"#display(df_unioned_withID.limit(100))"
 				],
-				"execution_count": 61
+				"execution_count": 12
 			},
 			{
 				"cell_type": "markdown",
@@ -508,7 +508,7 @@
 				"source": [
 					"df_unioned_withID.write.format('parquet').mode('overwrite').save('abfss://movies@demosynapsedls01.dfs.core.windows.net/curated/sales.parquet')"
 				],
-				"execution_count": 62
+				"execution_count": 13
 			}
 		]
 	}
