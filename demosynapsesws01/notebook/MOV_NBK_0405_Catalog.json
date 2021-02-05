@@ -521,17 +521,17 @@
 				"source": [
 					"# Join dataframes\r\n",
 					"df_vanArsdel_Catalog = (\r\n",
-					"    df_vanArsdel_Movies\r\n",
-					"        .join(df_vanArsdel_MovieActors, df_vanArsdel_Movies.MovieID == df_vanArsdel_MovieActors.MovieID, 'left')\r\n",
-					"        .join(df_vanArsdel_Actors, df_vanArsdel_MovieActors.ActorID == df_vanArsdel_Actors.ActorID, 'left')\r\n",
-					"        .join(df_vanArsdel_OnlineMovieMappings, df_vanArsdel_Movies.MovieID == df_vanArsdel_OnlineMovieMappings.MovieID, 'left')\r\n",
+					"    df_vanArsdel_Movies.alias(\"Movies\")\r\n",
+					"        .join(df_vanArsdel_MovieActors.alias(\"MovieActors\"), df_vanArsdel_Movies.MovieID == df_vanArsdel_MovieActors.MovieID, 'left')\r\n",
+					"        .join(df_vanArsdel_Actors.alias(\"Actors\"), df_vanArsdel_MovieActors.ActorID == df_vanArsdel_Actors.ActorID, 'left')\r\n",
+					"        .join(df_vanArsdel_OnlineMovieMappings.alias(\"Mappings\"), df_vanArsdel_Movies.MovieID == df_vanArsdel_OnlineMovieMappings.MovieID, 'left')\r\n",
 					")\r\n",
 					"\r\n",
 					"# Display dataframe\r\n",
 					"#df_vanArsdel_Catalog.printSchema()\r\n",
 					"#display(df_vanArsdel_Catalog.limit(100))"
 				],
-				"execution_count": 30
+				"execution_count": 52
 			},
 			{
 				"cell_type": "markdown",
@@ -689,11 +689,116 @@
 					"        .withColumnRenamed(\"ReleaseDate\", \"PhysicalAvailabilityDate\")\r\n",
 					")\r\n",
 					"\r\n",
+					"# Convert column types\r\n",
+					"df_FourthCoffee_Catalog_Modified = (\r\n",
+					"    df_FourthCoffee_Catalog_Modified.withColumn(\"SourceSystemID\", col(\"SourceSystemID\").cast(IntegerType()))\r\n",
+					"                           .withColumn(\"SourceSystemMovieID\", col(\"SourceSystemMovieID\").cast(StringType()))\r\n",
+					"                           .withColumn(\"SouthridgeMovieID\", col(\"SouthridgeMovieID\").cast(StringType()))\r\n",
+					"                           .withColumn(\"ActorID\", col(\"ActorID\").cast(StringType()))\r\n",
+					"                           .withColumn(\"ActorName\", col(\"ActorName\").cast(StringType()))\r\n",
+					"                           .withColumn(\"ActorGender\", col(\"ActorGender\").cast(StringType()))\r\n",
+					"                           .withColumn(\"Title\", col(\"Title\").cast(StringType()))\r\n",
+					"                           .withColumn(\"Genre\", col(\"Genre\").cast(StringType()))\r\n",
+					"                           .withColumn(\"Rating\", col(\"Rating\").cast(StringType()))\r\n",
+					"                           .withColumn(\"RuntimeMinutes\", col(\"RuntimeMinutes\").cast(IntegerType()))\r\n",
+					"                           .withColumn(\"TheatricalReleaseYear\", col(\"TheatricalReleaseYear\").cast(IntegerType()))\r\n",
+					"                           .withColumn(\"PhysicalAvailabilityDate\", col(\"PhysicalAvailabilityDate\").cast(DateType()))\r\n",
+					"                           .withColumn(\"StreamingAvailabilityDate\", col(\"StreamingAvailabilityDate\").cast(DateType()))\r\n",
+					")\r\n",
+					"\r\n",
 					"# Display dataframe\r\n",
-					"df_FourthCoffee_Catalog_Modified.printSchema()\r\n",
+					"#df_FourthCoffee_Catalog_Modified.printSchema()\r\n",
 					"#display(df_FourthCoffee_Catalog_Modified.limit(100))"
 				],
-				"execution_count": 47
+				"execution_count": 50
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"## VanArsdel - Transform data"
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
+					"collapsed": true
+				},
+				"source": [
+					"# Add columns\r\n",
+					"df_vanArsdel_Catalog_Modified = (\r\n",
+					"    df_vanArsdel_Catalog\r\n",
+					"        .withColumn(\"SourceSystemID\", lit(\"3\").cast(IntegerType()))\r\n",
+					"        .withColumn(\"TheatricalReleaseYear\", lit(None).cast(StringType()))\r\n",
+					"        .withColumn(\"StreamingAvailabilityDate\", lit(None).cast(StringType()))\r\n",
+					")\r\n",
+					"\r\n",
+					"# Reorder colums\r\n",
+					"df_vanArsdel_Catalog_Modified = df_vanArsdel_Catalog_Modified.select(\r\n",
+					"    'SourceSystemID',\r\n",
+					"    'Movies.MovieID',\r\n",
+					"    'OnlineMovieID',\r\n",
+					"    'Actors.ActorID',\r\n",
+					"    'ActorName',\r\n",
+					"    'Gender',\r\n",
+					"    'MovieTitle',\r\n",
+					"    'Category',\r\n",
+					"    'Rating',\r\n",
+					"    'RunTimeMin',\r\n",
+					"    'TheatricalReleaseYear',\r\n",
+					"    'ReleaseDate',\r\n",
+					"    'StreamingAvailabilityDate'\r\n",
+					")\r\n",
+					"\r\n",
+					"# Rename columns\r\n",
+					"df_vanArsdel_Catalog_Modified = (\r\n",
+					"    df_vanArsdel_Catalog_Modified\r\n",
+					"        .withColumnRenamed(\"MovieID\", \"SourceSystemMovieID\")\r\n",
+					"        .withColumnRenamed(\"OnlineMovieID\", \"SouthridgeMovieID\")\r\n",
+					"        .withColumnRenamed(\"Gender\", \"ActorGender\")\r\n",
+					"        .withColumnRenamed(\"MovieTitle\", \"Title\")\r\n",
+					"        .withColumnRenamed(\"Category\", \"Genre\")\r\n",
+					"        .withColumnRenamed(\"RunTimeMin\", \"RuntimeMinutes\")\r\n",
+					"        .withColumnRenamed(\"ReleaseDate\", \"PhysicalAvailabilityDate\")\r\n",
+					")\r\n",
+					"\r\n",
+					"# Convert column types\r\n",
+					"df_vanArsdel_Catalog_Modified = (\r\n",
+					"    df_vanArsdel_Catalog_Modified.withColumn(\"SourceSystemID\", col(\"SourceSystemID\").cast(IntegerType()))\r\n",
+					"                           .withColumn(\"SourceSystemMovieID\", col(\"SourceSystemMovieID\").cast(StringType()))\r\n",
+					"                           .withColumn(\"SouthridgeMovieID\", col(\"SouthridgeMovieID\").cast(StringType()))\r\n",
+					"                           .withColumn(\"ActorID\", col(\"ActorID\").cast(StringType()))\r\n",
+					"                           .withColumn(\"ActorName\", col(\"ActorName\").cast(StringType()))\r\n",
+					"                           .withColumn(\"ActorGender\", col(\"ActorGender\").cast(StringType()))\r\n",
+					"                           .withColumn(\"Title\", col(\"Title\").cast(StringType()))\r\n",
+					"                           .withColumn(\"Genre\", col(\"Genre\").cast(StringType()))\r\n",
+					"                           .withColumn(\"Rating\", col(\"Rating\").cast(StringType()))\r\n",
+					"                           .withColumn(\"RuntimeMinutes\", col(\"RuntimeMinutes\").cast(IntegerType()))\r\n",
+					"                           .withColumn(\"TheatricalReleaseYear\", col(\"TheatricalReleaseYear\").cast(IntegerType()))\r\n",
+					"                           .withColumn(\"PhysicalAvailabilityDate\", col(\"PhysicalAvailabilityDate\").cast(DateType()))\r\n",
+					"                           .withColumn(\"StreamingAvailabilityDate\", col(\"StreamingAvailabilityDate\").cast(DateType()))\r\n",
+					")\r\n",
+					"\r\n",
+					"# Display dataframe\r\n",
+					"df_vanArsdel_Catalog_Modified.printSchema()\r\n",
+					"#display(df_vanArsdel_Catalog_Modified.limit(100))"
+				],
+				"execution_count": 53
 			},
 			{
 				"cell_type": "markdown",
