@@ -838,7 +838,7 @@
 					"#df_unioned.printSchema()\r\n",
 					"#display(df_unioned.limit(100))"
 				],
-				"execution_count": 60
+				"execution_count": 84
 			},
 			{
 				"cell_type": "markdown",
@@ -869,30 +869,31 @@
 				},
 				"source": [
 					"# Add columns\r\n",
-					"df_unioned_withID = df_unioned.withColumn(\"GlobalCustomerID\", uuidUDF())\r\n",
+					"df_unioned_withID = df_unioned.withColumn(\"GlobalMovieID\", uuidUDF())\r\n",
 					"\r\n",
 					"# Order columns\r\n",
 					"df_unioned_withID = df_unioned_withID.select(\r\n",
 					"    'SourceSystemID',\r\n",
-					"    'GlobalCustomerID',\r\n",
-					"    'SourceSystemCustomerID',\r\n",
-					"    'LastName',\r\n",
-					"    'FirstName',\r\n",
-					"    'AddressLine1',\r\n",
-					"    'AddressLine2',\r\n",
-					"    'City',\r\n",
-					"    'State',\r\n",
-					"    'ZipCode',\r\n",
-					"    'PhoneNumber',\r\n",
-					"    'CreatedDate',\r\n",
-					"    'UpdatedDate'\r\n",
+					"    'GlobalMovieID',\r\n",
+					"    'SourceSystemMovieID',\r\n",
+					"    'SouthridgeMovieID',\r\n",
+					"    'ActorID',\r\n",
+					"    'ActorName',\r\n",
+					"    'ActorGender',\r\n",
+					"    'Title',\r\n",
+					"    'Genre',\r\n",
+					"    'Rating',\r\n",
+					"    'RuntimeMinutes',\r\n",
+					"    'TheatricalReleaseYear',\r\n",
+					"    'PhysicalAvailabilityDate',\r\n",
+					"    'StreamingAvailabilityDate'\r\n",
 					")\r\n",
 					"\r\n",
 					"# Display dataframe\r\n",
 					"#df_unioned_withID.printSchema()\r\n",
 					"#display(df_unioned_withID.limit(100))"
 				],
-				"execution_count": 33
+				"execution_count": 86
 			},
 			{
 				"cell_type": "markdown",
@@ -922,9 +923,9 @@
 					"collapsed": true
 				},
 				"source": [
-					"#df_unioned_withID.write.format('parquet').mode('overwrite').save('abfss://movies@demosynapsedls01.dfs.core.windows.net/curated/catalog.parquet')"
+					"df_unioned_withID.write.format('parquet').mode('overwrite').save('abfss://movies@demosynapsedls01.dfs.core.windows.net/curated/catalog.parquet')"
 				],
-				"execution_count": 34
+				"execution_count": 87
 			}
 		]
 	}
