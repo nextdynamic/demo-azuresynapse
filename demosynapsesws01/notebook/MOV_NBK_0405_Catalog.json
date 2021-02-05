@@ -30,7 +30,7 @@
 			},
 			"kernelspec": {
 				"name": "synapse_pyspark",
-				"display_name": "python"
+				"display_name": "Synapse PySpark"
 			},
 			"language_info": {
 				"name": "python"
@@ -114,7 +114,7 @@
 					"from pyspark.sql.functions import col, lit, udf, greatest, explode\r\n",
 					"import uuid"
 				],
-				"execution_count": 2
+				"execution_count": 1
 			},
 			{
 				"cell_type": "markdown",
@@ -146,7 +146,7 @@
 				"source": [
 					"uuidUDF = udf(lambda : str(uuid.uuid4()),StringType())"
 				],
-				"execution_count": 3
+				"execution_count": null
 			},
 			{
 				"cell_type": "markdown",
@@ -189,7 +189,7 @@
 					"#df_Southridge_Catalog.printSchema()\r\n",
 					"#display(df_Southridge_Catalog.limit(100))"
 				],
-				"execution_count": 18
+				"execution_count": null
 			},
 			{
 				"cell_type": "markdown",
@@ -224,7 +224,7 @@
 					"#df_FourthCoffee_Actors.printSchema()\r\n",
 					"#display(df_FourthCoffee_Actors.limit(100))"
 				],
-				"execution_count": 4
+				"execution_count": null
 			},
 			{
 				"cell_type": "code",
@@ -254,7 +254,7 @@
 					"#df_FourthCoffee_MovieActors.printSchema()\r\n",
 					"#display(df_FourthCoffee_MovieActors.limit(100))"
 				],
-				"execution_count": 5
+				"execution_count": null
 			},
 			{
 				"cell_type": "code",
@@ -284,7 +284,7 @@
 					"#df_FourthCoffee_Movies.printSchema()\r\n",
 					"#display(df_FourthCoffee_Movies.limit(100))"
 				],
-				"execution_count": 6
+				"execution_count": null
 			},
 			{
 				"cell_type": "code",
@@ -314,7 +314,7 @@
 					"#df_FourthCoffee_OnlineMovieMappings.printSchema()\r\n",
 					"#display(df_FourthCoffee_OnlineMovieMappings.limit(100))"
 				],
-				"execution_count": 7
+				"execution_count": null
 			},
 			{
 				"cell_type": "markdown",
@@ -356,7 +356,7 @@
 					"#df_Southridge_Catalog.printSchema()\r\n",
 					"#display(df_Southridge_Catalog.limit(100))"
 				],
-				"execution_count": 8
+				"execution_count": null
 			},
 			{
 				"cell_type": "markdown",
@@ -399,7 +399,7 @@
 					"#df_vanArsdel_Actors.printSchema()\r\n",
 					"#display(df_vanArsdel_Actors.limit(100))"
 				],
-				"execution_count": 9
+				"execution_count": null
 			},
 			{
 				"cell_type": "code",
@@ -429,7 +429,7 @@
 					"#df_vanArsdel_MovieActors.printSchema()\r\n",
 					"#display(df_vanArsdel_MovieActors.limit(100))"
 				],
-				"execution_count": 10
+				"execution_count": null
 			},
 			{
 				"cell_type": "code",
@@ -459,7 +459,7 @@
 					"#df_vanArsdel_Movies.printSchema()\r\n",
 					"#display(df_vanArsdel_Movies.limit(100))"
 				],
-				"execution_count": 11
+				"execution_count": null
 			},
 			{
 				"cell_type": "code",
@@ -489,7 +489,7 @@
 					"#df_vanArsdel_Movies.printSchema()\r\n",
 					"#display(df_vanArsdel_Movies.limit(100))"
 				],
-				"execution_count": 12
+				"execution_count": null
 			},
 			{
 				"cell_type": "markdown",
@@ -531,7 +531,7 @@
 					"#df_vanArsdel_Catalog.printSchema()\r\n",
 					"#display(df_vanArsdel_Catalog.limit(100))"
 				],
-				"execution_count": 13
+				"execution_count": null
 			},
 			{
 				"cell_type": "markdown",
@@ -623,7 +623,7 @@
 					"#df_Southridge_Sales_Modified.printSchema()\r\n",
 					"display(df_Southridge_Sales_Modified.limit(100))"
 				],
-				"execution_count": 28
+				"execution_count": null
 			},
 			{
 				"cell_type": "code",
