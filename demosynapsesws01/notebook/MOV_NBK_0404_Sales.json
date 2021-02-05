@@ -29,7 +29,7 @@
 			},
 			"kernelspec": {
 				"name": "synapse_pyspark",
-				"display_name": "Synapse PySpark"
+				"display_name": "python"
 			},
 			"language_info": {
 				"name": "python"
@@ -96,7 +96,7 @@
 					}
 				},
 				"source": [
-					"## Create functions"
+					"## Define functions"
 				]
 			},
 			{
@@ -128,7 +128,7 @@
 					}
 				},
 				"source": [
-					"## Import data"
+					"## Import data Southridge"
 				]
 			},
 			{
@@ -173,6 +173,49 @@
 							"deleting": false
 						}
 					},
+					"collapsed": false
+				},
+				"source": [
+					"# Read data from lake\r\n",
+					"df_Southridge_OrderDetails = spark.read.load('abfss://movies@demosynapsedls01.dfs.core.windows.net/raw/Southridge/CloudSales/dbo.OrderDetails.parquet',\r\n",
+					"                        format='parquet',\r\n",
+					"                        inferSchema=True,\r\n",
+					"                        header=True, \r\n",
+					"                        ignoreLeadingWhiteSpace=True, \r\n",
+					"                        ignoreTrailingWhiteSpace=True\r\n",
+					"                        )\r\n",
+					"\r\n",
+					"# Display dataframe\r\n",
+					"#df_Southridge_OrderDetails.printSchema()\r\n",
+					"#display(df_Southridge_OrderDetails.limit(100))"
+				],
+				"execution_count": 56
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"## Rename duplicate columns Southridge"
+				]
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"jupyter": {
+						"source_hidden": false,
+						"outputs_hidden": false
+					},
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					},
 					"collapsed": true
 				},
 				"source": [
@@ -196,36 +239,6 @@
 							"deleting": false
 						}
 					},
-					"collapsed": false
-				},
-				"source": [
-					"# Read data from lake\r\n",
-					"df_Southridge_OrderDetails = spark.read.load('abfss://movies@demosynapsedls01.dfs.core.windows.net/raw/Southridge/CloudSales/dbo.OrderDetails.parquet',\r\n",
-					"                        format='parquet',\r\n",
-					"                        inferSchema=True,\r\n",
-					"                        header=True, \r\n",
-					"                        ignoreLeadingWhiteSpace=True, \r\n",
-					"                        ignoreTrailingWhiteSpace=True\r\n",
-					"                        )\r\n",
-					"\r\n",
-					"# Display dataframe\r\n",
-					"#df_Southridge_OrderDetails.printSchema()\r\n",
-					"#display(df_Southridge_OrderDetails.limit(100))"
-				],
-				"execution_count": 56
-			},
-			{
-				"cell_type": "code",
-				"metadata": {
-					"jupyter": {
-						"source_hidden": false,
-						"outputs_hidden": false
-					},
-					"nteract": {
-						"transient": {
-							"deleting": false
-						}
-					},
 					"collapsed": true
 				},
 				"source": [
@@ -236,6 +249,19 @@
 					")"
 				],
 				"execution_count": 57
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"## Join data Southridge"
+				]
 			},
 			{
 				"cell_type": "code",
@@ -395,12 +421,12 @@
 				},
 				"source": [
 					"# Add columns\r\n",
-					"df_unioned_withID = df_unioned.withColumn(\"GlobalTransactionID\", uuidUDF())\r\n",
+					"df_unioned_withID = df_unioned.withColumn(\"GlobalOrderID\", uuidUDF())\r\n",
 					"\r\n",
 					"# Order columns\r\n",
 					"df_unioned_withID = df_unioned_withID.select(\r\n",
 					"    'SourceSystemID',\r\n",
-					"    'GlobalTransactionID',\r\n",
+					"    'GlobalOrderID',\r\n",
 					"    'SourceSystemOrderID',\r\n",
 					"    'CustomerID',\r\n",
 					"    'OrderDate',\r\n",

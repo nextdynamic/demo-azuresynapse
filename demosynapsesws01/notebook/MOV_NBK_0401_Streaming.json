@@ -62,6 +62,19 @@
 					}
 				},
 				"source": [
+					"# Challenge 4 - More than meets the eye - Streaming Data"
+				]
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
 					"## Import libraries"
 				]
 			},
@@ -129,7 +142,7 @@
 					}
 				},
 				"source": [
-					"## Import data"
+					"## Southridge - Import data"
 				]
 			},
 			{
@@ -163,7 +176,7 @@
 					}
 				},
 				"source": [
-					"## Transform data"
+					"## Southridge - Transform data"
 				]
 			},
 			{
