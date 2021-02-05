@@ -114,7 +114,7 @@
 					"from pyspark.sql.functions import col, lit, udf, greatest, explode, to_date\r\n",
 					"import uuid"
 				],
-				"execution_count": 66
+				"execution_count": 88
 			},
 			{
 				"cell_type": "markdown",
@@ -146,7 +146,7 @@
 				"source": [
 					"uuidUDF = udf(lambda : str(uuid.uuid4()),StringType())"
 				],
-				"execution_count": 19
+				"execution_count": 89
 			},
 			{
 				"cell_type": "markdown",
@@ -189,7 +189,7 @@
 					"#df_Southridge_Catalog.printSchema()\r\n",
 					"#display(df_Southridge_Catalog.limit(100))"
 				],
-				"execution_count": 20
+				"execution_count": 90
 			},
 			{
 				"cell_type": "markdown",
@@ -224,7 +224,7 @@
 					"#df_FourthCoffee_Actors.printSchema()\r\n",
 					"#display(df_FourthCoffee_Actors.limit(100))"
 				],
-				"execution_count": 21
+				"execution_count": 91
 			},
 			{
 				"cell_type": "code",
@@ -254,7 +254,7 @@
 					"#df_FourthCoffee_MovieActors.printSchema()\r\n",
 					"#display(df_FourthCoffee_MovieActors.limit(100))"
 				],
-				"execution_count": 22
+				"execution_count": 92
 			},
 			{
 				"cell_type": "code",
@@ -284,7 +284,7 @@
 					"#df_FourthCoffee_Movies.printSchema()\r\n",
 					"#display(df_FourthCoffee_Movies.limit(100))"
 				],
-				"execution_count": 23
+				"execution_count": 93
 			},
 			{
 				"cell_type": "code",
@@ -314,7 +314,7 @@
 					"#df_FourthCoffee_OnlineMovieMappings.printSchema()\r\n",
 					"#display(df_FourthCoffee_OnlineMovieMappings.limit(100))"
 				],
-				"execution_count": 24
+				"execution_count": 94
 			},
 			{
 				"cell_type": "markdown",
@@ -356,7 +356,7 @@
 					"#df_FourthCoffee_Catalog.printSchema()\r\n",
 					"#display(df_FourthCoffee_Catalog.limit(100))"
 				],
-				"execution_count": 34
+				"execution_count": 95
 			},
 			{
 				"cell_type": "markdown",
@@ -399,7 +399,7 @@
 					"#df_vanArsdel_Actors.printSchema()\r\n",
 					"#display(df_vanArsdel_Actors.limit(100))"
 				],
-				"execution_count": 26
+				"execution_count": 96
 			},
 			{
 				"cell_type": "code",
@@ -429,7 +429,7 @@
 					"#df_vanArsdel_MovieActors.printSchema()\r\n",
 					"#display(df_vanArsdel_MovieActors.limit(100))"
 				],
-				"execution_count": 27
+				"execution_count": 97
 			},
 			{
 				"cell_type": "code",
@@ -459,7 +459,7 @@
 					"#df_vanArsdel_Movies.printSchema()\r\n",
 					"#display(df_vanArsdel_Movies.limit(100))"
 				],
-				"execution_count": 28
+				"execution_count": 98
 			},
 			{
 				"cell_type": "code",
@@ -489,7 +489,7 @@
 					"#df_vanArsdel_Movies.printSchema()\r\n",
 					"#display(df_vanArsdel_Movies.limit(100))"
 				],
-				"execution_count": 29
+				"execution_count": 99
 			},
 			{
 				"cell_type": "markdown",
@@ -531,7 +531,7 @@
 					"#df_vanArsdel_Catalog.printSchema()\r\n",
 					"#display(df_vanArsdel_Catalog.limit(100))"
 				],
-				"execution_count": 67
+				"execution_count": 100
 			},
 			{
 				"cell_type": "markdown",
@@ -622,7 +622,7 @@
 					"#df_Southridge_Catalog_Modified.printSchema()\r\n",
 					"#display(df_Southridge_Catalog_Modified.limit(100))"
 				],
-				"execution_count": 78
+				"execution_count": 101
 			},
 			{
 				"cell_type": "markdown",
@@ -710,7 +710,7 @@
 					"#df_FourthCoffee_Catalog_Modified.printSchema()\r\n",
 					"#display(df_FourthCoffee_Catalog_Modified.limit(100))"
 				],
-				"execution_count": 70
+				"execution_count": 102
 			},
 			{
 				"cell_type": "markdown",
@@ -798,7 +798,7 @@
 					"#df_vanArsdel_Catalog_Modified.printSchema()\r\n",
 					"#display(df_vanArsdel_Catalog_Modified.limit(100))"
 				],
-				"execution_count": 74
+				"execution_count": 103
 			},
 			{
 				"cell_type": "markdown",
@@ -838,7 +838,7 @@
 					"#df_unioned.printSchema()\r\n",
 					"#display(df_unioned.limit(100))"
 				],
-				"execution_count": 84
+				"execution_count": 104
 			},
 			{
 				"cell_type": "markdown",
@@ -893,7 +893,7 @@
 					"#df_unioned_withID.printSchema()\r\n",
 					"#display(df_unioned_withID.limit(100))"
 				],
-				"execution_count": 86
+				"execution_count": 105
 			},
 			{
 				"cell_type": "markdown",
@@ -925,7 +925,7 @@
 				"source": [
 					"df_unioned_withID.write.format('parquet').mode('overwrite').save('abfss://movies@demosynapsedls01.dfs.core.windows.net/curated/catalog.parquet')"
 				],
-				"execution_count": 87
+				"execution_count": 106
 			}
 		]
 	}
