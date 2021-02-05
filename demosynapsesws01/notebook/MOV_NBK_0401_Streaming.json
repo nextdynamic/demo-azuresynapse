@@ -114,7 +114,7 @@
 					"\r\n",
 					"import uuid"
 				],
-				"execution_count": 1
+				"execution_count": 8
 			},
 			{
 				"cell_type": "markdown",
@@ -146,7 +146,7 @@
 				"source": [
 					"uuidUDF = udf(lambda : str(uuid.uuid4()),StringType())"
 				],
-				"execution_count": 2
+				"execution_count": 9
 			},
 			{
 				"cell_type": "markdown",
@@ -180,7 +180,7 @@
 					"#df_Southridge.printSchema\r\n",
 					"#display(df_Southridge.limit(100))"
 				],
-				"execution_count": 3
+				"execution_count": 10
 			},
 			{
 				"cell_type": "markdown",
@@ -246,7 +246,7 @@
 					"#df_SouthridgeModified.printSchema\r\n",
 					"#display(df_SouthridgeModified.limit(100))"
 				],
-				"execution_count": 4
+				"execution_count": 11
 			},
 			{
 				"cell_type": "markdown",
@@ -278,7 +278,7 @@
 				"source": [
 					"df_unioned = df_SouthridgeModified"
 				],
-				"execution_count": 5
+				"execution_count": 12
 			},
 			{
 				"cell_type": "markdown",
@@ -328,7 +328,7 @@
 					"#df_unioned_withID.printSchema()\r\n",
 					"#display(df_unioned_withID.limit(100))"
 				],
-				"execution_count": 6
+				"execution_count": 13
 			},
 			{
 				"cell_type": "markdown",
@@ -360,7 +360,7 @@
 				"source": [
 					"df_unioned_withID.write.format('parquet').mode('overwrite').save('abfss://movies@demosynapsedls01.dfs.core.windows.net/curated/streaming.parquet')"
 				],
-				"execution_count": 7
+				"execution_count": 14
 			}
 		]
 	}
