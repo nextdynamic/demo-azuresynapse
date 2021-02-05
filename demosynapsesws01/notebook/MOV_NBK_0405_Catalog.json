@@ -111,10 +111,10 @@
 				},
 				"source": [
 					"from pyspark.sql.types import StringType, TimestampType, DateType, IntegerType, DecimalType, BooleanType, StructType\r\n",
-					"from pyspark.sql.functions import col, lit, udf, greatest, explode\r\n",
+					"from pyspark.sql.functions import col, lit, udf, greatest, explode, to_date\r\n",
 					"import uuid"
 				],
-				"execution_count": 18
+				"execution_count": 66
 			},
 			{
 				"cell_type": "markdown",
@@ -516,7 +516,7 @@
 							"deleting": false
 						}
 					},
-					"collapsed": true
+					"collapsed": false
 				},
 				"source": [
 					"# Join dataframes\r\n",
@@ -531,7 +531,7 @@
 					"#df_vanArsdel_Catalog.printSchema()\r\n",
 					"#display(df_vanArsdel_Catalog.limit(100))"
 				],
-				"execution_count": 52
+				"execution_count": 67
 			},
 			{
 				"cell_type": "markdown",
@@ -614,15 +614,15 @@
 					"                           .withColumn(\"Rating\", col(\"Rating\").cast(StringType()))\r\n",
 					"                           .withColumn(\"RuntimeMinutes\", col(\"RuntimeMinutes\").cast(IntegerType()))\r\n",
 					"                           .withColumn(\"TheatricalReleaseYear\", col(\"TheatricalReleaseYear\").cast(IntegerType()))\r\n",
-					"                           .withColumn(\"PhysicalAvailabilityDate\", col(\"PhysicalAvailabilityDate\").cast(DateType()))\r\n",
-					"                           .withColumn(\"StreamingAvailabilityDate\", col(\"StreamingAvailabilityDate\").cast(DateType()))\r\n",
+					"                           .withColumn(\"PhysicalAvailabilityDate\", to_date(col(\"PhysicalAvailabilityDate\"), 'yyyy-MM-dd HH:mm:ss'))\r\n",
+					"                           .withColumn(\"StreamingAvailabilityDate\", to_date(col(\"StreamingAvailabilityDate\"), 'yyyy-MM-dd HH:mm:ss'))\r\n",
 					")\r\n",
 					"\r\n",
 					"# Display dataframe\r\n",
 					"#df_Southridge_Catalog_Modified.printSchema()\r\n",
 					"#display(df_Southridge_Catalog_Modified.limit(100))"
 				],
-				"execution_count": 32
+				"execution_count": 78
 			},
 			{
 				"cell_type": "markdown",
@@ -702,7 +702,7 @@
 					"                           .withColumn(\"Rating\", col(\"Rating\").cast(StringType()))\r\n",
 					"                           .withColumn(\"RuntimeMinutes\", col(\"RuntimeMinutes\").cast(IntegerType()))\r\n",
 					"                           .withColumn(\"TheatricalReleaseYear\", col(\"TheatricalReleaseYear\").cast(IntegerType()))\r\n",
-					"                           .withColumn(\"PhysicalAvailabilityDate\", col(\"PhysicalAvailabilityDate\").cast(DateType()))\r\n",
+					"                           .withColumn(\"PhysicalAvailabilityDate\", to_date(col(\"PhysicalAvailabilityDate\"), 'MM-dd-yyyy'))\r\n",
 					"                           .withColumn(\"StreamingAvailabilityDate\", col(\"StreamingAvailabilityDate\").cast(DateType()))\r\n",
 					")\r\n",
 					"\r\n",
@@ -710,7 +710,7 @@
 					"#df_FourthCoffee_Catalog_Modified.printSchema()\r\n",
 					"#display(df_FourthCoffee_Catalog_Modified.limit(100))"
 				],
-				"execution_count": 50
+				"execution_count": 70
 			},
 			{
 				"cell_type": "markdown",
@@ -737,7 +737,7 @@
 							"deleting": false
 						}
 					},
-					"collapsed": true
+					"collapsed": false
 				},
 				"source": [
 					"# Add columns\r\n",
@@ -790,15 +790,15 @@
 					"                           .withColumn(\"Rating\", col(\"Rating\").cast(StringType()))\r\n",
 					"                           .withColumn(\"RuntimeMinutes\", col(\"RuntimeMinutes\").cast(IntegerType()))\r\n",
 					"                           .withColumn(\"TheatricalReleaseYear\", col(\"TheatricalReleaseYear\").cast(IntegerType()))\r\n",
-					"                           .withColumn(\"PhysicalAvailabilityDate\", col(\"PhysicalAvailabilityDate\").cast(DateType()))\r\n",
+					"                           .withColumn(\"PhysicalAvailabilityDate\", to_date(col(\"PhysicalAvailabilityDate\"), 'MM-dd-yyyy'))\r\n",
 					"                           .withColumn(\"StreamingAvailabilityDate\", col(\"StreamingAvailabilityDate\").cast(DateType()))\r\n",
 					")\r\n",
 					"\r\n",
 					"# Display dataframe\r\n",
-					"df_vanArsdel_Catalog_Modified.printSchema()\r\n",
+					"#df_vanArsdel_Catalog_Modified.printSchema()\r\n",
 					"#display(df_vanArsdel_Catalog_Modified.limit(100))"
 				],
-				"execution_count": 53
+				"execution_count": 74
 			},
 			{
 				"cell_type": "markdown",
@@ -830,7 +830,7 @@
 				"source": [
 					"df_unioned = (\r\n",
 					"    df_Southridge_Catalog_Modified\r\n",
-					"        .union(df_FouthCoffee_Catalog_Modified)\r\n",
+					"        .union(df_FourthCoffee_Catalog_Modified)\r\n",
 					"        .union(df_vanArsdel_Catalog_Modified)\r\n",
 					")\r\n",
 					"\r\n",
@@ -838,7 +838,7 @@
 					"#df_unioned.printSchema()\r\n",
 					"#display(df_unioned.limit(100))"
 				],
-				"execution_count": 32
+				"execution_count": 60
 			},
 			{
 				"cell_type": "markdown",
