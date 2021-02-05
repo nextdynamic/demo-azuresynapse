@@ -29,7 +29,7 @@
 			},
 			"kernelspec": {
 				"name": "synapse_pyspark",
-				"display_name": "Synapse PySpark"
+				"display_name": "python"
 			},
 			"language_info": {
 				"name": "python"
@@ -97,7 +97,7 @@
 					}
 				},
 				"source": [
-					"## Create functions"
+					"## Define functions"
 				]
 			},
 			{

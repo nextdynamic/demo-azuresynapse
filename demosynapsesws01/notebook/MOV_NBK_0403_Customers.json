@@ -29,7 +29,7 @@
 			},
 			"kernelspec": {
 				"name": "synapse_pyspark",
-				"display_name": "Synapse PySpark"
+				"display_name": "python"
 			},
 			"language_info": {
 				"name": "python"
@@ -96,7 +96,7 @@
 					}
 				},
 				"source": [
-					"## Create functions"
+					"## Define functions"
 				]
 			},
 			{
@@ -252,6 +252,19 @@
 				"execution_count": 56
 			},
 			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"## Join data Southridge"
+				]
+			},
+			{
 				"cell_type": "code",
 				"metadata": {
 					"jupyter": {
@@ -399,7 +412,7 @@
 					}
 				},
 				"source": [
-					"## Transform data"
+					"## Transform data Southridge"
 				]
 			},
 			{
@@ -539,6 +552,19 @@
 				"execution_count": 62
 			},
 			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"## Transform data Fourth Coffee"
+				]
+			},
+			{
 				"cell_type": "code",
 				"metadata": {
 					"jupyter": {
@@ -601,6 +627,19 @@
 					"#display(df_FourthCoffee_Modified.limit(100))"
 				],
 				"execution_count": 63
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"## Transform data vanArsdel"
+				]
 			},
 			{
 				"cell_type": "code",
@@ -735,12 +774,12 @@
 				},
 				"source": [
 					"# Add columns\r\n",
-					"df_unioned_withID = df_unioned.withColumn(\"GlobalTransactionID\", uuidUDF())\r\n",
+					"df_unioned_withID = df_unioned.withColumn(\"GlobalCustomerID\", uuidUDF())\r\n",
 					"\r\n",
 					"# Order columns\r\n",
 					"df_unioned_withID = df_unioned_withID.select(\r\n",
 					"    'SourceSystemID',\r\n",
-					"    'GlobalTransactionID',\r\n",
+					"    'GlobalCustomerID',\r\n",
 					"    'SourceSystemCustomerID',\r\n",
 					"    'LastName',\r\n",
 					"    'FirstName',\r\n",

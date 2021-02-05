@@ -29,7 +29,7 @@
 			},
 			"kernelspec": {
 				"name": "synapse_pyspark",
-				"display_name": "Synapse PySpark"
+				"display_name": "python"
 			},
 			"language_info": {
 				"name": "python"
@@ -96,7 +96,7 @@
 					}
 				},
 				"source": [
-					"## Create functions"
+					"## Define functions"
 				]
 			},
 			{
@@ -128,7 +128,7 @@
 					}
 				},
 				"source": [
-					"## Import data"
+					"## Import data Fourth Coffee"
 				]
 			},
 			{
@@ -151,6 +151,19 @@
 					"#display(df_FourthCoffee.limit(100))"
 				],
 				"execution_count": 10
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"## Import data vanArsdel"
+				]
 			},
 			{
 				"cell_type": "code",
@@ -192,7 +205,7 @@
 					}
 				},
 				"source": [
-					"## Transform data"
+					"## Transform data Fourth Coffee"
 				]
 			},
 			{
@@ -253,6 +266,19 @@
 					"#display(df_FourthCoffeeModified.limit(100))"
 				],
 				"execution_count": 12
+			},
+			{
+				"cell_type": "markdown",
+				"metadata": {
+					"nteract": {
+						"transient": {
+							"deleting": false
+						}
+					}
+				},
+				"source": [
+					"## Transform data vanArsdel"
+				]
 			},
 			{
 				"cell_type": "code",
