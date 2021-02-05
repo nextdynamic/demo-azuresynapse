@@ -185,13 +185,17 @@
 					"                        ignoreTrailingWhiteSpace=True\r\n",
 					"                        )\r\n",
 					"\r\n",
-					"df_Southridge_Catalog = df_Southridge_Catalog.withColumn('actor', explode('actors'))\r\n",
+					"df_Southridge_Catalog = (\r\n",
+					"    df_Southridge_Catalog\r\n",
+					"        .withColumn('actor', explode('actors'))\r\n",
+					"        .drop('actors', '_attachments', '_etag', '_rid', '_self', '_ts')\r\n",
+					")\r\n",
 					"\r\n",
 					"# Display dataframe\r\n",
 					"df_Southridge_Catalog.printSchema()\r\n",
 					"#display(df_Southridge_Catalog.limit(100))"
 				],
-				"execution_count": 20
+				"execution_count": 21
 			},
 			{
 				"cell_type": "code",
