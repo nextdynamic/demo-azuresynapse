@@ -1,0 +1,16 @@
+{
+	"name": "SQL script 4",
+	"properties": {
+		"content": {
+			"query": "IF NOT EXISTS (SELECT * FROM sys.external_file_formats WHERE name = 'SynapseParquetFormat') \n\tCREATE EXTERNAL FILE FORMAT [SynapseParquetFormat] \n\tWITH ( FORMAT_TYPE = PARQUET)\nGO\n\nIF NOT EXISTS (SELECT * FROM sys.external_data_sources WHERE name = 'movies_demosynapsedls01_dfs_core_windows_net') \n\tCREATE EXTERNAL DATA SOURCE [movies_demosynapsedls01_dfs_core_windows_net] \n\tWITH (\n\t\tLOCATION   = 'https://demosynapsedls01.dfs.core.windows.net/movies', \n\t)\nGo\n\nCREATE EXTERNAL TABLE ddd (\n\t[SourceSystemID] varchar(8000),\n\t[GlobalTransactionID] varchar(8000),\n\t[SourceSystemTransactionID] varchar(8000),\n\t[CustomerID] varchar(8000),\n\t[MovieID] varchar(8000),\n\t[StreamStart] datetime2(7),\n\t[StreamEnd] datetime2(7),\n\t[CreatedDate] date,\n\t[UpdatedDate] date\n\t)\n\tWITH (\n\tLOCATION = 'curated/streaming.parquet/part-00000-9e77542c-9bad-423d-89bb-2ee0cb99ab79-c000.snappy.parquet',\n\tDATA_SOURCE = [movies_demosynapsedls01_dfs_core_windows_net],\n\tFILE_FORMAT = [SynapseParquetFormat]\n\t)\nGO\n\nSELECT TOP 100 * FROM ddd\nGO\n\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "Built-in",
+				"databaseName": "Movies"
+			}
+		},
+		"type": "SqlQuery"
+	}
+}
