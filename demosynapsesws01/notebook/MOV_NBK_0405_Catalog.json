@@ -113,7 +113,7 @@
 					"from pyspark.sql.types import StringType, TimestampType, DateType, IntegerType, DecimalType, BooleanType, StructType\r\n",
 					"from pyspark.sql.functions import col, lit, udf, greatest, explode, to_date, when"
 				],
-				"execution_count": 1
+				"execution_count": 25
 			},
 			{
 				"cell_type": "markdown",
@@ -145,7 +145,7 @@
 				"source": [
 					"uuidUDF = udf(lambda : str(uuid.uuid4()),StringType())"
 				],
-				"execution_count": 2
+				"execution_count": 26
 			},
 			{
 				"cell_type": "markdown",
@@ -188,7 +188,7 @@
 					"#df_Southridge_Catalog.printSchema()\r\n",
 					"#display(df_Southridge_Catalog.limit(100))"
 				],
-				"execution_count": 3
+				"execution_count": 27
 			},
 			{
 				"cell_type": "markdown",
@@ -223,7 +223,7 @@
 					"#df_FourthCoffee_Actors.printSchema()\r\n",
 					"#display(df_FourthCoffee_Actors.limit(100))"
 				],
-				"execution_count": 4
+				"execution_count": 28
 			},
 			{
 				"cell_type": "code",
@@ -253,7 +253,7 @@
 					"#df_FourthCoffee_MovieActors.printSchema()\r\n",
 					"#display(df_FourthCoffee_MovieActors.limit(100))"
 				],
-				"execution_count": 5
+				"execution_count": 29
 			},
 			{
 				"cell_type": "code",
@@ -283,7 +283,7 @@
 					"#df_FourthCoffee_Movies.printSchema()\r\n",
 					"#display(df_FourthCoffee_Movies.limit(100))"
 				],
-				"execution_count": 6
+				"execution_count": 30
 			},
 			{
 				"cell_type": "code",
@@ -313,7 +313,7 @@
 					"#df_FourthCoffee_OnlineMovieMappings.printSchema()\r\n",
 					"#display(df_FourthCoffee_OnlineMovieMappings.limit(100))"
 				],
-				"execution_count": 7
+				"execution_count": 31
 			},
 			{
 				"cell_type": "markdown",
@@ -355,7 +355,7 @@
 					"#df_FourthCoffee_Catalog.printSchema()\r\n",
 					"#display(df_FourthCoffee_Catalog.limit(100))"
 				],
-				"execution_count": 8
+				"execution_count": 32
 			},
 			{
 				"cell_type": "markdown",
@@ -398,7 +398,7 @@
 					"#df_vanArsdel_Actors.printSchema()\r\n",
 					"#display(df_vanArsdel_Actors.limit(100))"
 				],
-				"execution_count": 9
+				"execution_count": 33
 			},
 			{
 				"cell_type": "code",
@@ -428,7 +428,7 @@
 					"#df_vanArsdel_MovieActors.printSchema()\r\n",
 					"#display(df_vanArsdel_MovieActors.limit(100))"
 				],
-				"execution_count": 10
+				"execution_count": 34
 			},
 			{
 				"cell_type": "code",
@@ -458,7 +458,7 @@
 					"#df_vanArsdel_Movies.printSchema()\r\n",
 					"#display(df_vanArsdel_Movies.limit(100))"
 				],
-				"execution_count": 11
+				"execution_count": 35
 			},
 			{
 				"cell_type": "code",
@@ -488,7 +488,7 @@
 					"#df_vanArsdel_Movies.printSchema()\r\n",
 					"#display(df_vanArsdel_Movies.limit(100))"
 				],
-				"execution_count": 12
+				"execution_count": 36
 			},
 			{
 				"cell_type": "markdown",
@@ -530,7 +530,7 @@
 					"#df_vanArsdel_Catalog.printSchema()\r\n",
 					"#display(df_vanArsdel_Catalog.limit(100))"
 				],
-				"execution_count": 13
+				"execution_count": 37
 			},
 			{
 				"cell_type": "markdown",
@@ -621,7 +621,7 @@
 					"#df_Southridge_Catalog_Modified.printSchema()\r\n",
 					"#display(df_Southridge_Catalog_Modified.limit(100))"
 				],
-				"execution_count": 14
+				"execution_count": 38
 			},
 			{
 				"cell_type": "markdown",
@@ -709,7 +709,7 @@
 					"#df_FourthCoffee_Catalog_Modified.printSchema()\r\n",
 					"#display(df_FourthCoffee_Catalog_Modified.limit(100))"
 				],
-				"execution_count": 15
+				"execution_count": 39
 			},
 			{
 				"cell_type": "markdown",
@@ -797,7 +797,7 @@
 					"#df_vanArsdel_Catalog_Modified.printSchema()\r\n",
 					"#display(df_vanArsdel_Catalog_Modified.limit(100))"
 				],
-				"execution_count": 16
+				"execution_count": 40
 			},
 			{
 				"cell_type": "markdown",
@@ -837,7 +837,7 @@
 					"#df_unioned.printSchema()\r\n",
 					"#display(df_unioned.limit(100))"
 				],
-				"execution_count": 17
+				"execution_count": 41
 			},
 			{
 				"cell_type": "markdown",
@@ -892,13 +892,11 @@
 					"    'StreamingAvailabilityDate'\r\n",
 					")\r\n",
 					"\r\n",
-					"#sdf.select(\"*\", when(col(\"pro\").isNull(), lit(\"new pro\")).otherwise(col(\"pro\"))=\r\n",
-					"\r\n",
 					"# Display dataframe\r\n",
 					"#df_unioned_withID.printSchema()\r\n",
 					"#display(df_unioned_withID.limit(100))"
 				],
-				"execution_count": 18
+				"execution_count": 44
 			},
 			{
 				"cell_type": "markdown",
@@ -930,7 +928,7 @@
 				"source": [
 					"df_unioned_withID.write.format('parquet').mode('overwrite').save('abfss://movies@demosynapsedls01.dfs.core.windows.net/curated/catalog.parquet')"
 				],
-				"execution_count": 19
+				"execution_count": 45
 			}
 		]
 	}
