@@ -111,10 +111,10 @@
 				},
 				"source": [
 					"from pyspark.sql.types import StringType, TimestampType, DateType, IntegerType, DecimalType, BooleanType, StructType\r\n",
-					"from pyspark.sql.functions import col, lit, udf, greatest\r\n",
+					"from pyspark.sql.functions import col, lit, udf, greatest, when, upper\r\n",
 					"import uuid"
 				],
-				"execution_count": 1
+				"execution_count": 21
 			},
 			{
 				"cell_type": "markdown",
@@ -146,7 +146,7 @@
 				"source": [
 					"uuidUDF = udf(lambda : str(uuid.uuid4()),StringType())"
 				],
-				"execution_count": null
+				"execution_count": 22
 			},
 			{
 				"cell_type": "markdown",
@@ -507,6 +507,11 @@
 					"                           .withColumn(\"UpdatedDate\", col(\"UpdatedDate\").cast(DateType()))\r\n",
 					")\r\n",
 					"\r\n",
+					"# Clean up some data\r\n",
+					"df_Southridge_Sales_Modified = (\r\n",
+					"    df_Southridge_Sales_Modified.withColumn(\"AddressLine2\", when(upper(col(\"AddressLine2\")) == \"NULL\", None).otherwise(col(\"AddressLine2\")))\r\n",
+					")\r\n",
+					"\r\n",
 					"# Display dataframe\r\n",
 					"#df_Southridge_Sales_Modified.printSchema()\r\n",
 					"#display(df_Southridge_Sales_Modified.limit(100))"
@@ -573,6 +578,11 @@
 					"                           .withColumn(\"PhoneNumber\", col(\"PhoneNumber\").cast(StringType()))\r\n",
 					"                           .withColumn(\"CreatedDate\", col(\"CreatedDate\").cast(DateType()))\r\n",
 					"                           .withColumn(\"UpdatedDate\", col(\"UpdatedDate\").cast(DateType()))\r\n",
+					")\r\n",
+					"\r\n",
+					"# Clean up some data\r\n",
+					"df_Southridge_Streaming_Modified = (\r\n",
+					"    df_Southridge_Streaming_Modified.withColumn(\"AddressLine2\", when(upper(col(\"AddressLine2\")) == \"NULL\", None).otherwise(col(\"AddressLine2\")))\r\n",
 					")\r\n",
 					"\r\n",
 					"# Display dataframe\r\n",
@@ -650,6 +660,11 @@
 					"                           .withColumn(\"PhoneNumber\", col(\"PhoneNumber\").cast(StringType()))\r\n",
 					"                           .withColumn(\"CreatedDate\", col(\"CreatedDate\").cast(DateType()))\r\n",
 					"                           .withColumn(\"UpdatedDate\", col(\"UpdatedDate\").cast(DateType()))\r\n",
+					")\r\n",
+					"\r\n",
+					"# Clean up some data\r\n",
+					"df_FourthCoffee_Modified = (\r\n",
+					"    df_FourthCoffee_Modified.withColumn(\"AddressLine2\", when(upper(col(\"AddressLine2\")) == \"NULL\", None).otherwise(col(\"AddressLine2\")))\r\n",
 					")\r\n",
 					"\r\n",
 					"# Display dataframe\r\n",
@@ -731,12 +746,12 @@
 					"\r\n",
 					"# Clean up some data\r\n",
 					"df_vanArsdel_Modified = (\r\n",
-					"    df_vanArsdel_Modified.withColumn(\"AddressLine2\", when(upper(col(\"AddressLine2\")) == \"NULL\"), None).otherwise(col(\"AddressLine2\"))\r\n",
+					"    df_vanArsdel_Modified.withColumn(\"AddressLine2\", when(upper(col(\"AddressLine2\")) == \"NULL\", None).otherwise(col(\"AddressLine2\")))\r\n",
 					")\r\n",
 					"\r\n",
 					"# Display dataframe\r\n",
 					"#df_vanArsdel_Modified.printSchema()\r\n",
-					"display(df_vanArsdel_Modified.limit(100))"
+					"#display(df_vanArsdel_Modified.limit(100))"
 				],
 				"execution_count": null
 			},
