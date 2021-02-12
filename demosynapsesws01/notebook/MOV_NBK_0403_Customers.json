@@ -189,7 +189,7 @@
 					"#df_Southridge_Sales_Customers.printSchema()\r\n",
 					"#display(df_Southridge_Sales_Customers.limit(100))"
 				],
-				"execution_count": null
+				"execution_count": 23
 			},
 			{
 				"cell_type": "code",
@@ -219,7 +219,7 @@
 					"#df_Southridge_Sales_Adresses.printSchema()\r\n",
 					"#display(df_Southridge_Sales_Adresses.limit(100))"
 				],
-				"execution_count": null
+				"execution_count": 24
 			},
 			{
 				"cell_type": "code",
@@ -249,7 +249,7 @@
 					"#df_Southridge_Streaming_Customers.printSchema()\r\n",
 					"#display(df_Southridge_Streaming_Customers.limit(100))"
 				],
-				"execution_count": null
+				"execution_count": 25
 			},
 			{
 				"cell_type": "code",
@@ -279,7 +279,7 @@
 					"#df_Southridge_Streaming_Adresses.printSchema()\r\n",
 					"#display(df_Southridge_Streaming_Adresses.limit(100))"
 				],
-				"execution_count": null
+				"execution_count": 26
 			},
 			{
 				"cell_type": "markdown",
@@ -322,7 +322,7 @@
 					"#df_Southridge_Streaming_Joined.printSchema()\r\n",
 					"#display(df_Southridge_Streaming_Joined.limit(100))"
 				],
-				"execution_count": null
+				"execution_count": 27
 			},
 			{
 				"cell_type": "code",
@@ -352,7 +352,7 @@
 					"#df_Southridge_Sales_Joined.printSchema()\r\n",
 					"#display(df_Southridge_Sales_Joined.limit(100))"
 				],
-				"execution_count": null
+				"execution_count": 28
 			},
 			{
 				"cell_type": "markdown",
@@ -387,7 +387,7 @@
 					"#df_FourthCoffee.printSchema()\r\n",
 					"#display(df_FourthCoffee.limit(100))"
 				],
-				"execution_count": null
+				"execution_count": 29
 			},
 			{
 				"cell_type": "markdown",
@@ -430,7 +430,7 @@
 					"#df_vanArsdel.printSchema()\r\n",
 					"#display(df_vanArsdel.limit(100))"
 				],
-				"execution_count": null
+				"execution_count": 30
 			},
 			{
 				"cell_type": "markdown",
@@ -516,7 +516,7 @@
 					"#df_Southridge_Sales_Modified.printSchema()\r\n",
 					"#display(df_Southridge_Sales_Modified.limit(100))"
 				],
-				"execution_count": null
+				"execution_count": 31
 			},
 			{
 				"cell_type": "code",
@@ -589,7 +589,7 @@
 					"#df_Southridge_Streaming_Modified.printSchema()\r\n",
 					"#display(df_Southridge_Streaming_Modified.limit(100))"
 				],
-				"execution_count": null
+				"execution_count": 32
 			},
 			{
 				"cell_type": "markdown",
@@ -671,7 +671,7 @@
 					"#df_FourthCoffee_Modified.printSchema()\r\n",
 					"#display(df_FourthCoffee_Modified.limit(100))"
 				],
-				"execution_count": null
+				"execution_count": 33
 			},
 			{
 				"cell_type": "markdown",
@@ -753,7 +753,7 @@
 					"#df_vanArsdel_Modified.printSchema()\r\n",
 					"#display(df_vanArsdel_Modified.limit(100))"
 				],
-				"execution_count": null
+				"execution_count": 34
 			},
 			{
 				"cell_type": "markdown",
@@ -793,7 +793,7 @@
 					"#df_unioned.printSchema()\r\n",
 					"#display(df_unioned.limit(100))"
 				],
-				"execution_count": null
+				"execution_count": 35
 			},
 			{
 				"cell_type": "markdown",
@@ -847,7 +847,7 @@
 					"#df_unioned_withID.printSchema()\r\n",
 					"#display(df_unioned_withID.limit(100))"
 				],
-				"execution_count": null
+				"execution_count": 36
 			},
 			{
 				"cell_type": "markdown",
@@ -879,10 +879,10 @@
 				"source": [
 					"df_unioned_withID.write.format('parquet').mode('overwrite').save('abfss://movies@demosynapsedls01.dfs.core.windows.net/curated/customers.parquet')\r\n",
 					"\r\n",
-					"df_unioned_withID.count()\r\n",
+					"#df_unioned_withID.count()\r\n",
 					"# 1.999 Rows"
 				],
-				"execution_count": null
+				"execution_count": 37
 			}
 		]
 	}
