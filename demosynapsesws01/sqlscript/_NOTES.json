@@ -1,0 +1,19 @@
+{
+	"name": "_NOTES",
+	"properties": {
+		"folder": {
+			"name": "Movies"
+		},
+		"content": {
+			"query": "Parquet\nStreaming: 721.696 Rows\nRentals:  98.644 Rows\nCustomers: 1.999 Rows\nSales: 208.960 Rows\nCatalog: 9.331 Rows\n\nSQLOD\nStreaming: 721.696 Rows\nRentals:  98.644 Rows\nCustomers: 1.999 Rows\nSales: 208.960 Rows\nCatalog: 9.331 Rows\n\nSQLDW\nDimActors: 392\nDimCategories: 6\nDimCustomers: \nDimDate: 365\nDimLocation: \nDimMovieActors: 4708\nDimMovies: 1407\nDimRatings: 4\nDimTime: 86.400\nFactRentals: \nFactSales: \nFactStreaming: \nNumbers: 1.048.576\n\n\n\n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "Built-in",
+				"databaseName": "master"
+			}
+		},
+		"type": "SqlQuery"
+	}
+}
