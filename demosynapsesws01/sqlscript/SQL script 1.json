@@ -2,7 +2,7 @@
 	"name": "SQL script 1",
 	"properties": {
 		"content": {
-			"query": "-- SELECT COUNT(1) FROM  FROM [dbo].[FactRentals]\n\nDECLARE @MaxSK INT;\nSELECT @MaxSK = 0\n\nSELECT\n    @MaxSK + ROW_NUMBER() OVER (ORDER BY ExternalTable.TransactionID) AS RentalSK,\n    ren.SourceSystemTransactionID AS TransactionID,\n    dcus.CustomerSK AS CustomerSK,\n    ren.SourceSystemID AS LocationSK,\n    mov.MovieSK AS MovieSK,\n    rendat.DateSK AS RentalDateSK,\n    retdat.DateSK AS ReturnDateSK,\n    CASE\n        WHEN DATEDIFF(d, ren.RentalDate, ren.ReturnDate) < 0 THEN NULL\n        ELSE DATEDIFF(d, ren.RentalDate, ren.ReturnDate)\n    END AS RentalDuration,\n    ren.RentalCost,\n    ren.LateFee,\n    ren.RentalCost + ren.LateFee AS TotalCost,\n    ren.RewindFlag\nFROM\n    [ext].[rentals] ren\nLEFT JOIN\n    [dbo].[DimDate] rendat\n    ON ren.RentalDate = rendat.DateValue\nLEFT JOIN\n    [dbo].[DimDate] retdat\n    ON ren.ReturnDate = retdat.DateValue\nLEFT JOIN\n    [ext].[catalog] cat\n    ON ren.MovieID = cat.SourceSystemMovieID\nLEFT JOIN\n    [dbo].[DimMovies] mov\n    ON cat.Title = mov.MovieTitle\nLEFT JOIN\n    [ext].[customers] cust\n    ON ren.CustomerID = cust.SourceSystemCustomerID\nLEFT JOIN\n    [dbo].[DimCustomers] dcus\n    ON cust.LastName = dcus.Lastname\n    AND cust.FirstName = dcus.FirstName\n    AND cust.AddressLine1 = dcus.AddressLine1\n    AND cust.ZipCode = dcus.ZipCode",
+			"query": "SELECT * FROM dbo.FactRentals",
 			"metadata": {
 				"language": "sql"
 			},
