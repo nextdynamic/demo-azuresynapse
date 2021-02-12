@@ -112,7 +112,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"container_name": "movies",
-										"container_path": "raw/Southridge/CloudSales",
+										"container_path": "internal/Southridge/CloudSales",
 										"container_file": {
 											"value": "@concat(item().table_schema,'.',item().table_name,'.parquet')",
 											"type": "Expression"
@@ -203,7 +203,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"container_name": "movies",
-										"container_path": "raw/Southridge/CloudStreaming",
+										"container_path": "internal/Southridge/CloudStreaming",
 										"container_file": {
 											"value": "@concat(item().table_schema,'.',item().table_name,'.parquet')",
 											"type": "Expression"
