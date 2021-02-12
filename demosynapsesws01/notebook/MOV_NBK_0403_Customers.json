@@ -30,7 +30,7 @@
 			},
 			"kernelspec": {
 				"name": "synapse_pyspark",
-				"display_name": "python"
+				"display_name": "Synapse PySpark"
 			},
 			"language_info": {
 				"name": "python"
@@ -47,8 +47,10 @@
 				"sparkVersion": "2.4",
 				"nodeCount": 10,
 				"cores": 8,
-				"memory": 56
-			}
+				"memory": 56,
+				"automaticScaleJobs": false
+			},
+			"sessionKeepAliveTimeout": 30
 		},
 		"cells": [
 			{
@@ -112,7 +114,7 @@
 					"from pyspark.sql.functions import col, lit, udf, greatest\r\n",
 					"import uuid"
 				],
-				"execution_count": 18
+				"execution_count": 1
 			},
 			{
 				"cell_type": "markdown",
@@ -144,7 +146,7 @@
 				"source": [
 					"uuidUDF = udf(lambda : str(uuid.uuid4()),StringType())"
 				],
-				"execution_count": 19
+				"execution_count": 2
 			},
 			{
 				"cell_type": "markdown",
@@ -187,7 +189,7 @@
 					"#df_Southridge_Sales_Customers.printSchema()\r\n",
 					"#display(df_Southridge_Sales_Customers.limit(100))"
 				],
-				"execution_count": 20
+				"execution_count": 3
 			},
 			{
 				"cell_type": "code",
@@ -217,7 +219,7 @@
 					"#df_Southridge_Sales_Adresses.printSchema()\r\n",
 					"#display(df_Southridge_Sales_Adresses.limit(100))"
 				],
-				"execution_count": 21
+				"execution_count": 4
 			},
 			{
 				"cell_type": "code",
@@ -247,7 +249,7 @@
 					"#df_Southridge_Streaming_Customers.printSchema()\r\n",
 					"#display(df_Southridge_Streaming_Customers.limit(100))"
 				],
-				"execution_count": 22
+				"execution_count": 5
 			},
 			{
 				"cell_type": "code",
@@ -277,7 +279,7 @@
 					"#df_Southridge_Streaming_Adresses.printSchema()\r\n",
 					"#display(df_Southridge_Streaming_Adresses.limit(100))"
 				],
-				"execution_count": 23
+				"execution_count": 6
 			},
 			{
 				"cell_type": "markdown",
@@ -320,7 +322,7 @@
 					"#df_Southridge_Streaming_Joined.printSchema()\r\n",
 					"#display(df_Southridge_Streaming_Joined.limit(100))"
 				],
-				"execution_count": 24
+				"execution_count": 7
 			},
 			{
 				"cell_type": "code",
@@ -350,7 +352,7 @@
 					"#df_Southridge_Sales_Joined.printSchema()\r\n",
 					"#display(df_Southridge_Sales_Joined.limit(100))"
 				],
-				"execution_count": 25
+				"execution_count": 8
 			},
 			{
 				"cell_type": "markdown",
@@ -385,7 +387,7 @@
 					"#df_FourthCoffee.printSchema()\r\n",
 					"#display(df_FourthCoffee.limit(100))"
 				],
-				"execution_count": 26
+				"execution_count": 9
 			},
 			{
 				"cell_type": "markdown",
@@ -428,7 +430,7 @@
 					"#df_vanArsdel.printSchema()\r\n",
 					"#display(df_vanArsdel.limit(100))"
 				],
-				"execution_count": 27
+				"execution_count": 10
 			},
 			{
 				"cell_type": "markdown",
@@ -509,7 +511,7 @@
 					"#df_Southridge_Sales_Modified.printSchema()\r\n",
 					"#display(df_Southridge_Sales_Modified.limit(100))"
 				],
-				"execution_count": 28
+				"execution_count": 11
 			},
 			{
 				"cell_type": "code",
@@ -577,7 +579,7 @@
 					"#df_Southridge_Streaming_Modified.printSchema()\r\n",
 					"#display(df_Southridge_Streaming_Modified.limit(100))"
 				],
-				"execution_count": 29
+				"execution_count": 12
 			},
 			{
 				"cell_type": "markdown",
@@ -654,7 +656,7 @@
 					"#df_FourthCoffee_Modified.printSchema()\r\n",
 					"#display(df_FourthCoffee_Modified.limit(100))"
 				],
-				"execution_count": 30
+				"execution_count": 13
 			},
 			{
 				"cell_type": "markdown",
@@ -731,7 +733,7 @@
 					"#df_vanArsdel_Modified.printSchema()\r\n",
 					"#display(df_vanArsdel_Modified.limit(100))"
 				],
-				"execution_count": 31
+				"execution_count": 14
 			},
 			{
 				"cell_type": "markdown",
@@ -771,7 +773,7 @@
 					"#df_unioned.printSchema()\r\n",
 					"#display(df_unioned.limit(100))"
 				],
-				"execution_count": 32
+				"execution_count": 15
 			},
 			{
 				"cell_type": "markdown",
@@ -825,7 +827,7 @@
 					"#df_unioned_withID.printSchema()\r\n",
 					"#display(df_unioned_withID.limit(100))"
 				],
-				"execution_count": 33
+				"execution_count": 16
 			},
 			{
 				"cell_type": "markdown",
@@ -855,9 +857,12 @@
 					"collapsed": true
 				},
 				"source": [
-					"df_unioned_withID.write.format('parquet').mode('overwrite').save('abfss://movies@demosynapsedls01.dfs.core.windows.net/curated/customers.parquet')"
+					"df_unioned_withID.write.format('parquet').mode('overwrite').save('abfss://movies@demosynapsedls01.dfs.core.windows.net/curated/customers.parquet')\r\n",
+					"\r\n",
+					"#df_unioned_withID.count()\r\n",
+					"# 1.999 Rows"
 				],
-				"execution_count": 34
+				"execution_count": 17
 			}
 		]
 	}

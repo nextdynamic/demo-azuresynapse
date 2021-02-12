@@ -47,8 +47,10 @@
 				"sparkVersion": "2.4",
 				"nodeCount": 10,
 				"cores": 8,
-				"memory": 56
-			}
+				"memory": 56,
+				"automaticScaleJobs": false
+			},
+			"sessionKeepAliveTimeout": 30
 		},
 		"cells": [
 			{
@@ -505,7 +507,10 @@
 					"collapsed": true
 				},
 				"source": [
-					"df_unioned_withID.write.format('parquet').mode('overwrite').save('abfss://movies@demosynapsedls01.dfs.core.windows.net/curated/sales.parquet')"
+					"df_unioned_withID.write.format('parquet').mode('overwrite').save('abfss://movies@demosynapsedls01.dfs.core.windows.net/curated/sales.parquet')\r\n",
+					"\r\n",
+					"df_unioned_withID.count()\r\n",
+					"# 1.999 Rows"
 				],
 				"execution_count": 24
 			}
