@@ -50,7 +50,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"container_name": "movies",
-							"container_path": "raw/FourthCoffee/Transactions_2018"
+							"container_path": "internal/FourthCoffee/Transactions_2018"
 						}
 					}
 				]
