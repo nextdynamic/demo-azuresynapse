@@ -146,7 +146,7 @@
 				"source": [
 					"uuidUDF = udf(lambda : str(uuid.uuid4()),StringType())"
 				],
-				"execution_count": 2
+				"execution_count": null
 			},
 			{
 				"cell_type": "markdown",
@@ -189,7 +189,7 @@
 					"#df_Southridge_Sales_Customers.printSchema()\r\n",
 					"#display(df_Southridge_Sales_Customers.limit(100))"
 				],
-				"execution_count": 3
+				"execution_count": null
 			},
 			{
 				"cell_type": "code",
@@ -219,7 +219,7 @@
 					"#df_Southridge_Sales_Adresses.printSchema()\r\n",
 					"#display(df_Southridge_Sales_Adresses.limit(100))"
 				],
-				"execution_count": 4
+				"execution_count": null
 			},
 			{
 				"cell_type": "code",
@@ -249,7 +249,7 @@
 					"#df_Southridge_Streaming_Customers.printSchema()\r\n",
 					"#display(df_Southridge_Streaming_Customers.limit(100))"
 				],
-				"execution_count": 5
+				"execution_count": null
 			},
 			{
 				"cell_type": "code",
@@ -279,7 +279,7 @@
 					"#df_Southridge_Streaming_Adresses.printSchema()\r\n",
 					"#display(df_Southridge_Streaming_Adresses.limit(100))"
 				],
-				"execution_count": 6
+				"execution_count": null
 			},
 			{
 				"cell_type": "markdown",
@@ -322,7 +322,7 @@
 					"#df_Southridge_Streaming_Joined.printSchema()\r\n",
 					"#display(df_Southridge_Streaming_Joined.limit(100))"
 				],
-				"execution_count": 7
+				"execution_count": null
 			},
 			{
 				"cell_type": "code",
@@ -352,7 +352,7 @@
 					"#df_Southridge_Sales_Joined.printSchema()\r\n",
 					"#display(df_Southridge_Sales_Joined.limit(100))"
 				],
-				"execution_count": 8
+				"execution_count": null
 			},
 			{
 				"cell_type": "markdown",
@@ -387,7 +387,7 @@
 					"#df_FourthCoffee.printSchema()\r\n",
 					"#display(df_FourthCoffee.limit(100))"
 				],
-				"execution_count": 9
+				"execution_count": null
 			},
 			{
 				"cell_type": "markdown",
@@ -430,7 +430,7 @@
 					"#df_vanArsdel.printSchema()\r\n",
 					"#display(df_vanArsdel.limit(100))"
 				],
-				"execution_count": 10
+				"execution_count": null
 			},
 			{
 				"cell_type": "markdown",
@@ -511,7 +511,7 @@
 					"#df_Southridge_Sales_Modified.printSchema()\r\n",
 					"#display(df_Southridge_Sales_Modified.limit(100))"
 				],
-				"execution_count": 11
+				"execution_count": null
 			},
 			{
 				"cell_type": "code",
@@ -579,7 +579,7 @@
 					"#df_Southridge_Streaming_Modified.printSchema()\r\n",
 					"#display(df_Southridge_Streaming_Modified.limit(100))"
 				],
-				"execution_count": 12
+				"execution_count": null
 			},
 			{
 				"cell_type": "markdown",
@@ -656,7 +656,7 @@
 					"#df_FourthCoffee_Modified.printSchema()\r\n",
 					"#display(df_FourthCoffee_Modified.limit(100))"
 				],
-				"execution_count": 13
+				"execution_count": null
 			},
 			{
 				"cell_type": "markdown",
@@ -729,11 +729,16 @@
 					"                           .withColumn(\"UpdatedDate\", col(\"UpdatedDate\").cast(DateType()))\r\n",
 					")\r\n",
 					"\r\n",
+					"# Clean up some data\r\n",
+					"df_vanArsdel_Modified = (\r\n",
+					"    df_vanArsdel_Modified.withColumn(\"AddressLine2\", when(upper(col(\"AddressLine2\")) == \"NULL\"), None).otherwise(col(\"AddressLine2\"))\r\n",
+					")\r\n",
+					"\r\n",
 					"# Display dataframe\r\n",
 					"#df_vanArsdel_Modified.printSchema()\r\n",
-					"#display(df_vanArsdel_Modified.limit(100))"
+					"display(df_vanArsdel_Modified.limit(100))"
 				],
-				"execution_count": 14
+				"execution_count": null
 			},
 			{
 				"cell_type": "markdown",
@@ -773,7 +778,7 @@
 					"#df_unioned.printSchema()\r\n",
 					"#display(df_unioned.limit(100))"
 				],
-				"execution_count": 15
+				"execution_count": null
 			},
 			{
 				"cell_type": "markdown",
@@ -827,7 +832,7 @@
 					"#df_unioned_withID.printSchema()\r\n",
 					"#display(df_unioned_withID.limit(100))"
 				],
-				"execution_count": 16
+				"execution_count": null
 			},
 			{
 				"cell_type": "markdown",
@@ -859,10 +864,10 @@
 				"source": [
 					"df_unioned_withID.write.format('parquet').mode('overwrite').save('abfss://movies@demosynapsedls01.dfs.core.windows.net/curated/customers.parquet')\r\n",
 					"\r\n",
-					"#df_unioned_withID.count()\r\n",
+					"df_unioned_withID.count()\r\n",
 					"# 1.999 Rows"
 				],
-				"execution_count": 17
+				"execution_count": null
 			}
 		]
 	}
