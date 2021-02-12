@@ -30,7 +30,7 @@
 			},
 			"kernelspec": {
 				"name": "synapse_pyspark",
-				"display_name": "python"
+				"display_name": "Synapse PySpark"
 			},
 			"language_info": {
 				"name": "python"
@@ -359,9 +359,12 @@
 					"collapsed": true
 				},
 				"source": [
-					"df_unioned_withID.write.format('parquet').mode('overwrite').save('abfss://movies@demosynapsedls01.dfs.core.windows.net/curated/streaming.parquet')"
+					"df_unioned_withID.write.format('parquet').mode('overwrite').save('abfss://movies@demosynapsedls01.dfs.core.windows.net/curated/streaming.parquet')\r\n",
+					"\r\n",
+					"#df_unioned_withID.count()\r\n",
+					"# 721696 Rows"
 				],
-				"execution_count": 7
+				"execution_count": 8
 			}
 		]
 	}
