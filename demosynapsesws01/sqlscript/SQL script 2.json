@@ -1,0 +1,16 @@
+{
+	"name": "SQL script 2",
+	"properties": {
+		"content": {
+			"query": "SELECT TOP (100) [SourceSystemID]\n,[GlobalMovieID]\n,[SourceSystemMovieID]\n,[SouthridgeMovieID]\n,[ActorID]\n,[ActorName]\n,[ActorGender]\n,[Title]\n,[Genre]\n,[Rating]\n,[RuntimeMinutes]\n,[TheatricalReleaseYear]\n,[PhysicalAvailabilityDate]\n,[StreamingAvailabilityDate]\n FROM [ext].[Catalog]\n where actorname = 'Lisa Morris'",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "Movies",
+				"databaseName": "Movies"
+			}
+		},
+		"type": "SqlQuery"
+	}
+}
