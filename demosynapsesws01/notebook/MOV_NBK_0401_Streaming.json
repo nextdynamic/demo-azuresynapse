@@ -362,7 +362,7 @@
 					"df_unioned_withID.write.format('parquet').mode('overwrite').save('abfss://movies@demosynapsedls01.dfs.core.windows.net/curated/streaming.parquet')\r\n",
 					"\r\n",
 					"#df_unioned_withID.count()\r\n",
-					"# 721696 Rows"
+					"# 721.696 Rows"
 				],
 				"execution_count": 8
 			}
