@@ -112,7 +112,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"container_name": "movies",
-										"container_path": "raw/VanArsdel/OnPremRentals",
+										"container_path": "internal/VanArsdel/OnPremRentals",
 										"container_file": {
 											"value": "@concat(item().table_schema,'.',item().table_name,'.parquet')",
 											"type": "Expression"
