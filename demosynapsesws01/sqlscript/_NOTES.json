@@ -5,7 +5,7 @@
 			"name": "Movies"
 		},
 		"content": {
-			"query": "Parquet\nStreaming: 721.696 Rows\nRentals:  98.644 Rows\nCustomers: 1.999 Rows\nSales: 208.960 Rows\nCatalog: 9.331 Rows\n\nSQLOD\nStreaming: 721.696 Rows\nRentals:  98.644 Rows\nCustomers: 1.800 Rows\nSales: 208.960 Rows\nCatalog: 9.331 Rows\n\nSQLDW\nDimActors: 392\nDimCategories: 6\nDimCustomers: 1.899\nDimDate: 365\nDimLocation: 3\nDimMovieActors: 4.708\nDimMovies: 1.407\nDimRatings: 4\nDimTime: 86.400\nFactRentals: 98.644\nFactSales: \nFactStreaming: \nNumbers: 1.048.576\n",
+			"query": "/*\n\n--- Parquet ---\nStreaming: 721.696 Rows\nRentals:  98.644 Rows\nCustomers: 1.800 Rows\nSales: 208.960 Rows\nCatalog: 9.331 Rows\n\n--- SQLOD ---\nStreaming: 721.696 Rows\nRentals:  98.644 Rows\nCustomers: 1.800 Rows\nSales: 208.960 Rows\nCatalog: 9.331 Rows\n\n--- SQLDW ---\nDimActors: 392\nDimCategories: 6\nDimCustomers: 1.899\nDimDate: 365\nDimLocation: 3\nDimMovieActors: 4.708\nDimMovies: 1.407\nDimRatings: 4\nDimTime: 86.400\nFactRentals: 98.644\nFactSales: \nFactStreaming: \nNumbers: 1.048.576\n\n*/",
 			"metadata": {
 				"language": "sql"
 			},
