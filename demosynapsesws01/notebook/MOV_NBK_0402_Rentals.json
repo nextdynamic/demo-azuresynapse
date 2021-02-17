@@ -30,7 +30,7 @@
 			},
 			"kernelspec": {
 				"name": "synapse_pyspark",
-				"display_name": "python"
+				"display_name": "Synapse PySpark"
 			},
 			"language_info": {
 				"name": "python"
@@ -114,7 +114,7 @@
 					"from pyspark.sql.functions import col, lit, udf, to_date, upper\r\n",
 					"import uuid"
 				],
-				"execution_count": 11
+				"execution_count": 19
 			},
 			{
 				"cell_type": "markdown",
@@ -146,7 +146,7 @@
 				"source": [
 					"uuidUDF = udf(lambda : str(uuid.uuid4()),StringType())"
 				],
-				"execution_count": 12
+				"execution_count": 20
 			},
 			{
 				"cell_type": "markdown",
@@ -180,7 +180,7 @@
 					"#df_FourthCoffee.printSchema()\r\n",
 					"#display(df_FourthCoffee.limit(100))"
 				],
-				"execution_count": 13
+				"execution_count": 21
 			},
 			{
 				"cell_type": "markdown",
@@ -223,7 +223,7 @@
 					"#df_vanArsdel.printSchema()\r\n",
 					"#display(df_vanArsdel.limit(100))"
 				],
-				"execution_count": 14
+				"execution_count": 22
 			},
 			{
 				"cell_type": "markdown",
@@ -295,7 +295,7 @@
 					"#df_FourthCoffeeModified.printSchema()\r\n",
 					"#display(df_FourthCoffeeModified.limit(100))"
 				],
-				"execution_count": 15
+				"execution_count": 23
 			},
 			{
 				"cell_type": "markdown",
@@ -367,7 +367,7 @@
 					"#df_vanArsdelModified.printSchema()\r\n",
 					"#display(df_vanArsdelModified.limit(100))"
 				],
-				"execution_count": 16
+				"execution_count": 24
 			},
 			{
 				"cell_type": "markdown",
@@ -399,7 +399,7 @@
 				"source": [
 					"df_unioned = df_FourthCoffeeModified.unionAll(df_vanArsdelModified)"
 				],
-				"execution_count": 17
+				"execution_count": 25
 			},
 			{
 				"cell_type": "markdown",
@@ -452,7 +452,7 @@
 					"#df_unioned_withID.printSchema()\r\n",
 					"#display(df_unioned_withID.limit(100))"
 				],
-				"execution_count": 18
+				"execution_count": 26
 			},
 			{
 				"cell_type": "markdown",
@@ -487,7 +487,7 @@
 					"#df_unioned_withID.count()\r\n",
 					"# 98.644 Rows"
 				],
-				"execution_count": 19
+				"execution_count": 27
 			}
 		]
 	}

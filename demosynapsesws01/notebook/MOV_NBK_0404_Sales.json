@@ -30,7 +30,7 @@
 			},
 			"kernelspec": {
 				"name": "synapse_pyspark",
-				"display_name": "python"
+				"display_name": "Synapse PySpark"
 			},
 			"language_info": {
 				"name": "python"
@@ -114,7 +114,7 @@
 					"from pyspark.sql.functions import col, lit, udf, greatest, upper\r\n",
 					"import uuid"
 				],
-				"execution_count": 1
+				"execution_count": 9
 			},
 			{
 				"cell_type": "markdown",
@@ -146,7 +146,7 @@
 				"source": [
 					"uuidUDF = udf(lambda : str(uuid.uuid4()),StringType())"
 				],
-				"execution_count": 2
+				"execution_count": 10
 			},
 			{
 				"cell_type": "markdown",
@@ -189,7 +189,7 @@
 					"#df_Southridge_Orders.printSchema()\r\n",
 					"#display(df_Southridge_Orders.limit(100))"
 				],
-				"execution_count": 3
+				"execution_count": 11
 			},
 			{
 				"cell_type": "code",
@@ -219,7 +219,7 @@
 					"#df_Southridge_OrderDetails.printSchema()\r\n",
 					"#display(df_Southridge_OrderDetails.limit(100))"
 				],
-				"execution_count": 4
+				"execution_count": 12
 			},
 			{
 				"cell_type": "markdown",
@@ -255,7 +255,7 @@
 					"                        .withColumnRenamed(\"UpdatedDate\", \"OrderUpdatedDate\")\r\n",
 					")"
 				],
-				"execution_count": 5
+				"execution_count": 13
 			},
 			{
 				"cell_type": "code",
@@ -278,7 +278,7 @@
 					"                        .withColumnRenamed(\"UpdatedDate\", \"OrderDetailUpdatedDate\")\r\n",
 					")"
 				],
-				"execution_count": 6
+				"execution_count": 14
 			},
 			{
 				"cell_type": "markdown",
@@ -321,7 +321,7 @@
 					"#df_Southridge_Orders_Joined.printSchema()\r\n",
 					"#display(df_Southridge_Orders_Joined.limit(100))"
 				],
-				"execution_count": 7
+				"execution_count": 15
 			},
 			{
 				"cell_type": "markdown",
@@ -359,15 +359,15 @@
 					"# Reorder colums\r\n",
 					"df_Southridge_Orders_Modified = df_Southridge_Orders_Modified.select(\r\n",
 					"    'SourceSystemID',\r\n",
-					"    upper('Orders.OrderId'),\r\n",
-					"    upper('Orders.CustomerID'),\r\n",
+					"    'Orders.OrderId',\r\n",
+					"    'Orders.CustomerID',\r\n",
 					"    'OrderDate',\r\n",
 					"    'ShipDate',\r\n",
 					"    'TotalCost',\r\n",
 					"    'OrderCreatedDate',\r\n",
 					"    'OrderUpdatedDate',\r\n",
-					"    upper('OrderDetailID'),\r\n",
-					"    upper('MovieID'),\r\n",
+					"    'OrderDetailID',\r\n",
+					"    'MovieID',\r\n",
 					"    'Quantity',\r\n",
 					"    'UnitCost',\r\n",
 					"    'LineNumber',\r\n",
@@ -380,11 +380,30 @@
 					"    df_Southridge_Orders_Modified.withColumnRenamed(\"OrderId\", \"SourceSystemOrderID\")\r\n",
 					")\r\n",
 					"\r\n",
+					"# Convert column types\r\n",
+					"df_Southridge_Orders_Modified = (\r\n",
+					"    df_Southridge_Orders_Modified.withColumn(\"SourceSystemID\", col(\"SourceSystemID\").cast(IntegerType()))\r\n",
+					"                           .withColumn(\"SourceSystemOrderID\", upper(col(\"SourceSystemOrderID\").cast(StringType())))\r\n",
+					"                           .withColumn(\"CustomerID\", upper(col(\"CustomerID\").cast(StringType())))\r\n",
+					"                           .withColumn(\"OrderDate\", col(\"OrderDate\").cast(StringType()))\r\n",
+					"                           .withColumn(\"ShipDate\", col(\"ShipDate\").cast(StringType()))\r\n",
+					"                           .withColumn(\"TotalCost\", col(\"TotalCost\").cast(StringType()))\r\n",
+					"                           .withColumn(\"OrderCreatedDate\", col(\"OrderCreatedDate\").cast(DateType()))\r\n",
+					"                           .withColumn(\"OrderUpdatedDate\", col(\"OrderUpdatedDate\").cast(DateType()))\r\n",
+					"                           .withColumn(\"OrderDetailID\", upper(col(\"OrderDetailID\").cast(StringType())))\r\n",
+					"                           .withColumn(\"MovieID\", upper(col(\"MovieID\").cast(StringType())))\r\n",
+					"                           .withColumn(\"Quantity\", col(\"Quantity\").cast(IntegerType()))\r\n",
+					"                           .withColumn(\"UnitCost\", col(\"UnitCost\").cast(DecimalType()))\r\n",
+					"                           .withColumn(\"LineNumber\", col(\"LineNumber\").cast(IntegerType()))\r\n",
+					"                           .withColumn(\"OrderDetailCreatedDate\", col(\"OrderDetailCreatedDate\").cast(DateType()))\r\n",
+					"                           .withColumn(\"OrderDetailUpdatedDate\", col(\"OrderDetailUpdatedDate\").cast(DateType()))\r\n",
+					")\r\n",
+					"\r\n",
 					"# Display dataframe\r\n",
 					"#df_Southridge_Orders_Modified.printSchema()\r\n",
 					"#display(df_Southridge_Orders_Modified.limit(100))"
 				],
-				"execution_count": 8
+				"execution_count": 16
 			},
 			{
 				"cell_type": "markdown",
@@ -420,7 +439,7 @@
 					"#df_unioned.printSchema()\r\n",
 					"#display(df_unioned.limit(100))"
 				],
-				"execution_count": 9
+				"execution_count": 17
 			},
 			{
 				"cell_type": "markdown",
@@ -477,7 +496,7 @@
 					"#df_unioned_withID.printSchema()\r\n",
 					"#display(df_unioned_withID.limit(100))"
 				],
-				"execution_count": 10
+				"execution_count": 18
 			},
 			{
 				"cell_type": "markdown",
@@ -512,7 +531,7 @@
 					"#df_unioned_withID.count()\r\n",
 					"# 208.960 Rows"
 				],
-				"execution_count": 11
+				"execution_count": 20
 			}
 		]
 	}

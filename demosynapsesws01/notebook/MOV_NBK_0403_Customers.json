@@ -30,7 +30,7 @@
 			},
 			"kernelspec": {
 				"name": "synapse_pyspark",
-				"display_name": "python"
+				"display_name": "Synapse PySpark"
 			},
 			"language_info": {
 				"name": "python"
@@ -114,7 +114,7 @@
 					"from pyspark.sql.functions import col, lit, udf, greatest, when, upper\r\n",
 					"import uuid"
 				],
-				"execution_count": 12
+				"execution_count": 18
 			},
 			{
 				"cell_type": "markdown",
@@ -146,7 +146,7 @@
 				"source": [
 					"uuidUDF = udf(lambda : str(uuid.uuid4()),StringType())"
 				],
-				"execution_count": 13
+				"execution_count": 19
 			},
 			{
 				"cell_type": "markdown",
@@ -189,7 +189,7 @@
 					"#df_Southridge_Sales_Customers.printSchema()\r\n",
 					"#display(df_Southridge_Sales_Customers.limit(100))"
 				],
-				"execution_count": 14
+				"execution_count": 20
 			},
 			{
 				"cell_type": "code",
@@ -219,7 +219,7 @@
 					"#df_Southridge_Sales_Adresses.printSchema()\r\n",
 					"#display(df_Southridge_Sales_Adresses.limit(100))"
 				],
-				"execution_count": 15
+				"execution_count": 21
 			},
 			{
 				"cell_type": "code",
@@ -249,7 +249,7 @@
 					"#df_Southridge_Streaming_Customers.printSchema()\r\n",
 					"#display(df_Southridge_Streaming_Customers.limit(100))"
 				],
-				"execution_count": 16
+				"execution_count": 22
 			},
 			{
 				"cell_type": "code",
@@ -279,7 +279,7 @@
 					"#df_Southridge_Streaming_Adresses.printSchema()\r\n",
 					"#display(df_Southridge_Streaming_Adresses.limit(100))"
 				],
-				"execution_count": 17
+				"execution_count": 23
 			},
 			{
 				"cell_type": "markdown",
@@ -322,7 +322,7 @@
 					"#df_Southridge_Streaming_Joined.printSchema()\r\n",
 					"#display(df_Southridge_Streaming_Joined.limit(100))"
 				],
-				"execution_count": 18
+				"execution_count": 24
 			},
 			{
 				"cell_type": "code",
@@ -352,7 +352,7 @@
 					"#df_Southridge_Sales_Joined.printSchema()\r\n",
 					"#display(df_Southridge_Sales_Joined.limit(100))"
 				],
-				"execution_count": 19
+				"execution_count": 25
 			},
 			{
 				"cell_type": "markdown",
@@ -387,7 +387,7 @@
 					"#df_FourthCoffee.printSchema()\r\n",
 					"#display(df_FourthCoffee.limit(100))"
 				],
-				"execution_count": 20
+				"execution_count": 26
 			},
 			{
 				"cell_type": "markdown",
@@ -430,7 +430,7 @@
 					"#df_vanArsdel.printSchema()\r\n",
 					"#display(df_vanArsdel.limit(100))"
 				],
-				"execution_count": 21
+				"execution_count": 27
 			},
 			{
 				"cell_type": "markdown",
@@ -515,7 +515,7 @@
 					"#df_Southridge_Sales_Modified.printSchema()\r\n",
 					"#display(df_Southridge_Sales_Modified.limit(100))"
 				],
-				"execution_count": 22
+				"execution_count": 28
 			},
 			{
 				"cell_type": "code",
