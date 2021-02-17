@@ -146,7 +146,7 @@
 				"source": [
 					"uuidUDF = udf(lambda : str(uuid.uuid4()),StringType())"
 				],
-				"execution_count": 2
+				"execution_count": null
 			},
 			{
 				"cell_type": "markdown",
@@ -180,7 +180,7 @@
 					"#df_FourthCoffee.printSchema()\r\n",
 					"#display(df_FourthCoffee.limit(100))"
 				],
-				"execution_count": 3
+				"execution_count": null
 			},
 			{
 				"cell_type": "markdown",
@@ -223,7 +223,7 @@
 					"#df_vanArsdel.printSchema()\r\n",
 					"#display(df_vanArsdel.limit(100))"
 				],
-				"execution_count": 4
+				"execution_count": null
 			},
 			{
 				"cell_type": "markdown",
@@ -279,9 +279,9 @@
 					"# Convert column types\r\n",
 					"df_FourthCoffeeModified = (\r\n",
 					"    df_FourthCoffeeModified.withColumn(\"SourceSystemID\", col(\"SourceSystemID\").cast(StringType()))\r\n",
-					"                           .withColumn(\"SourceSystemTransactionID\", col(\"SourceSystemTransactionID\").cast(StringType()))\r\n",
-					"                           .withColumn(\"CustomerID\", col(\"CustomerID\").cast(StringType()))\r\n",
-					"                           .withColumn(\"MovieID\", col(\"MovieID\").cast(StringType()))\r\n",
+					"                           .withColumn(\"SourceSystemTransactionID\", upper(col(\"SourceSystemTransactionID\").cast(StringType())))\r\n",
+					"                           .withColumn(\"CustomerID\", upper(col(\"CustomerID\").cast(StringType())))\r\n",
+					"                           .withColumn(\"MovieID\", upper(col(\"MovieID\").cast(StringType())))\r\n",
 					"                           .withColumn(\"RentalDate\", to_date(col(\"RentalDate\").cast(StringType()), \"yyyymmdd\"))\r\n",
 					"                           .withColumn(\"ReturnDate\", to_date(col(\"ReturnDate\").cast(StringType()), \"yyyymmdd\"))\r\n",
 					"                           .withColumn(\"RentalCost\", col(\"RentalCost\").cast(DecimalType()))\r\n",
@@ -295,7 +295,7 @@
 					"#df_FourthCoffeeModified.printSchema()\r\n",
 					"#display(df_FourthCoffeeModified.limit(100))"
 				],
-				"execution_count": 5
+				"execution_count": null
 			},
 			{
 				"cell_type": "markdown",
@@ -351,9 +351,9 @@
 					"# Convert column types\r\n",
 					"df_vanArsdelModified = (\r\n",
 					"    df_vanArsdelModified.withColumn(\"SourceSystemID\", col(\"SourceSystemID\").cast(StringType()))\r\n",
-					"                           .withColumn(\"SourceSystemTransactionID\", col(\"SourceSystemTransactionID\").cast(StringType()))\r\n",
-					"                           .withColumn(\"CustomerID\", col(\"CustomerID\").cast(StringType()))\r\n",
-					"                           .withColumn(\"MovieID\", col(\"MovieID\").cast(StringType()))\r\n",
+					"                           .withColumn(\"SourceSystemTransactionID\", upper(col(\"SourceSystemTransactionID\").cast(StringType())))\r\n",
+					"                           .withColumn(\"CustomerID\", upper(col(\"CustomerID\").cast(StringType())))\r\n",
+					"                           .withColumn(\"MovieID\", upper(col(\"MovieID\").cast(StringType())))\r\n",
 					"                           .withColumn(\"RentalDate\", to_date(col(\"RentalDate\").cast(StringType()), \"yyyymmdd\"))\r\n",
 					"                           .withColumn(\"ReturnDate\", to_date(col(\"ReturnDate\").cast(StringType()), \"yyyymmdd\"))\r\n",
 					"                           .withColumn(\"RentalCost\", col(\"RentalCost\").cast(DecimalType()))\r\n",
@@ -367,7 +367,7 @@
 					"#df_vanArsdelModified.printSchema()\r\n",
 					"#display(df_vanArsdelModified.limit(100))"
 				],
-				"execution_count": 6
+				"execution_count": null
 			},
 			{
 				"cell_type": "markdown",
@@ -399,7 +399,7 @@
 				"source": [
 					"df_unioned = df_FourthCoffeeModified.unionAll(df_vanArsdelModified)"
 				],
-				"execution_count": 7
+				"execution_count": null
 			},
 			{
 				"cell_type": "markdown",
@@ -452,7 +452,7 @@
 					"#df_unioned_withID.printSchema()\r\n",
 					"#display(df_unioned_withID.limit(100))"
 				],
-				"execution_count": 8
+				"execution_count": null
 			},
 			{
 				"cell_type": "markdown",
@@ -487,7 +487,7 @@
 					"#df_unioned_withID.count()\r\n",
 					"# 98.644 Rows"
 				],
-				"execution_count": 9
+				"execution_count": null
 			}
 		]
 	}
