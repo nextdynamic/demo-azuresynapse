@@ -30,7 +30,7 @@
 			},
 			"kernelspec": {
 				"name": "synapse_pyspark",
-				"display_name": "Synapse PySpark"
+				"display_name": "python"
 			},
 			"language_info": {
 				"name": "python"
@@ -111,7 +111,7 @@
 				},
 				"source": [
 					"from pyspark.sql.types import StringType, TimestampType, DateType, IntegerType, DecimalType, BooleanType, StructType\r\n",
-					"from pyspark.sql.functions import col, lit, udf, greatest, explode, to_date, when\r\n",
+					"from pyspark.sql.functions import col, lit, udf, greatest, explode, to_date, when, upper\r\n",
 					"import uuid"
 				],
 				"execution_count": 1
@@ -604,9 +604,9 @@
 					"# Convert column types\r\n",
 					"df_Southridge_Catalog_Modified = (\r\n",
 					"    df_Southridge_Catalog_Modified.withColumn(\"SourceSystemID\", col(\"SourceSystemID\").cast(IntegerType()))\r\n",
-					"                           .withColumn(\"SourceSystemMovieID\", col(\"SourceSystemMovieID\").cast(StringType()))\r\n",
-					"                           .withColumn(\"SouthridgeMovieID\", col(\"SouthridgeMovieID\").cast(StringType()))\r\n",
-					"                           .withColumn(\"ActorID\", col(\"ActorID\").cast(StringType()))\r\n",
+					"                           .withColumn(\"SourceSystemMovieID\", upper(col(\"SourceSystemMovieID\").cast(StringType())))\r\n",
+					"                           .withColumn(\"SouthridgeMovieID\", upper(col(\"SouthridgeMovieID\").cast(StringType())))\r\n",
+					"                           .withColumn(\"ActorID\", upper(col(\"ActorID\").cast(StringType()))\r\n",
 					"                           .withColumn(\"ActorName\", col(\"ActorName\").cast(StringType()))\r\n",
 					"                           .withColumn(\"ActorGender\", col(\"ActorGender\").cast(StringType()))\r\n",
 					"                           .withColumn(\"Title\", col(\"Title\").cast(StringType()))\r\n",
@@ -692,9 +692,9 @@
 					"# Convert column types\r\n",
 					"df_FourthCoffee_Catalog_Modified = (\r\n",
 					"    df_FourthCoffee_Catalog_Modified.withColumn(\"SourceSystemID\", col(\"SourceSystemID\").cast(IntegerType()))\r\n",
-					"                           .withColumn(\"SourceSystemMovieID\", col(\"SourceSystemMovieID\").cast(StringType()))\r\n",
-					"                           .withColumn(\"SouthridgeMovieID\", col(\"SouthridgeMovieID\").cast(StringType()))\r\n",
-					"                           .withColumn(\"ActorID\", col(\"ActorID\").cast(StringType()))\r\n",
+					"                           .withColumn(\"SourceSystemMovieID\", upper(col(\"SourceSystemMovieID\").cast(StringType())))\r\n",
+					"                           .withColumn(\"SouthridgeMovieID\", upper(col(\"SouthridgeMovieID\").cast(StringType())))\r\n",
+					"                           .withColumn(\"ActorID\", upper(col(\"ActorID\").cast(StringType())))\r\n",
 					"                           .withColumn(\"ActorName\", col(\"ActorName\").cast(StringType()))\r\n",
 					"                           .withColumn(\"ActorGender\", col(\"ActorGender\").cast(StringType()))\r\n",
 					"                           .withColumn(\"Title\", col(\"Title\").cast(StringType()))\r\n",

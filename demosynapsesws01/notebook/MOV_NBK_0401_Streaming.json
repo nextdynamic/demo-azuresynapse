@@ -30,7 +30,7 @@
 			},
 			"kernelspec": {
 				"name": "synapse_pyspark",
-				"display_name": "python"
+				"display_name": "Synapse PySpark"
 			},
 			"language_info": {
 				"name": "python"
@@ -364,7 +364,7 @@
 					"#df_unioned_withID.count()\r\n",
 					"# 721.696 Rows"
 				],
-				"execution_count": 8
+				"execution_count": 7
 			}
 		]
 	}

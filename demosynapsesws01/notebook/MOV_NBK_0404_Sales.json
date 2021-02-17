@@ -30,7 +30,7 @@
 			},
 			"kernelspec": {
 				"name": "synapse_pyspark",
-				"display_name": "Synapse PySpark"
+				"display_name": "python"
 			},
 			"language_info": {
 				"name": "python"
@@ -111,7 +111,7 @@
 				},
 				"source": [
 					"from pyspark.sql.types import StringType, TimestampType, DateType, IntegerType, DecimalType, BooleanType, StructType\r\n",
-					"from pyspark.sql.functions import col, lit, udf, greatest\r\n",
+					"from pyspark.sql.functions import col, lit, udf, greatest, upper\r\n",
 					"import uuid"
 				],
 				"execution_count": 1
@@ -359,15 +359,15 @@
 					"# Reorder colums\r\n",
 					"df_Southridge_Orders_Modified = df_Southridge_Orders_Modified.select(\r\n",
 					"    'SourceSystemID',\r\n",
-					"    'Orders.OrderId',\r\n",
-					"    'Orders.CustomerID',\r\n",
+					"    upper('Orders.OrderId'),\r\n",
+					"    upper('Orders.CustomerID'),\r\n",
 					"    'OrderDate',\r\n",
 					"    'ShipDate',\r\n",
 					"    'TotalCost',\r\n",
 					"    'OrderCreatedDate',\r\n",
 					"    'OrderUpdatedDate',\r\n",
-					"    'OrderDetailID',\r\n",
-					"    'MovieID',\r\n",
+					"    upper('OrderDetailID'),\r\n",
+					"    upper('MovieID'),\r\n",
 					"    'Quantity',\r\n",
 					"    'UnitCost',\r\n",
 					"    'LineNumber',\r\n",

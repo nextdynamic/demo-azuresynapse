@@ -2,7 +2,7 @@
 	"name": "SQL script 1",
 	"properties": {
 		"content": {
-			"query": "SELECT TOP 100\n    SourceSystemTransactionID AS TransactionID,\n    NULL AS CustomerSK,\n    NULL AS MoviesSK,\n    strstadat.DateSK AS StreamStartDateSK,\n    strstatim.TimeSK AS StreamStartTimeSK,\n    strenddat.DateSK AS StreamEndDateSk,\n    strendtim.TimeSK AS StreamEndTimeSk,\n    TIMESTAMPDIFF(SECOND, StreamEnd, StreamStart) AS StreamDurationSec\nFROM\n    [ext].[Streaming] str\nLEFT JOIN\n    [dbo].[DimDate] strstadat\n    ON convert(date, str.StreamStart) = strstadat.DateValue\nLEFT JOIN\n    [dbo].[DimTime] strstatim\n    ON convert(time, str.StreamStart) = strstatim.TimeValue\nLEFT JOIN\n    [dbo].[DimDate] strenddat\n    ON convert(date, str.StreamEnd) = strenddat.DateValue\nLEFT JOIN\n    [dbo].[DimTime] strendtim\n    ON convert(time, str.StreamEnd) = strendtim.TimeValue\n\n\n--  SELECT TOP 10 *  FROM [ext].[Streaming] \n-- SELECT * FROM dimTIme",
+			"query": "",
 			"metadata": {
 				"language": "sql"
 			},

@@ -30,7 +30,7 @@
 			},
 			"kernelspec": {
 				"name": "synapse_pyspark",
-				"display_name": "Synapse PySpark"
+				"display_name": "python"
 			},
 			"language_info": {
 				"name": "python"
@@ -314,7 +314,7 @@
 					"    df_Southridge_Streaming_Customers.alias('Customers').join(\r\n",
 					"        df_Southridge_Streaming_Adresses.alias('Adresses'), \r\n",
 					"        df_Southridge_Streaming_Customers.CustomerID == df_Southridge_Streaming_Adresses.CustomerID,\r\n",
-					"        'inner'\r\n",
+					"        'left'\r\n",
 					"    )\r\n",
 					")\r\n",
 					"\r\n",
@@ -494,7 +494,7 @@
 					"# Convert column types\r\n",
 					"df_Southridge_Sales_Modified = (\r\n",
 					"    df_Southridge_Sales_Modified.withColumn(\"SourceSystemID\", col(\"SourceSystemID\").cast(IntegerType()))\r\n",
-					"                           .withColumn(\"SourceSystemCustomerID\", col(\"SourceSystemCustomerID\").cast(StringType()))\r\n",
+					"                           .withColumn(\"SourceSystemCustomerID\", upper(col(\"SourceSystemCustomerID\").cast(StringType())))\r\n",
 					"                           .withColumn(\"LastName\", col(\"LastName\").cast(StringType()))\r\n",
 					"                           .withColumn(\"FirstName\", col(\"FirstName\").cast(StringType()))\r\n",
 					"                           .withColumn(\"AddressLine1\", col(\"AddressLine1\").cast(StringType()))\r\n",
@@ -567,7 +567,7 @@
 					"# Convert column types\r\n",
 					"df_Southridge_Streaming_Modified = (\r\n",
 					"    df_Southridge_Streaming_Modified.withColumn(\"SourceSystemID\", col(\"SourceSystemID\").cast(IntegerType()))\r\n",
-					"                           .withColumn(\"SourceSystemCustomerID\", col(\"SourceSystemCustomerID\").cast(StringType()))\r\n",
+					"                           .withColumn(\"SourceSystemCustomerID\", upper(col(\"SourceSystemCustomerID\").cast(StringType())))\r\n",
 					"                           .withColumn(\"LastName\", col(\"LastName\").cast(StringType()))\r\n",
 					"                           .withColumn(\"FirstName\", col(\"FirstName\").cast(StringType()))\r\n",
 					"                           .withColumn(\"AddressLine1\", col(\"AddressLine1\").cast(StringType()))\r\n",
@@ -649,7 +649,7 @@
 					"# Convert column types\r\n",
 					"df_FourthCoffee_Modified = (\r\n",
 					"    df_FourthCoffee_Modified.withColumn(\"SourceSystemID\", col(\"SourceSystemID\").cast(IntegerType()))\r\n",
-					"                           .withColumn(\"SourceSystemCustomerID\", col(\"SourceSystemCustomerID\").cast(StringType()))\r\n",
+					"                           .withColumn(\"SourceSystemCustomerID\", upper(col(\"SourceSystemCustomerID\").cast(StringType())))\r\n",
 					"                           .withColumn(\"LastName\", col(\"LastName\").cast(StringType()))\r\n",
 					"                           .withColumn(\"FirstName\", col(\"FirstName\").cast(StringType()))\r\n",
 					"                           .withColumn(\"AddressLine1\", col(\"AddressLine1\").cast(StringType()))\r\n",
@@ -731,7 +731,7 @@
 					"# Convert column types\r\n",
 					"df_vanArsdel_Modified = (\r\n",
 					"    df_vanArsdel_Modified.withColumn(\"SourceSystemID\", col(\"SourceSystemID\").cast(IntegerType()))\r\n",
-					"                           .withColumn(\"SourceSystemCustomerID\", col(\"SourceSystemCustomerID\").cast(StringType()))\r\n",
+					"                           .withColumn(\"SourceSystemCustomerID\", upper(col(\"SourceSystemCustomerID\").cast(StringType())))\r\n",
 					"                           .withColumn(\"LastName\", col(\"LastName\").cast(StringType()))\r\n",
 					"                           .withColumn(\"FirstName\", col(\"FirstName\").cast(StringType()))\r\n",
 					"                           .withColumn(\"AddressLine1\", col(\"AddressLine1\").cast(StringType()))\r\n",
