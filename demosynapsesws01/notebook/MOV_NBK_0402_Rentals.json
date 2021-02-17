@@ -30,7 +30,7 @@
 			},
 			"kernelspec": {
 				"name": "synapse_pyspark",
-				"display_name": "Synapse PySpark"
+				"display_name": "python"
 			},
 			"language_info": {
 				"name": "python"
@@ -278,7 +278,7 @@
 					"\r\n",
 					"# Convert column types\r\n",
 					"df_FourthCoffeeModified = (\r\n",
-					"    df_FourthCoffeeModified.withColumn(\"SourceSystemID\", col(\"SourceSystemID\").cast(StringType()))\r\n",
+					"    df_FourthCoffeeModified.withColumn(\"SourceSystemID\", col(\"SourceSystemID\").cast(IntegerType()))\r\n",
 					"                           .withColumn(\"SourceSystemTransactionID\", upper(col(\"SourceSystemTransactionID\").cast(StringType())))\r\n",
 					"                           .withColumn(\"CustomerID\", upper(col(\"CustomerID\").cast(StringType())))\r\n",
 					"                           .withColumn(\"MovieID\", upper(col(\"MovieID\").cast(StringType())))\r\n",
@@ -350,7 +350,7 @@
 					"\r\n",
 					"# Convert column types\r\n",
 					"df_vanArsdelModified = (\r\n",
-					"    df_vanArsdelModified.withColumn(\"SourceSystemID\", col(\"SourceSystemID\").cast(StringType()))\r\n",
+					"    df_vanArsdelModified.withColumn(\"SourceSystemID\", col(\"SourceSystemID\").cast(IntegerType()))\r\n",
 					"                           .withColumn(\"SourceSystemTransactionID\", upper(col(\"SourceSystemTransactionID\").cast(StringType())))\r\n",
 					"                           .withColumn(\"CustomerID\", upper(col(\"CustomerID\").cast(StringType())))\r\n",
 					"                           .withColumn(\"MovieID\", upper(col(\"MovieID\").cast(StringType())))\r\n",
