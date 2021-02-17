@@ -313,7 +313,7 @@
 					"    df_Southridge_Orders_Renamed.alias('Orders').join(\r\n",
 					"        df_Southridge_OrderDetails_Renamed.alias('OrderDetails'),\r\n",
 					"        df_Southridge_Orders_Renamed.OrderID == df_Southridge_OrderDetails_Renamed.OrderID,\r\n",
-					"        'inner'\r\n",
+					"        'left'\r\n",
 					"    )\r\n",
 					")\r\n",
 					"\r\n",
