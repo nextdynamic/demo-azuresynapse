@@ -30,7 +30,7 @@
 			},
 			"kernelspec": {
 				"name": "synapse_pyspark",
-				"display_name": "Synapse PySpark"
+				"display_name": "python"
 			},
 			"language_info": {
 				"name": "python"
@@ -111,7 +111,7 @@
 				},
 				"source": [
 					"from pyspark.sql.types import StringType, TimestampType, DateType, IntegerType, StructType\r\n",
-					"from pyspark.sql.functions import col, lit, udf\r\n",
+					"from pyspark.sql.functions import col, lit, udf, upper\r\n",
 					"\r\n",
 					"import uuid"
 				],
@@ -234,9 +234,9 @@
 					"# Convert column types\r\n",
 					"df_SouthridgeModified = (\r\n",
 					"    df_SouthridgeModified.withColumn(\"SourceSystemID\", col(\"SourceSystemID\").cast(StringType()))\r\n",
-					"                           .withColumn(\"SourceSystemTransactionID\", col(\"SourceSystemTransactionID\").cast(StringType()))\r\n",
-					"                           .withColumn(\"CustomerID\", col(\"CustomerID\").cast(StringType()))\r\n",
-					"                           .withColumn(\"MovieID\", col(\"MovieID\").cast(StringType()))\r\n",
+					"                           .withColumn(\"SourceSystemTransactionID\", upper(col(\"SourceSystemTransactionID\").cast(StringType())))\r\n",
+					"                           .withColumn(\"CustomerID\", upper(col(\"CustomerID\").cast(StringType())))\r\n",
+					"                           .withColumn(\"MovieID\", upper(col(\"MovieID\").cast(StringType())))\r\n",
 					"                           .withColumn(\"StreamStart\", col(\"StreamStart\").cast(TimestampType()))\r\n",
 					"                           .withColumn(\"StreamEnd\", col(\"StreamEnd\").cast(TimestampType()))\r\n",
 					"                           .withColumn(\"CreatedDate\", col(\"CreatedDate\").cast(DateType()))\r\n",
