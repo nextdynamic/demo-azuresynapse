@@ -30,7 +30,7 @@
 			},
 			"kernelspec": {
 				"name": "synapse_pyspark",
-				"display_name": "Synapse PySpark"
+				"display_name": "python"
 			},
 			"language_info": {
 				"name": "python"
@@ -537,7 +537,7 @@
 					"df_Southridge_Streaming_Modified = (\r\n",
 					"    df_Southridge_Streaming_Joined.withColumn(\"SourceSystemID\", lit(\"1\").cast(IntegerType()))\r\n",
 					"                              .withColumn(\"MaxCreatedDate\", greatest(\"Customers.CreatedDate\", \"Adresses.CreatedDate\"))\r\n",
-					"                             .withColumn(\"MaxUpdatedDate\", greatest(\"Customers.UpdatedDate\", \"Adresses.UpdatedDate\"))\r\n",
+					"                              .withColumn(\"MaxUpdatedDate\", greatest(\"Customers.UpdatedDate\", \"Adresses.UpdatedDate\"))\r\n",
 					")\r\n",
 					"\r\n",
 					"# Reorder colums\r\n",

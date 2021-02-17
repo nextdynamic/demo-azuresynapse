@@ -1,0 +1,16 @@
+{
+	"name": "SQL script 1",
+	"properties": {
+		"content": {
+			"query": "SELECT\n    SourceSystemOrderID AS OrderID,\n    LineNumber,\n    orddat.DateSK AS OrderDateSK,\n    shidat.DateSK AS ShipDateSK,\n     (\n        SELECT TOP 1\n            CustomerSK \n        FROM \n            [dbo].[DimCustomers] dcust\n        JOIN\n            [ext].[Customers] cust\n            ON dcust.LastName = cust.LastName\n            AND dcust.FirstName = cust.FirstName\n            AND dcust.ZipCode = cust.ZipCode\n            AND dcust.City = cust.City\n            AND dcust.State = cust.State\n        WHERE\n            sal.CustomerID = cust.SourceSystemCustomerID\n    ) AS CustomerSK,\n    SourceSystemID AS LocationSK,\n    (\n        SELECT TOP 1\n            MovieSK \n        FROM \n            [dbo].[DimMovies] mov \n        JOIN\n            [ext].[Catalog] cat \n            ON mov.MovieTitle = cat.Title \n        WHERE\n            sal.MovieID = cat.SourceSystemMovieID\n    ) AS MovieSK,\n    CASE\n        WHEN DATEDIFF(d, sal.OrderDate, sal.ShipDate) < 0 THEN NULL\n        ELSE DATEDIFF(d, sal.OrderDate, sal.ShipDate)\n    END AS DaysToShip,\n    Quantity,\n    UnitCost,\n    Quantity * UnitCost AS ExtendedCosts \nFROM\n    [ext].[Sales] sal \nLEFT JOIN\n    [dbo].[DimDate] orddat\n    ON sal.OrderDate = orddat.DateValue\nLEFT JOIN\n    [dbo].[DimDate] shidat\n    ON sal.ShipDate = shidat.DateValue",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "Movies",
+				"databaseName": "Movies"
+			}
+		},
+		"type": "SqlQuery"
+	}
+}
