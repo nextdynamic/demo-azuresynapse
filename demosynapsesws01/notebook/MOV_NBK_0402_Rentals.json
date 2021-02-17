@@ -111,10 +111,10 @@
 				},
 				"source": [
 					"from pyspark.sql.types import StringType, TimestampType, DateType, IntegerType, DecimalType, BooleanType, StructType\r\n",
-					"from pyspark.sql.functions import col, lit, udf, to_date\r\n",
+					"from pyspark.sql.functions import col, lit, udf, to_date, upper\r\n",
 					"import uuid"
 				],
-				"execution_count": 1
+				"execution_count": 11
 			},
 			{
 				"cell_type": "markdown",
