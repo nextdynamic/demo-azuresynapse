@@ -233,7 +233,7 @@
 					"\r\n",
 					"# Convert column types\r\n",
 					"df_SouthridgeModified = (\r\n",
-					"    df_SouthridgeModified.withColumn(\"SourceSystemID\", col(\"SourceSystemID\").cast(StringType()))\r\n",
+					"    df_SouthridgeModified.withColumn(\"SourceSystemID\", col(\"SourceSystemID\").cast(IntegerType()))\r\n",
 					"                           .withColumn(\"SourceSystemTransactionID\", upper(col(\"SourceSystemTransactionID\").cast(StringType())))\r\n",
 					"                           .withColumn(\"CustomerID\", upper(col(\"CustomerID\").cast(StringType())))\r\n",
 					"                           .withColumn(\"MovieID\", upper(col(\"MovieID\").cast(StringType())))\r\n",
