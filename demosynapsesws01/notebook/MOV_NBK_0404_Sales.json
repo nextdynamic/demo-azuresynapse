@@ -30,7 +30,7 @@
 			},
 			"kernelspec": {
 				"name": "synapse_pyspark",
-				"display_name": "Synapse PySpark"
+				"display_name": "python"
 			},
 			"language_info": {
 				"name": "python"
@@ -385,9 +385,9 @@
 					"    df_Southridge_Orders_Modified.withColumn(\"SourceSystemID\", col(\"SourceSystemID\").cast(IntegerType()))\r\n",
 					"                           .withColumn(\"SourceSystemOrderID\", upper(col(\"SourceSystemOrderID\").cast(StringType())))\r\n",
 					"                           .withColumn(\"CustomerID\", upper(col(\"CustomerID\").cast(StringType())))\r\n",
-					"                           .withColumn(\"OrderDate\", col(\"OrderDate\").cast(StringType()))\r\n",
-					"                           .withColumn(\"ShipDate\", col(\"ShipDate\").cast(StringType()))\r\n",
-					"                           .withColumn(\"TotalCost\", col(\"TotalCost\").cast(StringType()))\r\n",
+					"                           .withColumn(\"OrderDate\", col(\"OrderDate\").cast(DateType()))\r\n",
+					"                           .withColumn(\"ShipDate\", col(\"ShipDate\").cast(DateType()))\r\n",
+					"                           .withColumn(\"TotalCost\", col(\"TotalCost\").cast(DecimalType()))\r\n",
 					"                           .withColumn(\"OrderCreatedDate\", col(\"OrderCreatedDate\").cast(DateType()))\r\n",
 					"                           .withColumn(\"OrderUpdatedDate\", col(\"OrderUpdatedDate\").cast(DateType()))\r\n",
 					"                           .withColumn(\"OrderDetailID\", upper(col(\"OrderDetailID\").cast(StringType())))\r\n",
