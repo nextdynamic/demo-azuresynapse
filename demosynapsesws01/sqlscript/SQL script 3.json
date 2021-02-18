@@ -1,0 +1,16 @@
+{
+	"name": "SQL script 3",
+	"properties": {
+		"content": {
+			"query": "SELECT TOP 10\n    ren.SourceSystemTransactionID AS TransactionID,\n    cust.CustomerSK AS CustomerSK,\n    mov.MovieSK AS MovieSK,\n    rendat.DateSK AS RentalDateSK,\n    retdat.DateSK AS ReturnDateSK,\n    CASE\n        WHEN DATEDIFF(d, ren.RentalDate, ren.ReturnDate) < 0 THEN NULL\n        ELSE DATEDIFF(d, ren.RentalDate, ren.ReturnDate)\n    END AS RentalDuration,\n    ren.RentalCost,\n    ren.LateFee,\n    ren.RentalCost + ren.LateFee AS TotalCost,\n    ren.RewindFlag\nFROM\n    [ext].[rentals] ren\nLEFT JOIN\n    [dbo].[DimDate] rendat\n    ON ren.RentalDate = rendat.DateValue\nLEFT JOIN\n    [dbo].[DimDate] retdat\n    ON ren.ReturnDate = retdat.DateValue\nLEFT JOIN\n    [dbo].[DimCustomers] cust\n    ON ren.CustomerID = cust.CustomerID\t\nLEFT JOIN\n    [dbo].[DimMovies] mov\n    ON ren.MovieID = mov.MovieID",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "Movies",
+				"databaseName": "Movies"
+			}
+		},
+		"type": "SqlQuery"
+	}
+}
