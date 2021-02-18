@@ -1,0 +1,16 @@
+{
+	"name": "SQL script 1",
+	"properties": {
+		"content": {
+			"query": "SELECT COUNT(1) FROM (\n\nSELECT\n    ren.SourceSystemTransactionID AS TransactionID,\n    (\n        SELECT TOP 1\n            CustomerSK \n        FROM \n            [dbo].[DimCustomers] dcust\n        JOIN\n            [ext].[Customers] cust\n            ON dcust.LastName = cust.LastName\n            AND dcust.FirstName = cust.FirstName\n            AND dcust.ZipCode = cust.ZipCode\n            AND dcust.City = cust.City\n            AND dcust.State = cust.State\n        WHERE\n            ren.CustomerID = cust.SourceSystemCustomerID\n    ) AS CustomerSK,\n    ren.SourceSystemID AS LocationSK,\n    (\n        SELECT TOP 1\n            MovieSK \n        FROM \n            [dbo].[DimMovies] mov \n        JOIN\n            [ext].[Catalog] cat \n            ON mov.MovieTitle = cat.Title \n        WHERE\n            ren.MovieID = cat.SourceSystemMovieID\n    ) AS MovieSK,\n    rendat.DateSK AS RentalDateSK,\n    retdat.DateSK AS ReturnDateSK,\n    CASE\n        WHEN DATEDIFF(d, ren.RentalDate, ren.ReturnDate) < 0 THEN NULL\n        ELSE DATEDIFF(d, ren.RentalDate, ren.ReturnDate)\n    END AS RentalDuration,\n    ren.RentalCost,\n    ren.LateFee,\n    ren.RentalCost + ren.LateFee AS TotalCost,\n    ren.RewindFlag\nFROM\n    [ext].[rentals] ren\nLEFT JOIN\n    [dbo].[DimDate] rendat\n    ON ren.RentalDate = rendat.DateValue\nLEFT JOIN\n    [dbo].[DimDate] retdat\n    ON ren.ReturnDate = retdat.DateValue\n\n) result",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"poolName": "Movies",
+				"databaseName": "Movies"
+			}
+		},
+		"type": "SqlQuery"
+	}
+}
